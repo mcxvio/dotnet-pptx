@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-pptx", "dotnet-pptx\dotnet-pptx.csproj", "{6882B18E-643A-48D3-B408-FAC243C834E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6882B18E-643A-48D3-B408-FAC243C834E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6882B18E-643A-48D3-B408-FAC243C834E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6882B18E-643A-48D3-B408-FAC243C834E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6882B18E-643A-48D3-B408-FAC243C834E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
