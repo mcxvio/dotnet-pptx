@@ -13,9 +13,19 @@ namespace pptx_creator.Controllers
     {
         public IActionResult Index()
         {
-            string filepath = @"pptx_creator.pptx";
+            return View();
+        }
 
-            PptxService.CreatePresentation(filepath);
+        public IActionResult Create()
+        {
+            PptxService.CreatePresentation();
+
+            return View();
+        }
+
+        public IActionResult InsertSlide()
+        {
+            PptxService.InsertSlide();
 
             return View();
         }

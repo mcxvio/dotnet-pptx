@@ -1,5 +1,7 @@
 # Autosave files
 *~
+*~lock.*
+*.bowerrc
 
 # build
 [Oo]bj/
