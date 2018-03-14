@@ -57,6 +57,23 @@ namespace pptx_creator.Services
             slideMasterPart1.AddPart(slideLayoutPart1, "rId1");
             presentationPart.AddPart(slideMasterPart1, "rId1");
             presentationPart.AddPart(themePart1, "rId5");
+
+            // Start set layout.
+            /*
+            string layoutName = "Title and Content";
+
+            // Get SlideMasterPart and SlideLayoutPart from the existing Presentation Part
+            SlideMasterPart slideMasterPart = presentationPart.SlideMasterParts.First();
+            SlideLayoutPart slideLayoutPart = slideMasterPart.SlideLayoutParts.SingleOrDefault
+                (sl => sl.SlideLayout.CommonSlideData.Name.Value.Equals(layoutName, StringComparison.OrdinalIgnoreCase));
+            if (slideLayoutPart == null)
+            {
+                throw new Exception("The slide layout " + layoutName + " is not found");
+            }
+
+            slidePart1.AddPart<SlideLayoutPart>(slideLayoutPart);
+            */
+            // End set layout.
         }
 
         private static SlidePart CreateSlidePart(PresentationPart presentationPart)        
@@ -80,21 +97,18 @@ namespace pptx_creator.Services
                             new P.TextBody(
                                 new Drawing.BodyProperties(),
                                 new Drawing.ListStyle(),
-                                new Drawing.Paragraph(new Drawing.EndParagraphRunProperties() { Language = "en-US" }),
-                                new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "THIS IS MY CONTENT" }))
-                            )
+                                new Drawing.Paragraph(new Drawing.EndParagraphRunProperties() { Language = "en-US" }))
                         )
                     )
                 ),
                 new ColorMapOverride(new Drawing.MasterColorMapping())
             );
 
-            // Start add title shape & text. //
-            /*
+            // TITLE. //
             // Declare and instantiate the title shape of the new slide.
             Shape titleShape = slidePart1.Slide.CommonSlideData.ShapeTree.AppendChild(new Shape());
 
-            // Specify the required shape properties for the title shape. 
+            // Specify the required shape properties for the title shape.
             titleShape.NonVisualShapeProperties = new NonVisualShapeProperties
                 (new NonVisualDrawingProperties() { Id = (UInt32Value)3U, Name = "Title" },
                 new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
@@ -102,11 +116,27 @@ namespace pptx_creator.Services
             titleShape.ShapeProperties = new ShapeProperties();
 
             // Specify the text of the title shape.
-            titleShape.TextBody = new TextBody(new Drawing.BodyProperties(),
+            titleShape.TextBody = new TextBody(
+                    new Drawing.BodyProperties(),
                     new Drawing.ListStyle(),
-                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "THIS IS MY TITLE, YEAH." })));
-            */
-            // End add title shape & text. //
+                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "This is the title!" })));
+
+            // CONTENT. //
+            // Declare and instantiate the body shape of the new slide.
+            Shape bodyShape = slidePart1.Slide.CommonSlideData.ShapeTree.AppendChild(new Shape());
+
+            // Specify the required shape properties for the body shape.
+            bodyShape.NonVisualShapeProperties = new NonVisualShapeProperties
+                (new NonVisualDrawingProperties() { Id = (UInt32Value)4U, Name = "Content" },
+                new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
+                new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Index = 1 }));
+            bodyShape.ShapeProperties = new ShapeProperties();
+
+            // Specify the text of the body shape.
+            bodyShape.TextBody = new TextBody(
+                    new Drawing.BodyProperties(),
+                    new Drawing.ListStyle(),
+                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "This is the content!" })));
 
             return slidePart1;
         } 
@@ -136,9 +166,10 @@ namespace pptx_creator.Services
                     )
                 ),
                 new ColorMapOverride(new Drawing.MasterColorMapping())
-            );
+            ) { Type = SlideLayoutValues.Title };
 
             slideLayoutPart1.SlideLayout = slideLayout;
+            slideLayoutPart1.SlideLayout.Type = SlideLayoutValues.Title;
             return slideLayoutPart1;
         }
 
@@ -237,7 +268,6 @@ namespace pptx_creator.Services
 
             // Declare and instantiate the title shape of the new slide.
             Shape titleShape = slide.CommonSlideData.ShapeTree.AppendChild(new Shape());
-
             drawingObjectId++;
 
             // Specify the required shape properties for the title shape. 
@@ -257,15 +287,16 @@ namespace pptx_creator.Services
             drawingObjectId++;
 
             // Specify the required shape properties for the body shape.
-            bodyShape.NonVisualShapeProperties = new NonVisualShapeProperties(new NonVisualDrawingProperties() { Id = drawingObjectId, Name = "Content Placeholder" },
-                    new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
-                    new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Index = 1 }));
+            bodyShape.NonVisualShapeProperties = new NonVisualShapeProperties
+                (new NonVisualDrawingProperties() { Id = drawingObjectId, Name = "Content Placeholder" },
+                new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
+                new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Index = 1 }));
             bodyShape.ShapeProperties = new ShapeProperties();
 
             // Specify the text of the body shape.
             bodyShape.TextBody = new TextBody(new Drawing.BodyProperties(),
                     new Drawing.ListStyle(),
-                    new Drawing.Paragraph());
+                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "This is the body!" })));
 
             // Create the slide part for the new slide.
             SlidePart slidePart = presentationPart.AddNewPart<SlidePart>();
