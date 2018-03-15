@@ -12,10 +12,6 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
   <ItemGroup>
     <Content Remove="dotnet-pptx\bin\Debug\netcoreapp2.0\dotnet-pptx.deps.json" />
   </ItemGroup>

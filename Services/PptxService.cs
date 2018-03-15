@@ -8,7 +8,7 @@ using DocumentFormat.OpenXml.Presentation;
 using P = DocumentFormat.OpenXml.Presentation;
 using Drawing = DocumentFormat.OpenXml.Drawing;
 
-namespace pptx_creator.Services
+namespace builder.Services
 {
     public class PptxService
     {
@@ -104,6 +104,7 @@ namespace pptx_creator.Services
                 new ColorMapOverride(new Drawing.MasterColorMapping())
             );
 
+            /*
             // TITLE. //
             // Declare and instantiate the title shape of the new slide.
             Shape titleShape = slidePart1.Slide.CommonSlideData.ShapeTree.AppendChild(new Shape());
@@ -137,6 +138,7 @@ namespace pptx_creator.Services
                     new Drawing.BodyProperties(),
                     new Drawing.ListStyle(),
                     new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "This is the content!" })));
+            */
 
             return slidePart1;
         } 
@@ -225,13 +227,14 @@ namespace pptx_creator.Services
             {
                 int position = 1;
                 string slideTitle = "My new slide.";
+                string slideContent = "My slide's content.";
                 // Pass the source document and the position and title of the slide to be inserted to the next methoDrawing.
-                InsertNewSlide(presentationDocument, position, slideTitle);
+                InsertNewSlide(presentationDocument, position, slideTitle, slideContent);
             }
         }
 
         // Insert the specified slide into the presentation at the specified position.
-        public static void InsertNewSlide(PresentationDocument presentationDocument, int position, string slideTitle)
+        public static void InsertNewSlide(PresentationDocument presentationDocument, int position, string slideTitle, string slideContent)
         {
 
             if (presentationDocument == null)
@@ -274,13 +277,13 @@ namespace pptx_creator.Services
             titleShape.NonVisualShapeProperties = new NonVisualShapeProperties
                 (new NonVisualDrawingProperties() { Id = drawingObjectId, Name = "Title" },
                 new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
-                new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Type = PlaceholderValues.Title }));
+                new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Index = 0, Type = PlaceholderValues.Title }));
             titleShape.ShapeProperties = new ShapeProperties();
 
             // Specify the text of the title shape.
             titleShape.TextBody = new TextBody(new Drawing.BodyProperties(),
-                    new Drawing.ListStyle(),
-                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = slideTitle })));
+                new Drawing.ListStyle(),
+                new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = slideTitle })));
 
             // Declare and instantiate the body shape of the new slide.
             Shape bodyShape = slide.CommonSlideData.ShapeTree.AppendChild(new Shape());
@@ -288,15 +291,15 @@ namespace pptx_creator.Services
 
             // Specify the required shape properties for the body shape.
             bodyShape.NonVisualShapeProperties = new NonVisualShapeProperties
-                (new NonVisualDrawingProperties() { Id = drawingObjectId, Name = "Content Placeholder" },
+                (new NonVisualDrawingProperties() { Id = drawingObjectId, Name = "Content" },
                 new NonVisualShapeDrawingProperties(new Drawing.ShapeLocks() { NoGrouping = true }),
                 new ApplicationNonVisualDrawingProperties(new PlaceholderShape() { Index = 1 }));
             bodyShape.ShapeProperties = new ShapeProperties();
 
             // Specify the text of the body shape.
             bodyShape.TextBody = new TextBody(new Drawing.BodyProperties(),
-                    new Drawing.ListStyle(),
-                    new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = "This is the body!" })));
+                new Drawing.ListStyle(),
+                new Drawing.Paragraph(new Drawing.Run(new Drawing.Text() { Text = slideContent })));
 
             // Create the slide part for the new slide.
             SlidePart slidePart = presentationPart.AddNewPart<SlidePart>();
@@ -324,7 +327,6 @@ namespace pptx_creator.Services
                 {
                     prevSlideId = slideId;
                 }
-
             }
 
             maxSlideId++;
@@ -358,11 +360,11 @@ namespace pptx_creator.Services
 
        private static ThemePart CreateTheme(SlideMasterPart slideMasterPart1)
        {
-           ThemePart themePart1 = slideMasterPart1.AddNewPart<ThemePart>("rId5");
-           Drawing.Theme theme1 = new Drawing.Theme() { Name = "Office Theme" };
+            ThemePart themePart1 = slideMasterPart1.AddNewPart<ThemePart>("rId5");
+            Drawing.Theme theme1 = new Drawing.Theme() { Name = "Office Theme" };
 
-           Drawing.ThemeElements themeElements1 = new Drawing.ThemeElements(
-           new Drawing.ColorScheme(
+            Drawing.ThemeElements themeElements1 = new Drawing.ThemeElements(
+            new Drawing.ColorScheme(
              new Drawing.Dark1Color(new Drawing.SystemColor() { Val = Drawing.SystemColorValues.WindowText, LastColor = "000000" }),
              new Drawing.Light1Color(new Drawing.SystemColor() { Val = Drawing.SystemColorValues.Window, LastColor = "FFFFFF" }),
              new Drawing.Dark2Color(new Drawing.RgbColorModelHex() { Val = "1F497D" }),
@@ -388,55 +390,55 @@ namespace pptx_creator.Services
              new Drawing.FillStyleList(
              new Drawing.SolidFill(new Drawing.SchemeColor() { Val = Drawing.SchemeColorValues.PhColor }),
              new Drawing.GradientFill(
-               new Drawing.GradientStopList(
-               new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 50000 },
-                 new Drawing.SaturationModulation() { Val = 300000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 0 },
-               new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 37000 },
-                new Drawing.SaturationModulation() { Val = 300000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 35000 },
-               new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 15000 },
-                new Drawing.SaturationModulation() { Val = 350000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 100000 }
-               ),
+                new Drawing.GradientStopList(
+                    new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 50000 },
+                    new Drawing.SaturationModulation() { Val = 300000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 0 },
+                    new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 37000 },
+                    new Drawing.SaturationModulation() { Val = 300000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 35000 },
+                    new Drawing.GradientStop(new Drawing.SchemeColor(new Drawing.Tint() { Val = 15000 },
+                    new Drawing.SaturationModulation() { Val = 350000 }) { Val = Drawing.SchemeColorValues.PhColor }) { Position = 100000 }
+                ),
                new Drawing.LinearGradientFill() { Angle = 16200000, Scaled = true }),
              new Drawing.NoFill(),
              new Drawing.PatternFill(),
              new Drawing.GroupFill()),
              new Drawing.LineStyleList(
-             new Drawing.Outline(
-               new Drawing.SolidFill(
-               new Drawing.SchemeColor(
-                 new Drawing.Shade() { Val = 95000 },
-                 new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
-               new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
-             {
-                 Width = 9525,
-                 CapType = Drawing.LineCapValues.Flat,
-                 CompoundLineType = Drawing.CompoundLineValues.Single,
-                 Alignment = Drawing.PenAlignmentValues.Center
-             },
-             new Drawing.Outline(
-               new Drawing.SolidFill(
-               new Drawing.SchemeColor(
-                 new Drawing.Shade() { Val = 95000 },
-                 new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
-               new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
-             {
-                 Width = 9525,
-                 CapType = Drawing.LineCapValues.Flat,
-                 CompoundLineType = Drawing.CompoundLineValues.Single,
-                 Alignment = Drawing.PenAlignmentValues.Center
-             },
-             new Drawing.Outline(
-               new Drawing.SolidFill(
-               new Drawing.SchemeColor(
-                 new Drawing.Shade() { Val = 95000 },
-                 new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
-               new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
-             {
-                 Width = 9525,
-                 CapType = Drawing.LineCapValues.Flat,
-                 CompoundLineType = Drawing.CompoundLineValues.Single,
-                 Alignment = Drawing.PenAlignmentValues.Center
-             }),
+                    new Drawing.Outline(
+                    new Drawing.SolidFill(
+                    new Drawing.SchemeColor(
+                    new Drawing.Shade() { Val = 95000 },
+                    new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
+                    new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
+                    {
+                    Width = 9525,
+                    CapType = Drawing.LineCapValues.Flat,
+                    CompoundLineType = Drawing.CompoundLineValues.Single,
+                    Alignment = Drawing.PenAlignmentValues.Center
+                    },
+                    new Drawing.Outline(
+                    new Drawing.SolidFill(
+                    new Drawing.SchemeColor(
+                    new Drawing.Shade() { Val = 95000 },
+                    new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
+                    new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
+                    {
+                    Width = 9525,
+                    CapType = Drawing.LineCapValues.Flat,
+                    CompoundLineType = Drawing.CompoundLineValues.Single,
+                    Alignment = Drawing.PenAlignmentValues.Center
+                    },
+                    new Drawing.Outline(
+                    new Drawing.SolidFill(
+                    new Drawing.SchemeColor(
+                    new Drawing.Shade() { Val = 95000 },
+                    new Drawing.SaturationModulation() { Val = 105000 }) { Val = Drawing.SchemeColorValues.PhColor }),
+                    new Drawing.PresetDash() { Val = Drawing.PresetLineDashValues.Solid })
+                    {
+                    Width = 9525,
+                    CapType = Drawing.LineCapValues.Flat,
+                    CompoundLineType = Drawing.CompoundLineValues.Single,
+                    Alignment = Drawing.PenAlignmentValues.Center
+                    }),
              new Drawing.EffectStyleList(
              new Drawing.EffectStyle(
                new Drawing.EffectList(

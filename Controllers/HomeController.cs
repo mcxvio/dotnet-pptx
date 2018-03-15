@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using pptx_creator.Models;
-using pptx_creator.Services;
+using builder.Services;
 
 namespace pptx_creator.Controllers
 {
@@ -18,7 +18,12 @@ namespace pptx_creator.Controllers
 
         public IActionResult Create()
         {
-            PptxService.CreatePresentation();
+            string filepath = @"my_springboard.pptx";
+
+            //PptxService.CreatePresentation();
+            SpringboardService svc = new SpringboardService();
+
+            svc.CreatePackage(filepath);
 
             return View();
         }
