@@ -13,6 +13,8 @@ namespace builder.Services
 {
     public class SpringboardService
     {
+        private MySpringboard _springboard = new MySpringboard();
+
         // Creates a PresentationDocument.
         public void CreatePackage(string filePath)
         {
@@ -1727,7 +1729,7 @@ namespace builder.Services
 
             runProperties8.Append(solidFill26);
             A.Text text8 = new A.Text();
-            text8.Text = "$Area.Title";
+            text8.Text = _springboard.Project.Areas[0].Title; //"$Area.Title";
 
             run6.Append(runProperties8);
             run6.Append(text8);
@@ -1782,7 +1784,7 @@ namespace builder.Services
             A.Run run8 = new A.Run();
             A.RunProperties runProperties10 = new A.RunProperties() { Language = "en-US", Dirty = false };
             A.Text text10 = new A.Text();
-            text10.Text = "#0Springboard.Title";
+            text10.Text = _springboard.Project.Areas[0].Springboards[0].Title;//"#0Springboard.Title";
 
             run8.Append(runProperties10);
             run8.Append(text10);
@@ -1836,7 +1838,7 @@ namespace builder.Services
             A.Run run9 = new A.Run();
             A.RunProperties runProperties11 = new A.RunProperties() { Language = "en-US", Dirty = false };
             A.Text text11 = new A.Text();
-            text11.Text = "#0Springboard.Description";
+            text11.Text = _springboard.Project.Areas[0].Springboards[0].Description; //"#0Springboard.Description";
 
             run9.Append(runProperties11);
             run9.Append(text11);
@@ -2341,7 +2343,7 @@ namespace builder.Services
             runProperties20.Append(eastAsianFont22);
             runProperties20.Append(complexScriptFont22);
             A.Text text20 = new A.Text();
-            text20.Text = "Project.Teaser";
+            text20.Text = _springboard.Project.Teaser; //"Project.Teaser";
 
             run18.Append(runProperties20);
             run18.Append(text20);
@@ -9555,7 +9557,7 @@ namespace builder.Services
             A.Run run70 = new A.Run();
             A.RunProperties runProperties73 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
             A.Text text72 = new A.Text();
-            text72.Text = "Url";
+            text72.Text = _springboard.Project.Sources[0].Url; //"Url";
 
             run70.Append(runProperties73);
             run70.Append(text72);
@@ -9563,7 +9565,7 @@ namespace builder.Services
             A.Run run71 = new A.Run();
             A.RunProperties runProperties74 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text73 = new A.Text();
-            text73.Text = ", Area, Market";
+            text73.Text = _springboard.Project.Sources[0].Area + ", " + _springboard.Project.Sources[0].Market; //", Area, Market";
 
             run71.Append(runProperties74);
             run71.Append(text73);
@@ -9780,7 +9782,7 @@ namespace builder.Services
             A.Run run80 = new A.Run();
             A.RunProperties runProperties83 = new A.RunProperties() { Language = "en-GB" };
             A.Text text82 = new A.Text();
-            text82.Text = "$Question";
+            text82.Text = _springboard.Project.Question; //"$Question";
 
             run80.Append(runProperties83);
             run80.Append(text82);
@@ -9867,15 +9869,17 @@ namespace builder.Services
             A.SolidFill solidFill88 = new A.SolidFill();
             A.RgbColorModelHex rgbColorModelHex39 = new A.RgbColorModelHex() { Val = "FF0000" };
 
-            solidFill88.Append(rgbColorModelHex39);
+            //solidFill88.Append(rgbColorModelHex39);
+            //runProperties86.Append(solidFill88);
 
-            runProperties86.Append(solidFill88);
             A.Text text85 = new A.Text();
-            text85.Text = "$SourceCount ";
+            int sourcesPlusAreas = _springboard.Project.Sources.Length + _springboard.Project.Areas.Length;
+            text85.Text = sourcesPlusAreas.ToString(); //"$SourceCount ";
 
             run83.Append(runProperties86);
             run83.Append(text85);
 
+            /*
             A.Run run84 = new A.Run();
             A.RunProperties runProperties87 = new A.RunProperties() { Language = "en-GB" };
             A.Text text86 = new A.Text();
@@ -9895,15 +9899,16 @@ namespace builder.Services
 
             runProperties88.Append(solidFill89);
             A.Text text87 = new A.Text();
-            text87.Text = "$AreaCount";
+            text87.Text = _springboard.Project.Areas.Length.ToString(); //"$AreaCount";
 
             run85.Append(runProperties88);
             run85.Append(text87);
+            */
 
             A.Run run86 = new A.Run();
             A.RunProperties runProperties89 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text88 = new A.Text();
-            text88.Text = "sources ";
+            text88.Text = " sources ";
 
             run86.Append(runProperties89);
             run86.Append(text88);
@@ -9923,11 +9928,10 @@ namespace builder.Services
             A.SolidFill solidFill90 = new A.SolidFill();
             A.RgbColorModelHex rgbColorModelHex41 = new A.RgbColorModelHex() { Val = "FF0000" };
 
-            solidFill90.Append(rgbColorModelHex41);
-
-            runProperties91.Append(solidFill90);
+            //solidFill90.Append(rgbColorModelHex41);
+            //runProperties91.Append(solidFill90);
             A.Text text90 = new A.Text();
-            text90.Text = "$MarketCount";
+            text90.Text = _springboard.Project.Markets.Length.ToString() + " markets."; //"$MarketCount";
 
             run88.Append(runProperties91);
             run88.Append(text90);
@@ -9945,8 +9949,8 @@ namespace builder.Services
             paragraph79.Append(run81);
             paragraph79.Append(run82);
             paragraph79.Append(run83);
-            paragraph79.Append(run84);
-            paragraph79.Append(run85);
+            //paragraph79.Append(run84);
+            //paragraph79.Append(run85);
             paragraph79.Append(run86);
             paragraph79.Append(run87);
             paragraph79.Append(run88);
@@ -10116,7 +10120,7 @@ namespace builder.Services
             runProperties93.Append(eastAsianFont66);
             runProperties93.Append(complexScriptFont66);
             A.Text text92 = new A.Text();
-            text92.Text = "Area$Title";
+            text92.Text = _springboard.Project.Areas[0].Title; //"Area$Title";
 
             run90.Append(runProperties93);
             run90.Append(text92);
@@ -10144,6 +10148,8 @@ namespace builder.Services
             shape74.Append(shapeStyle11);
             shape74.Append(textBody69);
 
+            #region AreaTitle
+            /*
             Shape shape75 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties75 = new NonVisualShapeProperties();
@@ -10278,6 +10284,8 @@ namespace builder.Services
             shape75.Append(shapeProperties93);
             shape75.Append(shapeStyle12);
             shape75.Append(textBody70);
+            */
+            #endregion
 
             Shape shape76 = new Shape();
 
@@ -11362,7 +11370,7 @@ namespace builder.Services
             groupShape5.Append(nonVisualGroupShapeProperties19);
             groupShape5.Append(groupShapeProperties19);
             groupShape5.Append(shape74);
-            groupShape5.Append(shape75);
+            //groupShape5.Append(shape75);
             groupShape5.Append(shape76);
             groupShape5.Append(shape77);
             groupShape5.Append(shape78);
@@ -11476,7 +11484,7 @@ namespace builder.Services
             A.Run run110 = new A.Run();
             A.RunProperties runProperties113 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
             A.Text text112 = new A.Text();
-            text112.Text = "WordList.Title";
+            text112.Text = _springboard.Project.WordLists[0].Title;//"WordList.Title";
 
             run110.Append(runProperties113);
             run110.Append(text112);
@@ -11537,7 +11545,7 @@ namespace builder.Services
             A.Run run111 = new A.Run();
             A.RunProperties runProperties114 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text113 = new A.Text();
-            text113.Text = "#0Word";
+            text113.Text = _springboard.Project.WordLists[0].Words[0];//"#0Word";
 
             run111.Append(runProperties114);
             run111.Append(text113);
@@ -11705,7 +11713,7 @@ namespace builder.Services
             A.Run run117 = new A.Run();
             A.RunProperties runProperties120 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
             A.Text text119 = new A.Text();
-            text119.Text = "WordCloud.Title";
+            text119.Text = _springboard.Project.WordClouds[0].Title;//"WordCloud.Title";
 
             run117.Append(runProperties120);
             run117.Append(text119);
@@ -16362,7 +16370,7 @@ namespace builder.Services
             runProperties163.Append(solidFill186);
             runProperties163.Append(latinFont160);
             A.Text text162 = new A.Text();
-            text162.Text = "Project.Teaser";
+            text162.Text = _springboard.Project.Teaser;//"Project.Teaser";
 
             run160.Append(runProperties163);
             run160.Append(text162);

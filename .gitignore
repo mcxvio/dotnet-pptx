@@ -1,4 +1,5 @@
 # Autosave files
+*.pptx
 *~
 *~lock.*
 *.bowerrc
