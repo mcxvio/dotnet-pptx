@@ -43,9 +43,12 @@ namespace builder
 
         private M.Springboard[] CreateSpringboards()
         {
-            M.Springboard[] springboards = new M.Springboard[2];
+            M.Springboard[] springboards = new M.Springboard[5];
             springboards[0] = new M.Springboard { Title = "springboard title 1", Description = "springboard description 1", ImageUrl = "springboard image url 1", Themes = CreateSpringboardThemes() };
             springboards[1] = new M.Springboard { Title = "springboard title 2", Description = "springboard description 2", ImageUrl = "springboard image url 2", Themes = CreateSpringboardThemes() };
+            springboards[2] = new M.Springboard { Title = "springboard title 3", Description = "springboard description 3", ImageUrl = "springboard image url 3", Themes = CreateSpringboardThemes() };
+            springboards[3] = new M.Springboard { Title = "springboard title 4", Description = "springboard description 4", ImageUrl = "springboard image url 4", Themes = CreateSpringboardThemes() };
+            springboards[4] = new M.Springboard { Title = "springboard title 5", Description = "springboard description 5", ImageUrl = "springboard image url 5", Themes = CreateSpringboardThemes() };
             return springboards;
         }
 
