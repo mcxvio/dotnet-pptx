@@ -9799,6 +9799,7 @@ namespace builder.Services
             shape72.Append(shapeProperties90);
             shape72.Append(textBody67);
 
+            #region Ovals #1
             Shape shape73 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties73 = new NonVisualShapeProperties();
@@ -9916,7 +9917,7 @@ namespace builder.Services
             A.Run run87 = new A.Run();
             A.RunProperties runProperties90 = new A.RunProperties() { Language = "en-GB" };
             A.Text text89 = new A.Text();
-            text89.Text = "from ";
+            text89.Text = "and from ";
 
             run87.Append(runProperties90);
             run87.Append(text89);
@@ -10013,10 +10014,11 @@ namespace builder.Services
             groupShapeProperties19.Append(transformGroup19);
             groupShapeProperties19.Append(solidFill92);
 
+            // First oval.
             Shape shape74 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties74 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties111 = new NonVisualDrawingProperties() { Id = (UInt32Value)6U, Name = "Oval 5" };
+            NonVisualDrawingProperties nonVisualDrawingProperties111 = new NonVisualDrawingProperties() { Id = (UInt32Value)6U, Name = "Oval 5" }; // todo: Increment Name Count.
             NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties74 = new NonVisualShapeDrawingProperties();
             ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties111 = new ApplicationNonVisualDrawingProperties();
 
@@ -10029,6 +10031,27 @@ namespace builder.Services
             A.Transform2D transform2D78 = new A.Transform2D();
             A.Offset offset97 = new A.Offset() { X = 1711308L, Y = 4066863L };
             A.Extents extents97 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+
+            /* Oval 6 X diff = 2798571 - 1711308 = 1087263
+            A.Transform2D transform2D79 = new A.Transform2D();
+            A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
+            A.Extents extents98 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+             */
+            /* Oval 7 X diff = 3885834 - 2798571 = 1087263
+            A.Transform2D transform2D80 = new A.Transform2D();
+            A.Offset offset99 = new A.Offset() { X = 3885834L, Y = 4066863L };
+            A.Extents extents99 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+             */
+            /* Oval 8 X diff = 4973097 - 3885834 = 1087263
+            A.Transform2D transform2D81 = new A.Transform2D();
+            A.Offset offset100 = new A.Offset() { X = 4973097L, Y = 4066863L };
+            A.Extents extents100 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+             */
+            /* Oval 9 X diff = 6060360 - 4973097 = 1087263
+            A.Transform2D transform2D82 = new A.Transform2D();
+            A.Offset offset101 = new A.Offset() { X = 6060360L, Y = 4066863L };
+            A.Extents extents101 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+             */
 
             transform2D78.Append(offset97);
             transform2D78.Append(extents97);
@@ -10147,6 +10170,7 @@ namespace builder.Services
             shape74.Append(shapeProperties92);
             shape74.Append(shapeStyle11);
             shape74.Append(textBody69);
+            #endregion
 
             #region AreaTitle
             /*
@@ -10284,8 +10308,6 @@ namespace builder.Services
             shape75.Append(shapeProperties93);
             shape75.Append(shapeStyle12);
             shape75.Append(textBody70);
-            */
-            #endregion
 
             Shape shape76 = new Shape();
 
@@ -11231,6 +11253,8 @@ namespace builder.Services
             shape82.Append(shapeProperties100);
             shape82.Append(shapeStyle19);
             shape82.Append(textBody77);
+            */
+            #endregion
 
             Shape shape83 = new Shape();
 
@@ -11371,13 +11395,13 @@ namespace builder.Services
             groupShape5.Append(groupShapeProperties19);
             groupShape5.Append(shape74);
             //groupShape5.Append(shape75);
-            groupShape5.Append(shape76);
-            groupShape5.Append(shape77);
-            groupShape5.Append(shape78);
-            groupShape5.Append(shape79);
-            groupShape5.Append(shape80);
-            groupShape5.Append(shape81);
-            groupShape5.Append(shape82);
+            //groupShape5.Append(shape76);
+            //groupShape5.Append(shape77);
+            //groupShape5.Append(shape78);
+            //groupShape5.Append(shape79);
+            //groupShape5.Append(shape80);
+            //groupShape5.Append(shape81);
+            //groupShape5.Append(shape82);
             groupShape5.Append(shape83);
 
             shapeTree14.Append(nonVisualGroupShapeProperties18);
@@ -11410,6 +11434,147 @@ namespace builder.Services
 
             slidePart3.Slide = slide3;
         }
+
+        private Shape GenerateSlideShapeOval()
+        {
+            Shape shape75 = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties75 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties112 = new NonVisualDrawingProperties() { Id = (UInt32Value)7U, Name = "Oval 6" };
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties75 = new NonVisualShapeDrawingProperties();
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties112 = new ApplicationNonVisualDrawingProperties();
+
+            nonVisualShapeProperties75.Append(nonVisualDrawingProperties112);
+            nonVisualShapeProperties75.Append(nonVisualShapeDrawingProperties75);
+            nonVisualShapeProperties75.Append(applicationNonVisualDrawingProperties112);
+
+            ShapeProperties shapeProperties93 = new ShapeProperties();
+
+            A.Transform2D transform2D79 = new A.Transform2D();
+            A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
+            A.Extents extents98 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
+
+            transform2D79.Append(offset98);
+            transform2D79.Append(extents98);
+
+            A.PresetGeometry presetGeometry47 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
+            A.AdjustValueList adjustValueList47 = new A.AdjustValueList();
+
+            presetGeometry47.Append(adjustValueList47);
+            A.GroupFill groupFill2 = new A.GroupFill();
+
+            A.Outline outline21 = new A.Outline();
+            A.NoFill noFill21 = new A.NoFill();
+
+            outline21.Append(noFill21);
+
+            shapeProperties93.Append(transform2D79);
+            shapeProperties93.Append(presetGeometry47);
+            shapeProperties93.Append(groupFill2);
+            shapeProperties93.Append(outline21);
+
+            ShapeStyle shapeStyle12 = new ShapeStyle();
+
+            A.LineReference lineReference12 = new A.LineReference() { Index = (UInt32Value)2U };
+
+            A.SchemeColor schemeColor147 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+            A.Shade shade18 = new A.Shade() { Val = 50000 };
+
+            schemeColor147.Append(shade18);
+
+            lineReference12.Append(schemeColor147);
+
+            A.FillReference fillReference12 = new A.FillReference() { Index = (UInt32Value)1U };
+            A.SchemeColor schemeColor148 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+
+            fillReference12.Append(schemeColor148);
+
+            A.EffectReference effectReference12 = new A.EffectReference() { Index = (UInt32Value)0U };
+            A.SchemeColor schemeColor149 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+
+            effectReference12.Append(schemeColor149);
+
+            A.FontReference fontReference12 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
+            A.SchemeColor schemeColor150 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
+
+            fontReference12.Append(schemeColor150);
+
+            shapeStyle12.Append(lineReference12);
+            shapeStyle12.Append(fillReference12);
+            shapeStyle12.Append(effectReference12);
+            shapeStyle12.Append(fontReference12);
+
+            TextBody textBody70 = new TextBody();
+            A.BodyProperties bodyProperties70 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
+            A.ListStyle listStyle70 = new A.ListStyle();
+
+            A.Paragraph paragraph82 = new A.Paragraph();
+            A.ParagraphProperties paragraphProperties39 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.Run run91 = new A.Run();
+
+            A.RunProperties runProperties94 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
+            A.LatinFont latinFont68 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.EastAsianFont eastAsianFont68 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.ComplexScriptFont complexScriptFont68 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            runProperties94.Append(latinFont68);
+            runProperties94.Append(eastAsianFont68);
+            runProperties94.Append(complexScriptFont68);
+            A.Text text93 = new A.Text();
+            text93.Text = "#1";
+
+            run91.Append(runProperties94);
+            run91.Append(text93);
+
+            paragraph82.Append(paragraphProperties39);
+            paragraph82.Append(run91);
+
+            A.Paragraph paragraph83 = new A.Paragraph();
+            A.ParagraphProperties paragraphProperties40 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.Run run92 = new A.Run();
+
+            A.RunProperties runProperties95 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
+            A.LatinFont latinFont69 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.EastAsianFont eastAsianFont69 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.ComplexScriptFont complexScriptFont69 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            runProperties95.Append(latinFont69);
+            runProperties95.Append(eastAsianFont69);
+            runProperties95.Append(complexScriptFont69);
+            A.Text text94 = new A.Text();
+            text94.Text = "Area$Title";
+
+            run92.Append(runProperties95);
+            run92.Append(text94);
+
+            A.EndParagraphRunProperties endParagraphRunProperties31 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
+            A.LatinFont latinFont70 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.EastAsianFont eastAsianFont70 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.ComplexScriptFont complexScriptFont70 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            endParagraphRunProperties31.Append(latinFont70);
+            endParagraphRunProperties31.Append(eastAsianFont70);
+            endParagraphRunProperties31.Append(complexScriptFont70);
+
+            paragraph83.Append(paragraphProperties40);
+            paragraph83.Append(run92);
+            paragraph83.Append(endParagraphRunProperties31);
+
+            textBody70.Append(bodyProperties70);
+            textBody70.Append(listStyle70);
+            textBody70.Append(paragraph82);
+            textBody70.Append(paragraph83);
+
+            shape75.Append(nonVisualShapeProperties75);
+            shape75.Append(shapeProperties93);
+            shape75.Append(shapeStyle12);
+            shape75.Append(textBody70);
+
+            return shape75;
+        }
+
 
         // Generates content of slidePart4.
         private void GenerateSlidePart4Content(SlidePart slidePart4)
