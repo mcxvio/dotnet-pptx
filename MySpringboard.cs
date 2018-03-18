@@ -27,9 +27,17 @@ namespace builder
 
         private M.Area[] CreateAreas()
         {
-            M.Area[] areas = new M.Area[2];
+            M.Area[] areas = new M.Area[10];
             areas[0] = new M.Area() { Title = "area title 1", Springboards = CreateSpringboards() };
             areas[1] = new M.Area() { Title = "area title 2", Springboards = CreateSpringboards() };
+            areas[2] = new M.Area() { Title = "area title 3", Springboards = CreateSpringboards() };
+            areas[3] = new M.Area() { Title = "area title 4", Springboards = CreateSpringboards() };
+            areas[4] = new M.Area() { Title = "area title 5", Springboards = CreateSpringboards() };
+            areas[5] = new M.Area() { Title = "area title 6", Springboards = CreateSpringboards() };
+            areas[6] = new M.Area() { Title = "area title 7", Springboards = CreateSpringboards() };
+            areas[7] = new M.Area() { Title = "area title 8", Springboards = CreateSpringboards() };
+            areas[8] = new M.Area() { Title = "area title 9", Springboards = CreateSpringboards() };
+            areas[9] = new M.Area() { Title = "area title 10", Springboards = CreateSpringboards() };
             return areas;
         }
 

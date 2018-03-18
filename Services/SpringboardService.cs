@@ -203,13 +203,9 @@ namespace builder.Services
 
             solidFill1.Append(schemeColor1);
             A.LatinFont latinFont1 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont1 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont1 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties2.Append(solidFill1);
             defaultRunProperties2.Append(latinFont1);
-            defaultRunProperties2.Append(eastAsianFont1);
-            defaultRunProperties2.Append(complexScriptFont1);
 
             level1ParagraphProperties1.Append(defaultRunProperties2);
 
@@ -222,13 +218,9 @@ namespace builder.Services
 
             solidFill2.Append(schemeColor2);
             A.LatinFont latinFont2 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont2 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont2 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties3.Append(solidFill2);
             defaultRunProperties3.Append(latinFont2);
-            defaultRunProperties3.Append(eastAsianFont2);
-            defaultRunProperties3.Append(complexScriptFont2);
 
             level2ParagraphProperties1.Append(defaultRunProperties3);
 
@@ -241,13 +233,9 @@ namespace builder.Services
 
             solidFill3.Append(schemeColor3);
             A.LatinFont latinFont3 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont3 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont3 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties4.Append(solidFill3);
             defaultRunProperties4.Append(latinFont3);
-            defaultRunProperties4.Append(eastAsianFont3);
-            defaultRunProperties4.Append(complexScriptFont3);
 
             level3ParagraphProperties1.Append(defaultRunProperties4);
 
@@ -260,13 +248,9 @@ namespace builder.Services
 
             solidFill4.Append(schemeColor4);
             A.LatinFont latinFont4 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont4 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont4 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties5.Append(solidFill4);
             defaultRunProperties5.Append(latinFont4);
-            defaultRunProperties5.Append(eastAsianFont4);
-            defaultRunProperties5.Append(complexScriptFont4);
 
             level4ParagraphProperties1.Append(defaultRunProperties5);
 
@@ -279,13 +263,9 @@ namespace builder.Services
 
             solidFill5.Append(schemeColor5);
             A.LatinFont latinFont5 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont5 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont5 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties6.Append(solidFill5);
             defaultRunProperties6.Append(latinFont5);
-            defaultRunProperties6.Append(eastAsianFont5);
-            defaultRunProperties6.Append(complexScriptFont5);
 
             level5ParagraphProperties1.Append(defaultRunProperties6);
 
@@ -317,13 +297,9 @@ namespace builder.Services
 
             solidFill7.Append(schemeColor7);
             A.LatinFont latinFont7 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont7 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont7 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties8.Append(solidFill7);
             defaultRunProperties8.Append(latinFont7);
-            defaultRunProperties8.Append(eastAsianFont7);
-            defaultRunProperties8.Append(complexScriptFont7);
 
             level7ParagraphProperties1.Append(defaultRunProperties8);
 
@@ -355,13 +331,9 @@ namespace builder.Services
 
             solidFill9.Append(schemeColor9);
             A.LatinFont latinFont9 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont9 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont9 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties10.Append(solidFill9);
             defaultRunProperties10.Append(latinFont9);
-            defaultRunProperties10.Append(eastAsianFont9);
-            defaultRunProperties10.Append(complexScriptFont9);
 
             level9ParagraphProperties1.Append(defaultRunProperties10);
 
@@ -953,13 +925,9 @@ namespace builder.Services
 
             solidFill11.Append(schemeColor11);
             A.LatinFont latinFont10 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont10 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont10 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties15.Append(solidFill11);
             defaultRunProperties15.Append(latinFont10);
-            defaultRunProperties15.Append(eastAsianFont10);
-            defaultRunProperties15.Append(complexScriptFont10);
 
             level1ParagraphProperties6.Append(defaultRunProperties15);
 
@@ -972,13 +940,9 @@ namespace builder.Services
 
             solidFill12.Append(schemeColor12);
             A.LatinFont latinFont11 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont11 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont11 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties16.Append(solidFill12);
             defaultRunProperties16.Append(latinFont11);
-            defaultRunProperties16.Append(eastAsianFont11);
-            defaultRunProperties16.Append(complexScriptFont11);
 
             level2ParagraphProperties2.Append(defaultRunProperties16);
 
@@ -991,13 +955,9 @@ namespace builder.Services
 
             solidFill13.Append(schemeColor13);
             A.LatinFont latinFont12 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont12 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont12 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties17.Append(solidFill13);
             defaultRunProperties17.Append(latinFont12);
-            defaultRunProperties17.Append(eastAsianFont12);
-            defaultRunProperties17.Append(complexScriptFont12);
 
             level3ParagraphProperties2.Append(defaultRunProperties17);
 
@@ -1010,13 +970,9 @@ namespace builder.Services
 
             solidFill14.Append(schemeColor14);
             A.LatinFont latinFont13 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont13 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont13 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties18.Append(solidFill14);
             defaultRunProperties18.Append(latinFont13);
-            defaultRunProperties18.Append(eastAsianFont13);
-            defaultRunProperties18.Append(complexScriptFont13);
 
             level4ParagraphProperties2.Append(defaultRunProperties18);
 
@@ -1029,13 +985,9 @@ namespace builder.Services
 
             solidFill15.Append(schemeColor15);
             A.LatinFont latinFont14 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont14 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont14 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties19.Append(solidFill15);
             defaultRunProperties19.Append(latinFont14);
-            defaultRunProperties19.Append(eastAsianFont14);
-            defaultRunProperties19.Append(complexScriptFont14);
 
             level5ParagraphProperties2.Append(defaultRunProperties19);
 
@@ -1048,13 +1000,9 @@ namespace builder.Services
 
             solidFill16.Append(schemeColor16);
             A.LatinFont latinFont15 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont15 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont15 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties20.Append(solidFill16);
             defaultRunProperties20.Append(latinFont15);
-            defaultRunProperties20.Append(eastAsianFont15);
-            defaultRunProperties20.Append(complexScriptFont15);
 
             level6ParagraphProperties2.Append(defaultRunProperties20);
 
@@ -1067,13 +1015,9 @@ namespace builder.Services
 
             solidFill17.Append(schemeColor17);
             A.LatinFont latinFont16 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont16 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont16 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties21.Append(solidFill17);
             defaultRunProperties21.Append(latinFont16);
-            defaultRunProperties21.Append(eastAsianFont16);
-            defaultRunProperties21.Append(complexScriptFont16);
 
             level7ParagraphProperties2.Append(defaultRunProperties21);
 
@@ -1086,13 +1030,9 @@ namespace builder.Services
 
             solidFill18.Append(schemeColor18);
             A.LatinFont latinFont17 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont17 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont17 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties22.Append(solidFill18);
             defaultRunProperties22.Append(latinFont17);
-            defaultRunProperties22.Append(eastAsianFont17);
-            defaultRunProperties22.Append(complexScriptFont17);
 
             level8ParagraphProperties2.Append(defaultRunProperties22);
 
@@ -1105,13 +1045,9 @@ namespace builder.Services
 
             solidFill19.Append(schemeColor19);
             A.LatinFont latinFont18 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont18 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont18 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties23.Append(solidFill19);
             defaultRunProperties23.Append(latinFont18);
-            defaultRunProperties23.Append(eastAsianFont18);
-            defaultRunProperties23.Append(complexScriptFont18);
 
             level9ParagraphProperties2.Append(defaultRunProperties23);
 
@@ -1221,139 +1157,19 @@ namespace builder.Services
             A.LatinFont latinFont19 = new A.LatinFont() { Typeface = "Calibri Light", Panose = "020F0302020204030204" };
             A.EastAsianFont eastAsianFont19 = new A.EastAsianFont() { Typeface = "" };
             A.ComplexScriptFont complexScriptFont19 = new A.ComplexScriptFont() { Typeface = "" };
-            A.SupplementalFont supplementalFont1 = new A.SupplementalFont() { Script = "Jpan", Typeface = "Yu Gothic Light" };
-            A.SupplementalFont supplementalFont2 = new A.SupplementalFont() { Script = "Hang", Typeface = "맑은 고딕" };
-            A.SupplementalFont supplementalFont3 = new A.SupplementalFont() { Script = "Hans", Typeface = "DengXian Light" };
-            A.SupplementalFont supplementalFont4 = new A.SupplementalFont() { Script = "Hant", Typeface = "新細明體" };
-            A.SupplementalFont supplementalFont5 = new A.SupplementalFont() { Script = "Arab", Typeface = "Times New Roman" };
-            A.SupplementalFont supplementalFont6 = new A.SupplementalFont() { Script = "Hebr", Typeface = "Times New Roman" };
-            A.SupplementalFont supplementalFont7 = new A.SupplementalFont() { Script = "Thai", Typeface = "Angsana New" };
-            A.SupplementalFont supplementalFont8 = new A.SupplementalFont() { Script = "Ethi", Typeface = "Nyala" };
-            A.SupplementalFont supplementalFont9 = new A.SupplementalFont() { Script = "Beng", Typeface = "Vrinda" };
-            A.SupplementalFont supplementalFont10 = new A.SupplementalFont() { Script = "Gujr", Typeface = "Shruti" };
-            A.SupplementalFont supplementalFont11 = new A.SupplementalFont() { Script = "Khmr", Typeface = "MoolBoran" };
-            A.SupplementalFont supplementalFont12 = new A.SupplementalFont() { Script = "Knda", Typeface = "Tunga" };
-            A.SupplementalFont supplementalFont13 = new A.SupplementalFont() { Script = "Guru", Typeface = "Raavi" };
-            A.SupplementalFont supplementalFont14 = new A.SupplementalFont() { Script = "Cans", Typeface = "Euphemia" };
-            A.SupplementalFont supplementalFont15 = new A.SupplementalFont() { Script = "Cher", Typeface = "Plantagenet Cherokee" };
-            A.SupplementalFont supplementalFont16 = new A.SupplementalFont() { Script = "Yiii", Typeface = "Microsoft Yi Baiti" };
-            A.SupplementalFont supplementalFont17 = new A.SupplementalFont() { Script = "Tibt", Typeface = "Microsoft Himalaya" };
-            A.SupplementalFont supplementalFont18 = new A.SupplementalFont() { Script = "Thaa", Typeface = "MV Boli" };
-            A.SupplementalFont supplementalFont19 = new A.SupplementalFont() { Script = "Deva", Typeface = "Mangal" };
-            A.SupplementalFont supplementalFont20 = new A.SupplementalFont() { Script = "Telu", Typeface = "Gautami" };
-            A.SupplementalFont supplementalFont21 = new A.SupplementalFont() { Script = "Taml", Typeface = "Latha" };
-            A.SupplementalFont supplementalFont22 = new A.SupplementalFont() { Script = "Syrc", Typeface = "Estrangelo Edessa" };
-            A.SupplementalFont supplementalFont23 = new A.SupplementalFont() { Script = "Orya", Typeface = "Kalinga" };
-            A.SupplementalFont supplementalFont24 = new A.SupplementalFont() { Script = "Mlym", Typeface = "Kartika" };
-            A.SupplementalFont supplementalFont25 = new A.SupplementalFont() { Script = "Laoo", Typeface = "DokChampa" };
-            A.SupplementalFont supplementalFont26 = new A.SupplementalFont() { Script = "Sinh", Typeface = "Iskoola Pota" };
-            A.SupplementalFont supplementalFont27 = new A.SupplementalFont() { Script = "Mong", Typeface = "Mongolian Baiti" };
-            A.SupplementalFont supplementalFont28 = new A.SupplementalFont() { Script = "Viet", Typeface = "Times New Roman" };
-            A.SupplementalFont supplementalFont29 = new A.SupplementalFont() { Script = "Uigh", Typeface = "Microsoft Uighur" };
-            A.SupplementalFont supplementalFont30 = new A.SupplementalFont() { Script = "Geor", Typeface = "Sylfaen" };
 
             majorFont1.Append(latinFont19);
             majorFont1.Append(eastAsianFont19);
             majorFont1.Append(complexScriptFont19);
-            majorFont1.Append(supplementalFont1);
-            majorFont1.Append(supplementalFont2);
-            majorFont1.Append(supplementalFont3);
-            majorFont1.Append(supplementalFont4);
-            majorFont1.Append(supplementalFont5);
-            majorFont1.Append(supplementalFont6);
-            majorFont1.Append(supplementalFont7);
-            majorFont1.Append(supplementalFont8);
-            majorFont1.Append(supplementalFont9);
-            majorFont1.Append(supplementalFont10);
-            majorFont1.Append(supplementalFont11);
-            majorFont1.Append(supplementalFont12);
-            majorFont1.Append(supplementalFont13);
-            majorFont1.Append(supplementalFont14);
-            majorFont1.Append(supplementalFont15);
-            majorFont1.Append(supplementalFont16);
-            majorFont1.Append(supplementalFont17);
-            majorFont1.Append(supplementalFont18);
-            majorFont1.Append(supplementalFont19);
-            majorFont1.Append(supplementalFont20);
-            majorFont1.Append(supplementalFont21);
-            majorFont1.Append(supplementalFont22);
-            majorFont1.Append(supplementalFont23);
-            majorFont1.Append(supplementalFont24);
-            majorFont1.Append(supplementalFont25);
-            majorFont1.Append(supplementalFont26);
-            majorFont1.Append(supplementalFont27);
-            majorFont1.Append(supplementalFont28);
-            majorFont1.Append(supplementalFont29);
-            majorFont1.Append(supplementalFont30);
 
             A.MinorFont minorFont1 = new A.MinorFont();
             A.LatinFont latinFont20 = new A.LatinFont() { Typeface = "Calibri", Panose = "020F0502020204030204" };
             A.EastAsianFont eastAsianFont20 = new A.EastAsianFont() { Typeface = "" };
             A.ComplexScriptFont complexScriptFont20 = new A.ComplexScriptFont() { Typeface = "" };
-            A.SupplementalFont supplementalFont31 = new A.SupplementalFont() { Script = "Jpan", Typeface = "Yu Gothic" };
-            A.SupplementalFont supplementalFont32 = new A.SupplementalFont() { Script = "Hang", Typeface = "맑은 고딕" };
-            A.SupplementalFont supplementalFont33 = new A.SupplementalFont() { Script = "Hans", Typeface = "DengXian" };
-            A.SupplementalFont supplementalFont34 = new A.SupplementalFont() { Script = "Hant", Typeface = "新細明體" };
-            A.SupplementalFont supplementalFont35 = new A.SupplementalFont() { Script = "Arab", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont36 = new A.SupplementalFont() { Script = "Hebr", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont37 = new A.SupplementalFont() { Script = "Thai", Typeface = "Cordia New" };
-            A.SupplementalFont supplementalFont38 = new A.SupplementalFont() { Script = "Ethi", Typeface = "Nyala" };
-            A.SupplementalFont supplementalFont39 = new A.SupplementalFont() { Script = "Beng", Typeface = "Vrinda" };
-            A.SupplementalFont supplementalFont40 = new A.SupplementalFont() { Script = "Gujr", Typeface = "Shruti" };
-            A.SupplementalFont supplementalFont41 = new A.SupplementalFont() { Script = "Khmr", Typeface = "DaunPenh" };
-            A.SupplementalFont supplementalFont42 = new A.SupplementalFont() { Script = "Knda", Typeface = "Tunga" };
-            A.SupplementalFont supplementalFont43 = new A.SupplementalFont() { Script = "Guru", Typeface = "Raavi" };
-            A.SupplementalFont supplementalFont44 = new A.SupplementalFont() { Script = "Cans", Typeface = "Euphemia" };
-            A.SupplementalFont supplementalFont45 = new A.SupplementalFont() { Script = "Cher", Typeface = "Plantagenet Cherokee" };
-            A.SupplementalFont supplementalFont46 = new A.SupplementalFont() { Script = "Yiii", Typeface = "Microsoft Yi Baiti" };
-            A.SupplementalFont supplementalFont47 = new A.SupplementalFont() { Script = "Tibt", Typeface = "Microsoft Himalaya" };
-            A.SupplementalFont supplementalFont48 = new A.SupplementalFont() { Script = "Thaa", Typeface = "MV Boli" };
-            A.SupplementalFont supplementalFont49 = new A.SupplementalFont() { Script = "Deva", Typeface = "Mangal" };
-            A.SupplementalFont supplementalFont50 = new A.SupplementalFont() { Script = "Telu", Typeface = "Gautami" };
-            A.SupplementalFont supplementalFont51 = new A.SupplementalFont() { Script = "Taml", Typeface = "Latha" };
-            A.SupplementalFont supplementalFont52 = new A.SupplementalFont() { Script = "Syrc", Typeface = "Estrangelo Edessa" };
-            A.SupplementalFont supplementalFont53 = new A.SupplementalFont() { Script = "Orya", Typeface = "Kalinga" };
-            A.SupplementalFont supplementalFont54 = new A.SupplementalFont() { Script = "Mlym", Typeface = "Kartika" };
-            A.SupplementalFont supplementalFont55 = new A.SupplementalFont() { Script = "Laoo", Typeface = "DokChampa" };
-            A.SupplementalFont supplementalFont56 = new A.SupplementalFont() { Script = "Sinh", Typeface = "Iskoola Pota" };
-            A.SupplementalFont supplementalFont57 = new A.SupplementalFont() { Script = "Mong", Typeface = "Mongolian Baiti" };
-            A.SupplementalFont supplementalFont58 = new A.SupplementalFont() { Script = "Viet", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont59 = new A.SupplementalFont() { Script = "Uigh", Typeface = "Microsoft Uighur" };
-            A.SupplementalFont supplementalFont60 = new A.SupplementalFont() { Script = "Geor", Typeface = "Sylfaen" };
 
             minorFont1.Append(latinFont20);
             minorFont1.Append(eastAsianFont20);
             minorFont1.Append(complexScriptFont20);
-            minorFont1.Append(supplementalFont31);
-            minorFont1.Append(supplementalFont32);
-            minorFont1.Append(supplementalFont33);
-            minorFont1.Append(supplementalFont34);
-            minorFont1.Append(supplementalFont35);
-            minorFont1.Append(supplementalFont36);
-            minorFont1.Append(supplementalFont37);
-            minorFont1.Append(supplementalFont38);
-            minorFont1.Append(supplementalFont39);
-            minorFont1.Append(supplementalFont40);
-            minorFont1.Append(supplementalFont41);
-            minorFont1.Append(supplementalFont42);
-            minorFont1.Append(supplementalFont43);
-            minorFont1.Append(supplementalFont44);
-            minorFont1.Append(supplementalFont45);
-            minorFont1.Append(supplementalFont46);
-            minorFont1.Append(supplementalFont47);
-            minorFont1.Append(supplementalFont48);
-            minorFont1.Append(supplementalFont49);
-            minorFont1.Append(supplementalFont50);
-            minorFont1.Append(supplementalFont51);
-            minorFont1.Append(supplementalFont52);
-            minorFont1.Append(supplementalFont53);
-            minorFont1.Append(supplementalFont54);
-            minorFont1.Append(supplementalFont55);
-            minorFont1.Append(supplementalFont56);
-            minorFont1.Append(supplementalFont57);
-            minorFont1.Append(supplementalFont58);
-            minorFont1.Append(supplementalFont59);
-            minorFont1.Append(supplementalFont60);
 
             fontScheme1.Append(majorFont1);
             fontScheme1.Append(minorFont1);
@@ -1737,7 +1553,7 @@ namespace builder.Services
             A.Run run7 = new A.Run();
             A.RunProperties runProperties9 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text9 = new A.Text();
-            text9.Text = "Springboards";
+            text9.Text = " Springboards";
 
             run7.Append(runProperties9);
             run7.Append(text9);
@@ -1755,103 +1571,12 @@ namespace builder.Services
             shape7.Append(shapeProperties7);
             shape7.Append(textBody7);
 
-            Shape shape8 = new Shape();
+            #region Springboard Title & Description
+            Shape shape8 = GenerateSpringboardTitle(_springboard.Project.Areas[0].Springboards[0].Title);
 
-            NonVisualShapeProperties nonVisualShapeProperties8 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties10 = new NonVisualDrawingProperties() { Id = (UInt32Value)10U, Name = "Text Placeholder 9" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties8 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks8 = new A.ShapeLocks() { NoGrouping = true };
-
-            nonVisualShapeDrawingProperties8.Append(shapeLocks8);
-
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties10 = new ApplicationNonVisualDrawingProperties();
-            PlaceholderShape placeholderShape8 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)16U };
-
-            applicationNonVisualDrawingProperties10.Append(placeholderShape8);
-
-            nonVisualShapeProperties8.Append(nonVisualDrawingProperties10);
-            nonVisualShapeProperties8.Append(nonVisualShapeDrawingProperties8);
-            nonVisualShapeProperties8.Append(applicationNonVisualDrawingProperties10);
-            ShapeProperties shapeProperties8 = new ShapeProperties();
-
-            TextBody textBody8 = new TextBody();
-            A.BodyProperties bodyProperties8 = new A.BodyProperties();
-            A.ListStyle listStyle8 = new A.ListStyle();
-
-            A.Paragraph paragraph12 = new A.Paragraph();
-
-            A.Run run8 = new A.Run();
-            A.RunProperties runProperties10 = new A.RunProperties() { Language = "en-US", Dirty = false };
-            A.Text text10 = new A.Text();
-            text10.Text = _springboard.Project.Areas[0].Springboards[0].Title;//"#0Springboard.Title";
-
-            run8.Append(runProperties10);
-            run8.Append(text10);
-
-            paragraph12.Append(run8);
-
-            textBody8.Append(bodyProperties8);
-            textBody8.Append(listStyle8);
-            textBody8.Append(paragraph12);
-
-            shape8.Append(nonVisualShapeProperties8);
-            shape8.Append(shapeProperties8);
-            shape8.Append(textBody8);
-
-            Shape shape9 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties9 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties11 = new NonVisualDrawingProperties() { Id = (UInt32Value)11U, Name = "Text Placeholder 10" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties9 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks9 = new A.ShapeLocks() { NoGrouping = true };
-
-            nonVisualShapeDrawingProperties9.Append(shapeLocks9);
-
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties11 = new ApplicationNonVisualDrawingProperties();
-            PlaceholderShape placeholderShape9 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)17U };
-
-            applicationNonVisualDrawingProperties11.Append(placeholderShape9);
-
-            nonVisualShapeProperties9.Append(nonVisualDrawingProperties11);
-            nonVisualShapeProperties9.Append(nonVisualShapeDrawingProperties9);
-            nonVisualShapeProperties9.Append(applicationNonVisualDrawingProperties11);
-
-            ShapeProperties shapeProperties9 = new ShapeProperties();
-
-            A.Transform2D transform2D7 = new A.Transform2D();
-            A.Offset offset9 = new A.Offset() { X = 695326L, Y = 5116152L };
-            A.Extents extents9 = new A.Extents() { Cx = 2035348L, Cy = 1013185L };
-
-            transform2D7.Append(offset9);
-            transform2D7.Append(extents9);
-
-            shapeProperties9.Append(transform2D7);
-
-            TextBody textBody9 = new TextBody();
-            A.BodyProperties bodyProperties9 = new A.BodyProperties();
-            A.ListStyle listStyle9 = new A.ListStyle();
-
-            A.Paragraph paragraph13 = new A.Paragraph();
-
-            A.Run run9 = new A.Run();
-            A.RunProperties runProperties11 = new A.RunProperties() { Language = "en-US", Dirty = false };
-            A.Text text11 = new A.Text();
-            text11.Text = _springboard.Project.Areas[0].Springboards[0].Description; //"#0Springboard.Description";
-
-            run9.Append(runProperties11);
-            run9.Append(text11);
-
-            paragraph13.Append(run9);
-
-            textBody9.Append(bodyProperties9);
-            textBody9.Append(listStyle9);
-            textBody9.Append(paragraph13);
-
-            shape9.Append(nonVisualShapeProperties9);
-            shape9.Append(shapeProperties9);
-            shape9.Append(textBody9);
+            //A.Offset offset9 = new A.Offset() { X = 695326L, Y = 5116152L };
+            Shape shape9 = GenerateSpringboardDescription(_springboard.Project.Areas[0].Springboards[0].Description, 695326L, 5116152L);
+            #endregion
 
             Shape shape10 = new Shape();
 
@@ -3004,6 +2729,113 @@ namespace builder.Services
             slide1.Append(colorMapOverride1);
 
             slidePart1.Slide = slide1;
+        }
+
+        private Shape GenerateSpringboardDescription(string springboardDescription, long xOffset, long yOffset)
+        {
+            Shape shape9 = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties9 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties11 = new NonVisualDrawingProperties() { Id = (UInt32Value)11U, Name = "Text Placeholder 10" };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties9 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks9 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties9.Append(shapeLocks9);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties11 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape9 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)17U };
+
+            applicationNonVisualDrawingProperties11.Append(placeholderShape9);
+
+            nonVisualShapeProperties9.Append(nonVisualDrawingProperties11);
+            nonVisualShapeProperties9.Append(nonVisualShapeDrawingProperties9);
+            nonVisualShapeProperties9.Append(applicationNonVisualDrawingProperties11);
+
+            ShapeProperties shapeProperties9 = new ShapeProperties();
+
+            A.Transform2D transform2D7 = new A.Transform2D();
+            //A.Offset offset9 = new A.Offset() { X = 695326L, Y = 5116152L };
+            A.Offset offset9 = new A.Offset() { X = xOffset, Y = yOffset };
+            A.Extents extents9 = new A.Extents() { Cx = 2035348L, Cy = 1013185L };
+
+            transform2D7.Append(offset9);
+            transform2D7.Append(extents9);
+
+            shapeProperties9.Append(transform2D7);
+
+            TextBody textBody9 = new TextBody();
+            A.BodyProperties bodyProperties9 = new A.BodyProperties();
+            A.ListStyle listStyle9 = new A.ListStyle();
+
+            A.Paragraph paragraph13 = new A.Paragraph();
+
+            A.Run run9 = new A.Run();
+            A.RunProperties runProperties11 = new A.RunProperties() { Language = "en-US", Dirty = false };
+            A.Text text11 = new A.Text();
+            text11.Text = springboardDescription; //"#0Springboard.Description";
+
+            run9.Append(runProperties11);
+            run9.Append(text11);
+
+            paragraph13.Append(run9);
+
+            textBody9.Append(bodyProperties9);
+            textBody9.Append(listStyle9);
+            textBody9.Append(paragraph13);
+
+            shape9.Append(nonVisualShapeProperties9);
+            shape9.Append(shapeProperties9);
+            shape9.Append(textBody9);
+            return shape9;
+        }
+
+        private Shape GenerateSpringboardTitle(string springboardTitle)
+        {
+            Shape shape8 = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties8 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties10 = new NonVisualDrawingProperties() { Id = (UInt32Value)10U, Name = "Text Placeholder 9" };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties8 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks8 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties8.Append(shapeLocks8);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties10 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape8 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)16U };
+
+            applicationNonVisualDrawingProperties10.Append(placeholderShape8);
+
+            nonVisualShapeProperties8.Append(nonVisualDrawingProperties10);
+            nonVisualShapeProperties8.Append(nonVisualShapeDrawingProperties8);
+            nonVisualShapeProperties8.Append(applicationNonVisualDrawingProperties10);
+            ShapeProperties shapeProperties8 = new ShapeProperties();
+
+            TextBody textBody8 = new TextBody();
+            A.BodyProperties bodyProperties8 = new A.BodyProperties();
+            A.ListStyle listStyle8 = new A.ListStyle();
+
+            A.Paragraph paragraph12 = new A.Paragraph();
+
+            A.Run run8 = new A.Run();
+            A.RunProperties runProperties10 = new A.RunProperties() { Language = "en-US", Dirty = false };
+            A.Text text10 = new A.Text();
+            text10.Text = springboardTitle; //"#0Springboard.Title";
+
+            run8.Append(runProperties10);
+            run8.Append(text10);
+
+            paragraph12.Append(run8);
+
+            textBody8.Append(bodyProperties8);
+            textBody8.Append(listStyle8);
+            textBody8.Append(paragraph12);
+
+            shape8.Append(nonVisualShapeProperties8);
+            shape8.Append(shapeProperties8);
+            shape8.Append(textBody8);
+            return shape8;
         }
 
         // Generates content of slideLayoutPart1.
@@ -8532,139 +8364,19 @@ namespace builder.Services
             A.LatinFont latinFont62 = new A.LatinFont() { Typeface = "Arial", Panose = "020B0604020202020204" };
             A.EastAsianFont eastAsianFont62 = new A.EastAsianFont() { Typeface = "" };
             A.ComplexScriptFont complexScriptFont62 = new A.ComplexScriptFont() { Typeface = "" };
-            A.SupplementalFont supplementalFont61 = new A.SupplementalFont() { Script = "Jpan", Typeface = "ＭＳ Ｐゴシック" };
-            A.SupplementalFont supplementalFont62 = new A.SupplementalFont() { Script = "Hang", Typeface = "굴림" };
-            A.SupplementalFont supplementalFont63 = new A.SupplementalFont() { Script = "Hans", Typeface = "黑体" };
-            A.SupplementalFont supplementalFont64 = new A.SupplementalFont() { Script = "Hant", Typeface = "微軟正黑體" };
-            A.SupplementalFont supplementalFont65 = new A.SupplementalFont() { Script = "Arab", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont66 = new A.SupplementalFont() { Script = "Hebr", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont67 = new A.SupplementalFont() { Script = "Thai", Typeface = "Cordia New" };
-            A.SupplementalFont supplementalFont68 = new A.SupplementalFont() { Script = "Ethi", Typeface = "Nyala" };
-            A.SupplementalFont supplementalFont69 = new A.SupplementalFont() { Script = "Beng", Typeface = "Vrinda" };
-            A.SupplementalFont supplementalFont70 = new A.SupplementalFont() { Script = "Gujr", Typeface = "Shruti" };
-            A.SupplementalFont supplementalFont71 = new A.SupplementalFont() { Script = "Khmr", Typeface = "DaunPenh" };
-            A.SupplementalFont supplementalFont72 = new A.SupplementalFont() { Script = "Knda", Typeface = "Tunga" };
-            A.SupplementalFont supplementalFont73 = new A.SupplementalFont() { Script = "Guru", Typeface = "Raavi" };
-            A.SupplementalFont supplementalFont74 = new A.SupplementalFont() { Script = "Cans", Typeface = "Euphemia" };
-            A.SupplementalFont supplementalFont75 = new A.SupplementalFont() { Script = "Cher", Typeface = "Plantagenet Cherokee" };
-            A.SupplementalFont supplementalFont76 = new A.SupplementalFont() { Script = "Yiii", Typeface = "Microsoft Yi Baiti" };
-            A.SupplementalFont supplementalFont77 = new A.SupplementalFont() { Script = "Tibt", Typeface = "Microsoft Himalaya" };
-            A.SupplementalFont supplementalFont78 = new A.SupplementalFont() { Script = "Thaa", Typeface = "MV Boli" };
-            A.SupplementalFont supplementalFont79 = new A.SupplementalFont() { Script = "Deva", Typeface = "Mangal" };
-            A.SupplementalFont supplementalFont80 = new A.SupplementalFont() { Script = "Telu", Typeface = "Gautami" };
-            A.SupplementalFont supplementalFont81 = new A.SupplementalFont() { Script = "Taml", Typeface = "Latha" };
-            A.SupplementalFont supplementalFont82 = new A.SupplementalFont() { Script = "Syrc", Typeface = "Estrangelo Edessa" };
-            A.SupplementalFont supplementalFont83 = new A.SupplementalFont() { Script = "Orya", Typeface = "Kalinga" };
-            A.SupplementalFont supplementalFont84 = new A.SupplementalFont() { Script = "Mlym", Typeface = "Kartika" };
-            A.SupplementalFont supplementalFont85 = new A.SupplementalFont() { Script = "Laoo", Typeface = "DokChampa" };
-            A.SupplementalFont supplementalFont86 = new A.SupplementalFont() { Script = "Sinh", Typeface = "Iskoola Pota" };
-            A.SupplementalFont supplementalFont87 = new A.SupplementalFont() { Script = "Mong", Typeface = "Mongolian Baiti" };
-            A.SupplementalFont supplementalFont88 = new A.SupplementalFont() { Script = "Viet", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont89 = new A.SupplementalFont() { Script = "Uigh", Typeface = "Microsoft Uighur" };
-            A.SupplementalFont supplementalFont90 = new A.SupplementalFont() { Script = "Geor", Typeface = "Sylfaen" };
 
             majorFont2.Append(latinFont62);
             majorFont2.Append(eastAsianFont62);
             majorFont2.Append(complexScriptFont62);
-            majorFont2.Append(supplementalFont61);
-            majorFont2.Append(supplementalFont62);
-            majorFont2.Append(supplementalFont63);
-            majorFont2.Append(supplementalFont64);
-            majorFont2.Append(supplementalFont65);
-            majorFont2.Append(supplementalFont66);
-            majorFont2.Append(supplementalFont67);
-            majorFont2.Append(supplementalFont68);
-            majorFont2.Append(supplementalFont69);
-            majorFont2.Append(supplementalFont70);
-            majorFont2.Append(supplementalFont71);
-            majorFont2.Append(supplementalFont72);
-            majorFont2.Append(supplementalFont73);
-            majorFont2.Append(supplementalFont74);
-            majorFont2.Append(supplementalFont75);
-            majorFont2.Append(supplementalFont76);
-            majorFont2.Append(supplementalFont77);
-            majorFont2.Append(supplementalFont78);
-            majorFont2.Append(supplementalFont79);
-            majorFont2.Append(supplementalFont80);
-            majorFont2.Append(supplementalFont81);
-            majorFont2.Append(supplementalFont82);
-            majorFont2.Append(supplementalFont83);
-            majorFont2.Append(supplementalFont84);
-            majorFont2.Append(supplementalFont85);
-            majorFont2.Append(supplementalFont86);
-            majorFont2.Append(supplementalFont87);
-            majorFont2.Append(supplementalFont88);
-            majorFont2.Append(supplementalFont89);
-            majorFont2.Append(supplementalFont90);
 
             A.MinorFont minorFont2 = new A.MinorFont();
             A.LatinFont latinFont63 = new A.LatinFont() { Typeface = "Arial", Panose = "020B0604020202020204" };
             A.EastAsianFont eastAsianFont63 = new A.EastAsianFont() { Typeface = "" };
             A.ComplexScriptFont complexScriptFont63 = new A.ComplexScriptFont() { Typeface = "" };
-            A.SupplementalFont supplementalFont91 = new A.SupplementalFont() { Script = "Jpan", Typeface = "ＭＳ Ｐゴシック" };
-            A.SupplementalFont supplementalFont92 = new A.SupplementalFont() { Script = "Hang", Typeface = "굴림" };
-            A.SupplementalFont supplementalFont93 = new A.SupplementalFont() { Script = "Hans", Typeface = "黑体" };
-            A.SupplementalFont supplementalFont94 = new A.SupplementalFont() { Script = "Hant", Typeface = "微軟正黑體" };
-            A.SupplementalFont supplementalFont95 = new A.SupplementalFont() { Script = "Arab", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont96 = new A.SupplementalFont() { Script = "Hebr", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont97 = new A.SupplementalFont() { Script = "Thai", Typeface = "Cordia New" };
-            A.SupplementalFont supplementalFont98 = new A.SupplementalFont() { Script = "Ethi", Typeface = "Nyala" };
-            A.SupplementalFont supplementalFont99 = new A.SupplementalFont() { Script = "Beng", Typeface = "Vrinda" };
-            A.SupplementalFont supplementalFont100 = new A.SupplementalFont() { Script = "Gujr", Typeface = "Shruti" };
-            A.SupplementalFont supplementalFont101 = new A.SupplementalFont() { Script = "Khmr", Typeface = "DaunPenh" };
-            A.SupplementalFont supplementalFont102 = new A.SupplementalFont() { Script = "Knda", Typeface = "Tunga" };
-            A.SupplementalFont supplementalFont103 = new A.SupplementalFont() { Script = "Guru", Typeface = "Raavi" };
-            A.SupplementalFont supplementalFont104 = new A.SupplementalFont() { Script = "Cans", Typeface = "Euphemia" };
-            A.SupplementalFont supplementalFont105 = new A.SupplementalFont() { Script = "Cher", Typeface = "Plantagenet Cherokee" };
-            A.SupplementalFont supplementalFont106 = new A.SupplementalFont() { Script = "Yiii", Typeface = "Microsoft Yi Baiti" };
-            A.SupplementalFont supplementalFont107 = new A.SupplementalFont() { Script = "Tibt", Typeface = "Microsoft Himalaya" };
-            A.SupplementalFont supplementalFont108 = new A.SupplementalFont() { Script = "Thaa", Typeface = "MV Boli" };
-            A.SupplementalFont supplementalFont109 = new A.SupplementalFont() { Script = "Deva", Typeface = "Mangal" };
-            A.SupplementalFont supplementalFont110 = new A.SupplementalFont() { Script = "Telu", Typeface = "Gautami" };
-            A.SupplementalFont supplementalFont111 = new A.SupplementalFont() { Script = "Taml", Typeface = "Latha" };
-            A.SupplementalFont supplementalFont112 = new A.SupplementalFont() { Script = "Syrc", Typeface = "Estrangelo Edessa" };
-            A.SupplementalFont supplementalFont113 = new A.SupplementalFont() { Script = "Orya", Typeface = "Kalinga" };
-            A.SupplementalFont supplementalFont114 = new A.SupplementalFont() { Script = "Mlym", Typeface = "Kartika" };
-            A.SupplementalFont supplementalFont115 = new A.SupplementalFont() { Script = "Laoo", Typeface = "DokChampa" };
-            A.SupplementalFont supplementalFont116 = new A.SupplementalFont() { Script = "Sinh", Typeface = "Iskoola Pota" };
-            A.SupplementalFont supplementalFont117 = new A.SupplementalFont() { Script = "Mong", Typeface = "Mongolian Baiti" };
-            A.SupplementalFont supplementalFont118 = new A.SupplementalFont() { Script = "Viet", Typeface = "Arial" };
-            A.SupplementalFont supplementalFont119 = new A.SupplementalFont() { Script = "Uigh", Typeface = "Microsoft Uighur" };
-            A.SupplementalFont supplementalFont120 = new A.SupplementalFont() { Script = "Geor", Typeface = "Sylfaen" };
 
             minorFont2.Append(latinFont63);
             minorFont2.Append(eastAsianFont63);
             minorFont2.Append(complexScriptFont63);
-            minorFont2.Append(supplementalFont91);
-            minorFont2.Append(supplementalFont92);
-            minorFont2.Append(supplementalFont93);
-            minorFont2.Append(supplementalFont94);
-            minorFont2.Append(supplementalFont95);
-            minorFont2.Append(supplementalFont96);
-            minorFont2.Append(supplementalFont97);
-            minorFont2.Append(supplementalFont98);
-            minorFont2.Append(supplementalFont99);
-            minorFont2.Append(supplementalFont100);
-            minorFont2.Append(supplementalFont101);
-            minorFont2.Append(supplementalFont102);
-            minorFont2.Append(supplementalFont103);
-            minorFont2.Append(supplementalFont104);
-            minorFont2.Append(supplementalFont105);
-            minorFont2.Append(supplementalFont106);
-            minorFont2.Append(supplementalFont107);
-            minorFont2.Append(supplementalFont108);
-            minorFont2.Append(supplementalFont109);
-            minorFont2.Append(supplementalFont110);
-            minorFont2.Append(supplementalFont111);
-            minorFont2.Append(supplementalFont112);
-            minorFont2.Append(supplementalFont113);
-            minorFont2.Append(supplementalFont114);
-            minorFont2.Append(supplementalFont115);
-            minorFont2.Append(supplementalFont116);
-            minorFont2.Append(supplementalFont117);
-            minorFont2.Append(supplementalFont118);
-            minorFont2.Append(supplementalFont119);
-            minorFont2.Append(supplementalFont120);
 
             fontScheme2.Append(majorFont2);
             fontScheme2.Append(minorFont2);
@@ -9743,6 +9455,7 @@ namespace builder.Services
 
             groupShapeProperties18.Append(transformGroup18);
 
+            #region Project Question
             Shape shape72 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties72 = new NonVisualShapeProperties();
@@ -9798,8 +9511,9 @@ namespace builder.Services
             shape72.Append(nonVisualShapeProperties72);
             shape72.Append(shapeProperties90);
             shape72.Append(textBody67);
+            #endregion
 
-            #region Ovals #1
+            #region Slide Intro Text.
             Shape shape73 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties73 = new NonVisualShapeProperties();
@@ -10013,1395 +9727,40 @@ namespace builder.Services
 
             groupShapeProperties19.Append(transformGroup19);
             groupShapeProperties19.Append(solidFill92);
-
-            // First oval.
-            Shape shape74 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties74 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties111 = new NonVisualDrawingProperties() { Id = (UInt32Value)6U, Name = "Oval 5" }; // todo: Increment Name Count.
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties74 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties111 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties74.Append(nonVisualDrawingProperties111);
-            nonVisualShapeProperties74.Append(nonVisualShapeDrawingProperties74);
-            nonVisualShapeProperties74.Append(applicationNonVisualDrawingProperties111);
-
-            ShapeProperties shapeProperties92 = new ShapeProperties();
-
-            A.Transform2D transform2D78 = new A.Transform2D();
-            A.Offset offset97 = new A.Offset() { X = 1711308L, Y = 4066863L };
-            A.Extents extents97 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            /* Oval 6 X diff = 2798571 - 1711308 = 1087263
-            A.Transform2D transform2D79 = new A.Transform2D();
-            A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
-            A.Extents extents98 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-             */
-            /* Oval 7 X diff = 3885834 - 2798571 = 1087263
-            A.Transform2D transform2D80 = new A.Transform2D();
-            A.Offset offset99 = new A.Offset() { X = 3885834L, Y = 4066863L };
-            A.Extents extents99 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-             */
-            /* Oval 8 X diff = 4973097 - 3885834 = 1087263
-            A.Transform2D transform2D81 = new A.Transform2D();
-            A.Offset offset100 = new A.Offset() { X = 4973097L, Y = 4066863L };
-            A.Extents extents100 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-             */
-            /* Oval 9 X diff = 6060360 - 4973097 = 1087263
-            A.Transform2D transform2D82 = new A.Transform2D();
-            A.Offset offset101 = new A.Offset() { X = 6060360L, Y = 4066863L };
-            A.Extents extents101 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-             */
-
-            transform2D78.Append(offset97);
-            transform2D78.Append(extents97);
-
-            A.PresetGeometry presetGeometry46 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList46 = new A.AdjustValueList();
-
-            presetGeometry46.Append(adjustValueList46);
-            A.GroupFill groupFill1 = new A.GroupFill();
-
-            A.Outline outline20 = new A.Outline();
-            A.NoFill noFill20 = new A.NoFill();
-
-            outline20.Append(noFill20);
-
-            shapeProperties92.Append(transform2D78);
-            shapeProperties92.Append(presetGeometry46);
-            shapeProperties92.Append(groupFill1);
-            shapeProperties92.Append(outline20);
-
-            ShapeStyle shapeStyle11 = new ShapeStyle();
-
-            A.LineReference lineReference11 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor143 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade17 = new A.Shade() { Val = 50000 };
-
-            schemeColor143.Append(shade17);
-
-            lineReference11.Append(schemeColor143);
-
-            A.FillReference fillReference11 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor144 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference11.Append(schemeColor144);
-
-            A.EffectReference effectReference11 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor145 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference11.Append(schemeColor145);
-
-            A.FontReference fontReference11 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor146 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference11.Append(schemeColor146);
-
-            shapeStyle11.Append(lineReference11);
-            shapeStyle11.Append(fillReference11);
-            shapeStyle11.Append(effectReference11);
-            shapeStyle11.Append(fontReference11);
-
-            TextBody textBody69 = new TextBody();
-            A.BodyProperties bodyProperties69 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle69 = new A.ListStyle();
-
-            A.Paragraph paragraph80 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties37 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run89 = new A.Run();
-
-            A.RunProperties runProperties92 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont65 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont65 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont65 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties92.Append(latinFont65);
-            runProperties92.Append(eastAsianFont65);
-            runProperties92.Append(complexScriptFont65);
-            A.Text text91 = new A.Text();
-            text91.Text = "#0";
-
-            run89.Append(runProperties92);
-            run89.Append(text91);
-
-            paragraph80.Append(paragraphProperties37);
-            paragraph80.Append(run89);
-
-            A.Paragraph paragraph81 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties38 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run90 = new A.Run();
-
-            A.RunProperties runProperties93 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont66 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont66 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont66 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties93.Append(latinFont66);
-            runProperties93.Append(eastAsianFont66);
-            runProperties93.Append(complexScriptFont66);
-            A.Text text92 = new A.Text();
-            text92.Text = _springboard.Project.Areas[0].Title; //"Area$Title";
-
-            run90.Append(runProperties93);
-            run90.Append(text92);
-
-            A.EndParagraphRunProperties endParagraphRunProperties30 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont67 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont67 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont67 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties30.Append(latinFont67);
-            endParagraphRunProperties30.Append(eastAsianFont67);
-            endParagraphRunProperties30.Append(complexScriptFont67);
-
-            paragraph81.Append(paragraphProperties38);
-            paragraph81.Append(run90);
-            paragraph81.Append(endParagraphRunProperties30);
-
-            textBody69.Append(bodyProperties69);
-            textBody69.Append(listStyle69);
-            textBody69.Append(paragraph80);
-            textBody69.Append(paragraph81);
-
-            shape74.Append(nonVisualShapeProperties74);
-            shape74.Append(shapeProperties92);
-            shape74.Append(shapeStyle11);
-            shape74.Append(textBody69);
             #endregion
-
-            #region AreaTitle
-            /*
-            Shape shape75 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties75 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties112 = new NonVisualDrawingProperties() { Id = (UInt32Value)7U, Name = "Oval 6" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties75 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties112 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties75.Append(nonVisualDrawingProperties112);
-            nonVisualShapeProperties75.Append(nonVisualShapeDrawingProperties75);
-            nonVisualShapeProperties75.Append(applicationNonVisualDrawingProperties112);
-
-            ShapeProperties shapeProperties93 = new ShapeProperties();
-
-            A.Transform2D transform2D79 = new A.Transform2D();
-            A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
-            A.Extents extents98 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D79.Append(offset98);
-            transform2D79.Append(extents98);
-
-            A.PresetGeometry presetGeometry47 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList47 = new A.AdjustValueList();
-
-            presetGeometry47.Append(adjustValueList47);
-            A.GroupFill groupFill2 = new A.GroupFill();
-
-            A.Outline outline21 = new A.Outline();
-            A.NoFill noFill21 = new A.NoFill();
-
-            outline21.Append(noFill21);
-
-            shapeProperties93.Append(transform2D79);
-            shapeProperties93.Append(presetGeometry47);
-            shapeProperties93.Append(groupFill2);
-            shapeProperties93.Append(outline21);
-
-            ShapeStyle shapeStyle12 = new ShapeStyle();
-
-            A.LineReference lineReference12 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor147 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade18 = new A.Shade() { Val = 50000 };
-
-            schemeColor147.Append(shade18);
-
-            lineReference12.Append(schemeColor147);
-
-            A.FillReference fillReference12 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor148 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference12.Append(schemeColor148);
-
-            A.EffectReference effectReference12 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor149 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference12.Append(schemeColor149);
-
-            A.FontReference fontReference12 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor150 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference12.Append(schemeColor150);
-
-            shapeStyle12.Append(lineReference12);
-            shapeStyle12.Append(fillReference12);
-            shapeStyle12.Append(effectReference12);
-            shapeStyle12.Append(fontReference12);
-
-            TextBody textBody70 = new TextBody();
-            A.BodyProperties bodyProperties70 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle70 = new A.ListStyle();
-
-            A.Paragraph paragraph82 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties39 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run91 = new A.Run();
-
-            A.RunProperties runProperties94 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont68 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont68 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont68 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties94.Append(latinFont68);
-            runProperties94.Append(eastAsianFont68);
-            runProperties94.Append(complexScriptFont68);
-            A.Text text93 = new A.Text();
-            text93.Text = "#1";
-
-            run91.Append(runProperties94);
-            run91.Append(text93);
-
-            paragraph82.Append(paragraphProperties39);
-            paragraph82.Append(run91);
-
-            A.Paragraph paragraph83 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties40 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run92 = new A.Run();
-
-            A.RunProperties runProperties95 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont69 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont69 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont69 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties95.Append(latinFont69);
-            runProperties95.Append(eastAsianFont69);
-            runProperties95.Append(complexScriptFont69);
-            A.Text text94 = new A.Text();
-            text94.Text = "Area$Title";
-
-            run92.Append(runProperties95);
-            run92.Append(text94);
-
-            A.EndParagraphRunProperties endParagraphRunProperties31 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont70 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont70 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont70 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties31.Append(latinFont70);
-            endParagraphRunProperties31.Append(eastAsianFont70);
-            endParagraphRunProperties31.Append(complexScriptFont70);
-
-            paragraph83.Append(paragraphProperties40);
-            paragraph83.Append(run92);
-            paragraph83.Append(endParagraphRunProperties31);
-
-            textBody70.Append(bodyProperties70);
-            textBody70.Append(listStyle70);
-            textBody70.Append(paragraph82);
-            textBody70.Append(paragraph83);
-
-            shape75.Append(nonVisualShapeProperties75);
-            shape75.Append(shapeProperties93);
-            shape75.Append(shapeStyle12);
-            shape75.Append(textBody70);
-
-            Shape shape76 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties76 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties113 = new NonVisualDrawingProperties() { Id = (UInt32Value)8U, Name = "Oval 7" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties76 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties113 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties76.Append(nonVisualDrawingProperties113);
-            nonVisualShapeProperties76.Append(nonVisualShapeDrawingProperties76);
-            nonVisualShapeProperties76.Append(applicationNonVisualDrawingProperties113);
-
-            ShapeProperties shapeProperties94 = new ShapeProperties();
-
-            A.Transform2D transform2D80 = new A.Transform2D();
-            A.Offset offset99 = new A.Offset() { X = 3885834L, Y = 4066863L };
-            A.Extents extents99 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D80.Append(offset99);
-            transform2D80.Append(extents99);
-
-            A.PresetGeometry presetGeometry48 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList48 = new A.AdjustValueList();
-
-            presetGeometry48.Append(adjustValueList48);
-            A.GroupFill groupFill3 = new A.GroupFill();
-
-            A.Outline outline22 = new A.Outline();
-            A.NoFill noFill22 = new A.NoFill();
-
-            outline22.Append(noFill22);
-
-            shapeProperties94.Append(transform2D80);
-            shapeProperties94.Append(presetGeometry48);
-            shapeProperties94.Append(groupFill3);
-            shapeProperties94.Append(outline22);
-
-            ShapeStyle shapeStyle13 = new ShapeStyle();
-
-            A.LineReference lineReference13 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor151 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade19 = new A.Shade() { Val = 50000 };
-
-            schemeColor151.Append(shade19);
-
-            lineReference13.Append(schemeColor151);
-
-            A.FillReference fillReference13 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor152 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference13.Append(schemeColor152);
-
-            A.EffectReference effectReference13 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor153 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference13.Append(schemeColor153);
-
-            A.FontReference fontReference13 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor154 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference13.Append(schemeColor154);
-
-            shapeStyle13.Append(lineReference13);
-            shapeStyle13.Append(fillReference13);
-            shapeStyle13.Append(effectReference13);
-            shapeStyle13.Append(fontReference13);
-
-            TextBody textBody71 = new TextBody();
-            A.BodyProperties bodyProperties71 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle71 = new A.ListStyle();
-
-            A.Paragraph paragraph84 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties41 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run93 = new A.Run();
-
-            A.RunProperties runProperties96 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont71 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont71 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont71 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties96.Append(latinFont71);
-            runProperties96.Append(eastAsianFont71);
-            runProperties96.Append(complexScriptFont71);
-            A.Text text95 = new A.Text();
-            text95.Text = "#2";
-
-            run93.Append(runProperties96);
-            run93.Append(text95);
-
-            paragraph84.Append(paragraphProperties41);
-            paragraph84.Append(run93);
-
-            A.Paragraph paragraph85 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties42 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run94 = new A.Run();
-
-            A.RunProperties runProperties97 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont72 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont72 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont72 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties97.Append(latinFont72);
-            runProperties97.Append(eastAsianFont72);
-            runProperties97.Append(complexScriptFont72);
-            A.Text text96 = new A.Text();
-            text96.Text = "Area$Title";
-
-            run94.Append(runProperties97);
-            run94.Append(text96);
-
-            A.EndParagraphRunProperties endParagraphRunProperties32 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont73 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont73 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont73 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties32.Append(latinFont73);
-            endParagraphRunProperties32.Append(eastAsianFont73);
-            endParagraphRunProperties32.Append(complexScriptFont73);
-
-            paragraph85.Append(paragraphProperties42);
-            paragraph85.Append(run94);
-            paragraph85.Append(endParagraphRunProperties32);
-
-            textBody71.Append(bodyProperties71);
-            textBody71.Append(listStyle71);
-            textBody71.Append(paragraph84);
-            textBody71.Append(paragraph85);
-
-            shape76.Append(nonVisualShapeProperties76);
-            shape76.Append(shapeProperties94);
-            shape76.Append(shapeStyle13);
-            shape76.Append(textBody71);
-
-            Shape shape77 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties77 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties114 = new NonVisualDrawingProperties() { Id = (UInt32Value)9U, Name = "Oval 8" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties77 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties114 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties77.Append(nonVisualDrawingProperties114);
-            nonVisualShapeProperties77.Append(nonVisualShapeDrawingProperties77);
-            nonVisualShapeProperties77.Append(applicationNonVisualDrawingProperties114);
-
-            ShapeProperties shapeProperties95 = new ShapeProperties();
-
-            A.Transform2D transform2D81 = new A.Transform2D();
-            A.Offset offset100 = new A.Offset() { X = 4973097L, Y = 4066863L };
-            A.Extents extents100 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D81.Append(offset100);
-            transform2D81.Append(extents100);
-
-            A.PresetGeometry presetGeometry49 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList49 = new A.AdjustValueList();
-
-            presetGeometry49.Append(adjustValueList49);
-            A.GroupFill groupFill4 = new A.GroupFill();
-
-            A.Outline outline23 = new A.Outline();
-            A.NoFill noFill23 = new A.NoFill();
-
-            outline23.Append(noFill23);
-
-            shapeProperties95.Append(transform2D81);
-            shapeProperties95.Append(presetGeometry49);
-            shapeProperties95.Append(groupFill4);
-            shapeProperties95.Append(outline23);
-
-            ShapeStyle shapeStyle14 = new ShapeStyle();
-
-            A.LineReference lineReference14 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor155 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade20 = new A.Shade() { Val = 50000 };
-
-            schemeColor155.Append(shade20);
-
-            lineReference14.Append(schemeColor155);
-
-            A.FillReference fillReference14 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor156 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference14.Append(schemeColor156);
-
-            A.EffectReference effectReference14 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor157 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference14.Append(schemeColor157);
-
-            A.FontReference fontReference14 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor158 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference14.Append(schemeColor158);
-
-            shapeStyle14.Append(lineReference14);
-            shapeStyle14.Append(fillReference14);
-            shapeStyle14.Append(effectReference14);
-            shapeStyle14.Append(fontReference14);
-
-            TextBody textBody72 = new TextBody();
-            A.BodyProperties bodyProperties72 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle72 = new A.ListStyle();
-
-            A.Paragraph paragraph86 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties43 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run95 = new A.Run();
-
-            A.RunProperties runProperties98 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont74 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont74 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont74 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties98.Append(latinFont74);
-            runProperties98.Append(eastAsianFont74);
-            runProperties98.Append(complexScriptFont74);
-            A.Text text97 = new A.Text();
-            text97.Text = "#3";
-
-            run95.Append(runProperties98);
-            run95.Append(text97);
-
-            paragraph86.Append(paragraphProperties43);
-            paragraph86.Append(run95);
-
-            A.Paragraph paragraph87 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties44 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run96 = new A.Run();
-
-            A.RunProperties runProperties99 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont75 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont75 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont75 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties99.Append(latinFont75);
-            runProperties99.Append(eastAsianFont75);
-            runProperties99.Append(complexScriptFont75);
-            A.Text text98 = new A.Text();
-            text98.Text = "Area$Title";
-
-            run96.Append(runProperties99);
-            run96.Append(text98);
-
-            A.EndParagraphRunProperties endParagraphRunProperties33 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont76 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont76 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont76 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties33.Append(latinFont76);
-            endParagraphRunProperties33.Append(eastAsianFont76);
-            endParagraphRunProperties33.Append(complexScriptFont76);
-
-            paragraph87.Append(paragraphProperties44);
-            paragraph87.Append(run96);
-            paragraph87.Append(endParagraphRunProperties33);
-
-            textBody72.Append(bodyProperties72);
-            textBody72.Append(listStyle72);
-            textBody72.Append(paragraph86);
-            textBody72.Append(paragraph87);
-
-            shape77.Append(nonVisualShapeProperties77);
-            shape77.Append(shapeProperties95);
-            shape77.Append(shapeStyle14);
-            shape77.Append(textBody72);
-
-            Shape shape78 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties78 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties115 = new NonVisualDrawingProperties() { Id = (UInt32Value)10U, Name = "Oval 9" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties78 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties115 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties78.Append(nonVisualDrawingProperties115);
-            nonVisualShapeProperties78.Append(nonVisualShapeDrawingProperties78);
-            nonVisualShapeProperties78.Append(applicationNonVisualDrawingProperties115);
-
-            ShapeProperties shapeProperties96 = new ShapeProperties();
-
-            A.Transform2D transform2D82 = new A.Transform2D();
-            A.Offset offset101 = new A.Offset() { X = 6060360L, Y = 4066863L };
-            A.Extents extents101 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D82.Append(offset101);
-            transform2D82.Append(extents101);
-
-            A.PresetGeometry presetGeometry50 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList50 = new A.AdjustValueList();
-
-            presetGeometry50.Append(adjustValueList50);
-            A.GroupFill groupFill5 = new A.GroupFill();
-
-            A.Outline outline24 = new A.Outline();
-            A.NoFill noFill24 = new A.NoFill();
-
-            outline24.Append(noFill24);
-
-            shapeProperties96.Append(transform2D82);
-            shapeProperties96.Append(presetGeometry50);
-            shapeProperties96.Append(groupFill5);
-            shapeProperties96.Append(outline24);
-
-            ShapeStyle shapeStyle15 = new ShapeStyle();
-
-            A.LineReference lineReference15 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor159 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade21 = new A.Shade() { Val = 50000 };
-
-            schemeColor159.Append(shade21);
-
-            lineReference15.Append(schemeColor159);
-
-            A.FillReference fillReference15 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor160 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference15.Append(schemeColor160);
-
-            A.EffectReference effectReference15 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor161 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference15.Append(schemeColor161);
-
-            A.FontReference fontReference15 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor162 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference15.Append(schemeColor162);
-
-            shapeStyle15.Append(lineReference15);
-            shapeStyle15.Append(fillReference15);
-            shapeStyle15.Append(effectReference15);
-            shapeStyle15.Append(fontReference15);
-
-            TextBody textBody73 = new TextBody();
-            A.BodyProperties bodyProperties73 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle73 = new A.ListStyle();
-
-            A.Paragraph paragraph88 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties45 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run97 = new A.Run();
-
-            A.RunProperties runProperties100 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont77 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont77 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont77 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties100.Append(latinFont77);
-            runProperties100.Append(eastAsianFont77);
-            runProperties100.Append(complexScriptFont77);
-            A.Text text99 = new A.Text();
-            text99.Text = "#4";
-
-            run97.Append(runProperties100);
-            run97.Append(text99);
-
-            paragraph88.Append(paragraphProperties45);
-            paragraph88.Append(run97);
-
-            A.Paragraph paragraph89 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties46 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run98 = new A.Run();
-
-            A.RunProperties runProperties101 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont78 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont78 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont78 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties101.Append(latinFont78);
-            runProperties101.Append(eastAsianFont78);
-            runProperties101.Append(complexScriptFont78);
-            A.Text text100 = new A.Text();
-            text100.Text = "Area$Title";
-
-            run98.Append(runProperties101);
-            run98.Append(text100);
-
-            A.EndParagraphRunProperties endParagraphRunProperties34 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont79 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont79 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont79 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties34.Append(latinFont79);
-            endParagraphRunProperties34.Append(eastAsianFont79);
-            endParagraphRunProperties34.Append(complexScriptFont79);
-
-            paragraph89.Append(paragraphProperties46);
-            paragraph89.Append(run98);
-            paragraph89.Append(endParagraphRunProperties34);
-
-            textBody73.Append(bodyProperties73);
-            textBody73.Append(listStyle73);
-            textBody73.Append(paragraph88);
-            textBody73.Append(paragraph89);
-
-            shape78.Append(nonVisualShapeProperties78);
-            shape78.Append(shapeProperties96);
-            shape78.Append(shapeStyle15);
-            shape78.Append(textBody73);
-
-            Shape shape79 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties79 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties116 = new NonVisualDrawingProperties() { Id = (UInt32Value)17U, Name = "Oval 16" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties79 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties116 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties79.Append(nonVisualDrawingProperties116);
-            nonVisualShapeProperties79.Append(nonVisualShapeDrawingProperties79);
-            nonVisualShapeProperties79.Append(applicationNonVisualDrawingProperties116);
-
-            ShapeProperties shapeProperties97 = new ShapeProperties();
-
-            A.Transform2D transform2D83 = new A.Transform2D();
-            A.Offset offset102 = new A.Offset() { X = 1711308L, Y = 5156395L };
-            A.Extents extents102 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D83.Append(offset102);
-            transform2D83.Append(extents102);
-
-            A.PresetGeometry presetGeometry51 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList51 = new A.AdjustValueList();
-
-            presetGeometry51.Append(adjustValueList51);
-            A.GroupFill groupFill6 = new A.GroupFill();
-
-            A.Outline outline25 = new A.Outline();
-            A.NoFill noFill25 = new A.NoFill();
-
-            outline25.Append(noFill25);
-
-            shapeProperties97.Append(transform2D83);
-            shapeProperties97.Append(presetGeometry51);
-            shapeProperties97.Append(groupFill6);
-            shapeProperties97.Append(outline25);
-
-            ShapeStyle shapeStyle16 = new ShapeStyle();
-
-            A.LineReference lineReference16 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor163 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade22 = new A.Shade() { Val = 50000 };
-
-            schemeColor163.Append(shade22);
-
-            lineReference16.Append(schemeColor163);
-
-            A.FillReference fillReference16 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor164 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference16.Append(schemeColor164);
-
-            A.EffectReference effectReference16 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor165 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference16.Append(schemeColor165);
-
-            A.FontReference fontReference16 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor166 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference16.Append(schemeColor166);
-
-            shapeStyle16.Append(lineReference16);
-            shapeStyle16.Append(fillReference16);
-            shapeStyle16.Append(effectReference16);
-            shapeStyle16.Append(fontReference16);
-
-            TextBody textBody74 = new TextBody();
-            A.BodyProperties bodyProperties74 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle74 = new A.ListStyle();
-
-            A.Paragraph paragraph90 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties47 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run99 = new A.Run();
-
-            A.RunProperties runProperties102 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont80 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont80 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont80 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties102.Append(latinFont80);
-            runProperties102.Append(eastAsianFont80);
-            runProperties102.Append(complexScriptFont80);
-            A.Text text101 = new A.Text();
-            text101.Text = "#5";
-
-            run99.Append(runProperties102);
-            run99.Append(text101);
-
-            paragraph90.Append(paragraphProperties47);
-            paragraph90.Append(run99);
-
-            A.Paragraph paragraph91 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties48 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run100 = new A.Run();
-
-            A.RunProperties runProperties103 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont81 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont81 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont81 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties103.Append(latinFont81);
-            runProperties103.Append(eastAsianFont81);
-            runProperties103.Append(complexScriptFont81);
-            A.Text text102 = new A.Text();
-            text102.Text = "Area$Title";
-
-            run100.Append(runProperties103);
-            run100.Append(text102);
-
-            A.EndParagraphRunProperties endParagraphRunProperties35 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont82 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont82 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont82 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties35.Append(latinFont82);
-            endParagraphRunProperties35.Append(eastAsianFont82);
-            endParagraphRunProperties35.Append(complexScriptFont82);
-
-            paragraph91.Append(paragraphProperties48);
-            paragraph91.Append(run100);
-            paragraph91.Append(endParagraphRunProperties35);
-
-            textBody74.Append(bodyProperties74);
-            textBody74.Append(listStyle74);
-            textBody74.Append(paragraph90);
-            textBody74.Append(paragraph91);
-
-            shape79.Append(nonVisualShapeProperties79);
-            shape79.Append(shapeProperties97);
-            shape79.Append(shapeStyle16);
-            shape79.Append(textBody74);
-
-            Shape shape80 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties80 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties117 = new NonVisualDrawingProperties() { Id = (UInt32Value)18U, Name = "Oval 17" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties80 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties117 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties80.Append(nonVisualDrawingProperties117);
-            nonVisualShapeProperties80.Append(nonVisualShapeDrawingProperties80);
-            nonVisualShapeProperties80.Append(applicationNonVisualDrawingProperties117);
-
-            ShapeProperties shapeProperties98 = new ShapeProperties();
-
-            A.Transform2D transform2D84 = new A.Transform2D();
-            A.Offset offset103 = new A.Offset() { X = 2798571L, Y = 5156395L };
-            A.Extents extents103 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D84.Append(offset103);
-            transform2D84.Append(extents103);
-
-            A.PresetGeometry presetGeometry52 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList52 = new A.AdjustValueList();
-
-            presetGeometry52.Append(adjustValueList52);
-            A.GroupFill groupFill7 = new A.GroupFill();
-
-            A.Outline outline26 = new A.Outline();
-            A.NoFill noFill26 = new A.NoFill();
-
-            outline26.Append(noFill26);
-
-            shapeProperties98.Append(transform2D84);
-            shapeProperties98.Append(presetGeometry52);
-            shapeProperties98.Append(groupFill7);
-            shapeProperties98.Append(outline26);
-
-            ShapeStyle shapeStyle17 = new ShapeStyle();
-
-            A.LineReference lineReference17 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor167 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade23 = new A.Shade() { Val = 50000 };
-
-            schemeColor167.Append(shade23);
-
-            lineReference17.Append(schemeColor167);
-
-            A.FillReference fillReference17 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor168 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference17.Append(schemeColor168);
-
-            A.EffectReference effectReference17 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor169 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference17.Append(schemeColor169);
-
-            A.FontReference fontReference17 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor170 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference17.Append(schemeColor170);
-
-            shapeStyle17.Append(lineReference17);
-            shapeStyle17.Append(fillReference17);
-            shapeStyle17.Append(effectReference17);
-            shapeStyle17.Append(fontReference17);
-
-            TextBody textBody75 = new TextBody();
-            A.BodyProperties bodyProperties75 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle75 = new A.ListStyle();
-
-            A.Paragraph paragraph92 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties49 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run101 = new A.Run();
-
-            A.RunProperties runProperties104 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont83 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont83 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont83 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties104.Append(latinFont83);
-            runProperties104.Append(eastAsianFont83);
-            runProperties104.Append(complexScriptFont83);
-            A.Text text103 = new A.Text();
-            text103.Text = "#6";
-
-            run101.Append(runProperties104);
-            run101.Append(text103);
-
-            paragraph92.Append(paragraphProperties49);
-            paragraph92.Append(run101);
-
-            A.Paragraph paragraph93 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties50 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run102 = new A.Run();
-
-            A.RunProperties runProperties105 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont84 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont84 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont84 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties105.Append(latinFont84);
-            runProperties105.Append(eastAsianFont84);
-            runProperties105.Append(complexScriptFont84);
-            A.Text text104 = new A.Text();
-            text104.Text = "Area$Title";
-
-            run102.Append(runProperties105);
-            run102.Append(text104);
-
-            A.EndParagraphRunProperties endParagraphRunProperties36 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont85 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont85 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont85 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties36.Append(latinFont85);
-            endParagraphRunProperties36.Append(eastAsianFont85);
-            endParagraphRunProperties36.Append(complexScriptFont85);
-
-            paragraph93.Append(paragraphProperties50);
-            paragraph93.Append(run102);
-            paragraph93.Append(endParagraphRunProperties36);
-
-            textBody75.Append(bodyProperties75);
-            textBody75.Append(listStyle75);
-            textBody75.Append(paragraph92);
-            textBody75.Append(paragraph93);
-
-            shape80.Append(nonVisualShapeProperties80);
-            shape80.Append(shapeProperties98);
-            shape80.Append(shapeStyle17);
-            shape80.Append(textBody75);
-
-            Shape shape81 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties81 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties118 = new NonVisualDrawingProperties() { Id = (UInt32Value)19U, Name = "Oval 18" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties81 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties118 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties81.Append(nonVisualDrawingProperties118);
-            nonVisualShapeProperties81.Append(nonVisualShapeDrawingProperties81);
-            nonVisualShapeProperties81.Append(applicationNonVisualDrawingProperties118);
-
-            ShapeProperties shapeProperties99 = new ShapeProperties();
-
-            A.Transform2D transform2D85 = new A.Transform2D();
-            A.Offset offset104 = new A.Offset() { X = 3885834L, Y = 5156395L };
-            A.Extents extents104 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D85.Append(offset104);
-            transform2D85.Append(extents104);
-
-            A.PresetGeometry presetGeometry53 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList53 = new A.AdjustValueList();
-
-            presetGeometry53.Append(adjustValueList53);
-            A.GroupFill groupFill8 = new A.GroupFill();
-
-            A.Outline outline27 = new A.Outline();
-            A.NoFill noFill27 = new A.NoFill();
-
-            outline27.Append(noFill27);
-
-            shapeProperties99.Append(transform2D85);
-            shapeProperties99.Append(presetGeometry53);
-            shapeProperties99.Append(groupFill8);
-            shapeProperties99.Append(outline27);
-
-            ShapeStyle shapeStyle18 = new ShapeStyle();
-
-            A.LineReference lineReference18 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor171 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade24 = new A.Shade() { Val = 50000 };
-
-            schemeColor171.Append(shade24);
-
-            lineReference18.Append(schemeColor171);
-
-            A.FillReference fillReference18 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor172 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference18.Append(schemeColor172);
-
-            A.EffectReference effectReference18 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor173 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference18.Append(schemeColor173);
-
-            A.FontReference fontReference18 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor174 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference18.Append(schemeColor174);
-
-            shapeStyle18.Append(lineReference18);
-            shapeStyle18.Append(fillReference18);
-            shapeStyle18.Append(effectReference18);
-            shapeStyle18.Append(fontReference18);
-
-            TextBody textBody76 = new TextBody();
-            A.BodyProperties bodyProperties76 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle76 = new A.ListStyle();
-
-            A.Paragraph paragraph94 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties51 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run103 = new A.Run();
-
-            A.RunProperties runProperties106 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont86 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont86 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont86 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties106.Append(latinFont86);
-            runProperties106.Append(eastAsianFont86);
-            runProperties106.Append(complexScriptFont86);
-            A.Text text105 = new A.Text();
-            text105.Text = "#7";
-
-            run103.Append(runProperties106);
-            run103.Append(text105);
-
-            paragraph94.Append(paragraphProperties51);
-            paragraph94.Append(run103);
-
-            A.Paragraph paragraph95 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties52 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run104 = new A.Run();
-
-            A.RunProperties runProperties107 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont87 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont87 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont87 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties107.Append(latinFont87);
-            runProperties107.Append(eastAsianFont87);
-            runProperties107.Append(complexScriptFont87);
-            A.Text text106 = new A.Text();
-            text106.Text = "Area$Title";
-
-            run104.Append(runProperties107);
-            run104.Append(text106);
-
-            A.EndParagraphRunProperties endParagraphRunProperties37 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont88 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont88 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont88 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties37.Append(latinFont88);
-            endParagraphRunProperties37.Append(eastAsianFont88);
-            endParagraphRunProperties37.Append(complexScriptFont88);
-
-            paragraph95.Append(paragraphProperties52);
-            paragraph95.Append(run104);
-            paragraph95.Append(endParagraphRunProperties37);
-
-            textBody76.Append(bodyProperties76);
-            textBody76.Append(listStyle76);
-            textBody76.Append(paragraph94);
-            textBody76.Append(paragraph95);
-
-            shape81.Append(nonVisualShapeProperties81);
-            shape81.Append(shapeProperties99);
-            shape81.Append(shapeStyle18);
-            shape81.Append(textBody76);
-
-            Shape shape82 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties82 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties119 = new NonVisualDrawingProperties() { Id = (UInt32Value)20U, Name = "Oval 19" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties82 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties119 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties82.Append(nonVisualDrawingProperties119);
-            nonVisualShapeProperties82.Append(nonVisualShapeDrawingProperties82);
-            nonVisualShapeProperties82.Append(applicationNonVisualDrawingProperties119);
-
-            ShapeProperties shapeProperties100 = new ShapeProperties();
-
-            A.Transform2D transform2D86 = new A.Transform2D();
-            A.Offset offset105 = new A.Offset() { X = 4973097L, Y = 5156395L };
-            A.Extents extents105 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D86.Append(offset105);
-            transform2D86.Append(extents105);
-
-            A.PresetGeometry presetGeometry54 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList54 = new A.AdjustValueList();
-
-            presetGeometry54.Append(adjustValueList54);
-            A.GroupFill groupFill9 = new A.GroupFill();
-
-            A.Outline outline28 = new A.Outline();
-            A.NoFill noFill28 = new A.NoFill();
-
-            outline28.Append(noFill28);
-
-            shapeProperties100.Append(transform2D86);
-            shapeProperties100.Append(presetGeometry54);
-            shapeProperties100.Append(groupFill9);
-            shapeProperties100.Append(outline28);
-
-            ShapeStyle shapeStyle19 = new ShapeStyle();
-
-            A.LineReference lineReference19 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor175 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade25 = new A.Shade() { Val = 50000 };
-
-            schemeColor175.Append(shade25);
-
-            lineReference19.Append(schemeColor175);
-
-            A.FillReference fillReference19 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor176 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference19.Append(schemeColor176);
-
-            A.EffectReference effectReference19 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor177 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference19.Append(schemeColor177);
-
-            A.FontReference fontReference19 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor178 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference19.Append(schemeColor178);
-
-            shapeStyle19.Append(lineReference19);
-            shapeStyle19.Append(fillReference19);
-            shapeStyle19.Append(effectReference19);
-            shapeStyle19.Append(fontReference19);
-
-            TextBody textBody77 = new TextBody();
-            A.BodyProperties bodyProperties77 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle77 = new A.ListStyle();
-
-            A.Paragraph paragraph96 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties53 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run105 = new A.Run();
-
-            A.RunProperties runProperties108 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont89 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont89 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont89 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties108.Append(latinFont89);
-            runProperties108.Append(eastAsianFont89);
-            runProperties108.Append(complexScriptFont89);
-            A.Text text107 = new A.Text();
-            text107.Text = "#8";
-
-            run105.Append(runProperties108);
-            run105.Append(text107);
-
-            paragraph96.Append(paragraphProperties53);
-            paragraph96.Append(run105);
-
-            A.Paragraph paragraph97 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties54 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run106 = new A.Run();
-
-            A.RunProperties runProperties109 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont90 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont90 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont90 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties109.Append(latinFont90);
-            runProperties109.Append(eastAsianFont90);
-            runProperties109.Append(complexScriptFont90);
-            A.Text text108 = new A.Text();
-            text108.Text = "Area$Title";
-
-            run106.Append(runProperties109);
-            run106.Append(text108);
-
-            A.EndParagraphRunProperties endParagraphRunProperties38 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont91 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont91 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont91 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties38.Append(latinFont91);
-            endParagraphRunProperties38.Append(eastAsianFont91);
-            endParagraphRunProperties38.Append(complexScriptFont91);
-
-            paragraph97.Append(paragraphProperties54);
-            paragraph97.Append(run106);
-            paragraph97.Append(endParagraphRunProperties38);
-
-            textBody77.Append(bodyProperties77);
-            textBody77.Append(listStyle77);
-            textBody77.Append(paragraph96);
-            textBody77.Append(paragraph97);
-
-            shape82.Append(nonVisualShapeProperties82);
-            shape82.Append(shapeProperties100);
-            shape82.Append(shapeStyle19);
-            shape82.Append(textBody77);
-            */
-            #endregion
-
-            Shape shape83 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties83 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties120 = new NonVisualDrawingProperties() { Id = (UInt32Value)21U, Name = "Oval 20" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties83 = new NonVisualShapeDrawingProperties();
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties120 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties83.Append(nonVisualDrawingProperties120);
-            nonVisualShapeProperties83.Append(nonVisualShapeDrawingProperties83);
-            nonVisualShapeProperties83.Append(applicationNonVisualDrawingProperties120);
-
-            ShapeProperties shapeProperties101 = new ShapeProperties();
-
-            A.Transform2D transform2D87 = new A.Transform2D();
-            A.Offset offset106 = new A.Offset() { X = 6060360L, Y = 5156395L };
-            A.Extents extents106 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
-
-            transform2D87.Append(offset106);
-            transform2D87.Append(extents106);
-
-            A.PresetGeometry presetGeometry55 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList55 = new A.AdjustValueList();
-
-            presetGeometry55.Append(adjustValueList55);
-            A.GroupFill groupFill10 = new A.GroupFill();
-
-            A.Outline outline29 = new A.Outline();
-            A.NoFill noFill29 = new A.NoFill();
-
-            outline29.Append(noFill29);
-
-            shapeProperties101.Append(transform2D87);
-            shapeProperties101.Append(presetGeometry55);
-            shapeProperties101.Append(groupFill10);
-            shapeProperties101.Append(outline29);
-
-            ShapeStyle shapeStyle20 = new ShapeStyle();
-
-            A.LineReference lineReference20 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor179 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade26 = new A.Shade() { Val = 50000 };
-
-            schemeColor179.Append(shade26);
-
-            lineReference20.Append(schemeColor179);
-
-            A.FillReference fillReference20 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor180 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference20.Append(schemeColor180);
-
-            A.EffectReference effectReference20 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor181 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference20.Append(schemeColor181);
-
-            A.FontReference fontReference20 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor182 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference20.Append(schemeColor182);
-
-            shapeStyle20.Append(lineReference20);
-            shapeStyle20.Append(fillReference20);
-            shapeStyle20.Append(effectReference20);
-            shapeStyle20.Append(fontReference20);
-
-            TextBody textBody78 = new TextBody();
-            A.BodyProperties bodyProperties78 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle78 = new A.ListStyle();
-
-            A.Paragraph paragraph98 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties55 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run107 = new A.Run();
-
-            A.RunProperties runProperties110 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont92 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont92 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont92 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties110.Append(latinFont92);
-            runProperties110.Append(eastAsianFont92);
-            runProperties110.Append(complexScriptFont92);
-            A.Text text109 = new A.Text();
-            text109.Text = "#9";
-
-            run107.Append(runProperties110);
-            run107.Append(text109);
-
-            paragraph98.Append(paragraphProperties55);
-            paragraph98.Append(run107);
-
-            A.Paragraph paragraph99 = new A.Paragraph();
-            A.ParagraphProperties paragraphProperties56 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.Run run108 = new A.Run();
-
-            A.RunProperties runProperties111 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
-            A.LatinFont latinFont93 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont93 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont93 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties111.Append(latinFont93);
-            runProperties111.Append(eastAsianFont93);
-            runProperties111.Append(complexScriptFont93);
-            A.Text text110 = new A.Text();
-            text110.Text = "Area$Title";
-
-            run108.Append(runProperties111);
-            run108.Append(text110);
-
-            A.EndParagraphRunProperties endParagraphRunProperties39 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
-            A.LatinFont latinFont94 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont94 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont94 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties39.Append(latinFont94);
-            endParagraphRunProperties39.Append(eastAsianFont94);
-            endParagraphRunProperties39.Append(complexScriptFont94);
-
-            paragraph99.Append(paragraphProperties56);
-            paragraph99.Append(run108);
-            paragraph99.Append(endParagraphRunProperties39);
-
-            textBody78.Append(bodyProperties78);
-            textBody78.Append(listStyle78);
-            textBody78.Append(paragraph98);
-            textBody78.Append(paragraph99);
-
-            shape83.Append(nonVisualShapeProperties83);
-            shape83.Append(shapeProperties101);
-            shape83.Append(shapeStyle20);
-            shape83.Append(textBody78);
 
             groupShape5.Append(nonVisualGroupShapeProperties19);
             groupShape5.Append(groupShapeProperties19);
+
+            //A.Offset offset97 = new A.Offset() { X = 1711308L, Y = 4066863L };
+            Shape shape74 = GenerateSlideShapeOval(_springboard.Project.Areas[0].Title, "Oval 5", 1711308L, 4066863L);
+            //A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
+            Shape shape75 = GenerateSlideShapeOval(_springboard.Project.Areas[1].Title, "Oval 6", 2798571L, 4066863L);
+            //A.Offset offset99 = new A.Offset() { X = 3885834L, Y = 4066863L };
+            Shape shape76 = GenerateSlideShapeOval(_springboard.Project.Areas[2].Title, "Oval 7", 3885834L, 4066863L);
+            //A.Offset offset100 = new A.Offset() { X = 4973097L, Y = 4066863L };
+            Shape shape77 = GenerateSlideShapeOval(_springboard.Project.Areas[3].Title, "Oval 8", 4973097L, 4066863L);
+            //A.Offset offset101 = new A.Offset() { X = 6060360L, Y = 4066863L };
+            Shape shape78 = GenerateSlideShapeOval(_springboard.Project.Areas[4].Title, "Oval 9", 6060360L, 4066863L);
+            // Top row.
             groupShape5.Append(shape74);
-            //groupShape5.Append(shape75);
-            //groupShape5.Append(shape76);
-            //groupShape5.Append(shape77);
-            //groupShape5.Append(shape78);
-            //groupShape5.Append(shape79);
-            //groupShape5.Append(shape80);
-            //groupShape5.Append(shape81);
-            //groupShape5.Append(shape82);
+            groupShape5.Append(shape75);
+            groupShape5.Append(shape76);
+            groupShape5.Append(shape77);
+            groupShape5.Append(shape78);
+
+            Shape shape79 = GenerateSlideShapeOval(_springboard.Project.Areas[5].Title, "Oval 16", 1711308L, 5156395L);
+            Shape shape80 = GenerateSlideShapeOval(_springboard.Project.Areas[6].Title, "Oval 17", 2798571L, 5156395L);
+            Shape shape81 = GenerateSlideShapeOval(_springboard.Project.Areas[7].Title, "Oval 18", 3885834L, 5156395L);
+            Shape shape82 = GenerateSlideShapeOval(_springboard.Project.Areas[8].Title, "Oval 19", 4973097L, 5156395L);
+            //A.Offset offset106 = new A.Offset() { X = 6060360L, Y = 5156395L };
+            Shape shape83 = GenerateSlideShapeOval(_springboard.Project.Areas[9].Title, "Oval 20", 6060360L, 5156395L);
+
+            // Bottom row.
+            groupShape5.Append(shape79);
+            groupShape5.Append(shape80);
+            groupShape5.Append(shape81);
+            groupShape5.Append(shape82);
             groupShape5.Append(shape83);
 
             shapeTree14.Append(nonVisualGroupShapeProperties18);
@@ -11435,12 +9794,12 @@ namespace builder.Services
             slidePart3.Slide = slide3;
         }
 
-        private Shape GenerateSlideShapeOval()
+        private Shape GenerateSlideShapeOval(string areaTitle, string nonVisualDrawingName, long xOffset, long yOffset)
         {
             Shape shape75 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties75 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties112 = new NonVisualDrawingProperties() { Id = (UInt32Value)7U, Name = "Oval 6" };
+            NonVisualDrawingProperties nonVisualDrawingProperties112 = new NonVisualDrawingProperties() { Id = (UInt32Value)7U, Name = nonVisualDrawingName };
             NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties75 = new NonVisualShapeDrawingProperties();
             ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties112 = new ApplicationNonVisualDrawingProperties();
 
@@ -11451,7 +9810,7 @@ namespace builder.Services
             ShapeProperties shapeProperties93 = new ShapeProperties();
 
             A.Transform2D transform2D79 = new A.Transform2D();
-            A.Offset offset98 = new A.Offset() { X = 2798571L, Y = 4066863L };
+            A.Offset offset98 = new A.Offset() { X = xOffset, Y = yOffset };
             A.Extents extents98 = new A.Extents() { Cx = 1015983L, Cy = 1015983L };
 
             transform2D79.Append(offset98);
@@ -11515,12 +9874,8 @@ namespace builder.Services
 
             A.RunProperties runProperties94 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
             A.LatinFont latinFont68 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont68 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont68 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties94.Append(latinFont68);
-            runProperties94.Append(eastAsianFont68);
-            runProperties94.Append(complexScriptFont68);
             A.Text text93 = new A.Text();
             text93.Text = "#1";
 
@@ -11537,26 +9892,18 @@ namespace builder.Services
 
             A.RunProperties runProperties95 = new A.RunProperties() { Language = "en-US", FontSize = 1200 };
             A.LatinFont latinFont69 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont69 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont69 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties95.Append(latinFont69);
-            runProperties95.Append(eastAsianFont69);
-            runProperties95.Append(complexScriptFont69);
             A.Text text94 = new A.Text();
-            text94.Text = "Area$Title";
+            text94.Text = areaTitle;// "Area$Title";
 
             run92.Append(runProperties95);
             run92.Append(text94);
 
             A.EndParagraphRunProperties endParagraphRunProperties31 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
             A.LatinFont latinFont70 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont70 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont70 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             endParagraphRunProperties31.Append(latinFont70);
-            endParagraphRunProperties31.Append(eastAsianFont70);
-            endParagraphRunProperties31.Append(complexScriptFont70);
 
             paragraph83.Append(paragraphProperties40);
             paragraph83.Append(run92);
@@ -11574,7 +9921,6 @@ namespace builder.Services
 
             return shape75;
         }
-
 
         // Generates content of slidePart4.
         private void GenerateSlidePart4Content(SlidePart slidePart4)
@@ -16514,6 +14860,7 @@ namespace builder.Services
             solidFill185.Append(schemeColor339);
             A.LatinFont latinFont159 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", Panose = "020F0704030504030204", PitchFamily = 34, CharacterSet = 0 };
 
+            /*
             runProperties162.Append(solidFill185);
             runProperties162.Append(latinFont159);
             A.Text text161 = new A.Text();
@@ -16521,6 +14868,7 @@ namespace builder.Services
 
             run159.Append(runProperties162);
             run159.Append(text161);
+            */
 
             A.Run run160 = new A.Run();
 
@@ -17111,6 +15459,5 @@ namespace builder.Services
         }
 
         #endregion
-
     }
 }
