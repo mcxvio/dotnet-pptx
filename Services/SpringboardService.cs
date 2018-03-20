@@ -12663,6 +12663,7 @@ namespace builder.Services
             shape101.Append(textBody95);
             #endregion
 
+            #region Big Picture & Url
             Shape shape102 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties102 = new NonVisualShapeProperties();
@@ -12826,6 +12827,7 @@ namespace builder.Services
             shape103.Append(shapeProperties122);
             shape103.Append(shapeStyle31);
             shape103.Append(textBody96);
+            #endregion
 
             #region Oval Shape, Market #0
             Shape shape104 = new Shape();
@@ -13117,6 +13119,7 @@ namespace builder.Services
             shape106.Append(textBody99);
             #endregion
 
+            #region Oval Shape, Market #2
             Shape shape107 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties107 = new NonVisualShapeProperties();
@@ -13455,7 +13458,9 @@ namespace builder.Services
             shape109.Append(shapeProperties128);
             shape109.Append(shapeStyle34);
             shape109.Append(textBody102);
+            #endregion
 
+            #region Oval Shape, Market #3
             Shape shape110 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties110 = new NonVisualShapeProperties();
@@ -13745,7 +13750,9 @@ namespace builder.Services
             shape112.Append(nonVisualShapeProperties112);
             shape112.Append(shapeProperties131);
             shape112.Append(textBody105);
+            #endregion
 
+            #region Oval Shape, Market #5
             Shape shape113 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties113 = new NonVisualShapeProperties();
@@ -13954,7 +13961,9 @@ namespace builder.Services
             shape114.Append(nonVisualShapeProperties114);
             shape114.Append(shapeProperties133);
             shape114.Append(textBody107);
+            #endregion
 
+            #region Oval Shape, Market #6
             Shape shape115 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties115 = new NonVisualShapeProperties();
@@ -14281,7 +14290,9 @@ namespace builder.Services
             shape117.Append(nonVisualShapeProperties117);
             shape117.Append(shapeProperties136);
             shape117.Append(textBody110);
+            #endregion
 
+            #region Springboard Picture Url
             Shape shape118 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties118 = new NonVisualShapeProperties();
@@ -14341,6 +14352,7 @@ namespace builder.Services
             shape118.Append(nonVisualShapeProperties118);
             shape118.Append(shapeProperties137);
             shape118.Append(textBody111);
+            #endregion
 
             shapeTree17.Append(nonVisualGroupShapeProperties22);
             shapeTree17.Append(groupShapeProperties22);
