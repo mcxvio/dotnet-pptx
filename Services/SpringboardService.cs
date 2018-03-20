@@ -10064,523 +10064,17 @@ namespace builder.Services
             #endregion
 
             #region Oval Shape, Theme Title, Text, Source Url #6
-            Shape shape92 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties92 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties133 = new NonVisualDrawingProperties() { Id = (UInt32Value)19U, Name = "Oval 18" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties92 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks67 = new A.ShapeLocks() { NoChangeAspect = true };
-
-            nonVisualShapeDrawingProperties92.Append(shapeLocks67);
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties133 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties92.Append(nonVisualDrawingProperties133);
-            nonVisualShapeProperties92.Append(nonVisualShapeDrawingProperties92);
-            nonVisualShapeProperties92.Append(applicationNonVisualDrawingProperties133);
-
-            ShapeProperties shapeProperties111 = new ShapeProperties();
-
-            A.Transform2D transform2D93 = new A.Transform2D();
-            A.Offset offset115 = new A.Offset() { X = 7727716L, Y = 3731327L };
-            A.Extents extents115 = new A.Extents() { Cx = 1944000L, Cy = 1944000L };
-
-            transform2D93.Append(offset115);
-            transform2D93.Append(extents115);
-
-            A.PresetGeometry presetGeometry59 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList59 = new A.AdjustValueList();
-
-            presetGeometry59.Append(adjustValueList59);
-
-            A.SolidFill solidFill94 = new A.SolidFill();
-
-            A.SchemeColor schemeColor184 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
-            A.Alpha alpha11 = new A.Alpha() { Val = 70000 };
-
-            schemeColor184.Append(alpha11);
-
-            solidFill94.Append(schemeColor184);
-
-            A.Outline outline30 = new A.Outline();
-            A.NoFill noFill32 = new A.NoFill();
-
-            outline30.Append(noFill32);
-            A.EffectList effectList7 = new A.EffectList();
-
-            shapeProperties111.Append(transform2D93);
-            shapeProperties111.Append(presetGeometry59);
-            shapeProperties111.Append(solidFill94);
-            shapeProperties111.Append(outline30);
-            shapeProperties111.Append(effectList7);
-
-            ShapeStyle shapeStyle21 = new ShapeStyle();
-
-            A.LineReference lineReference21 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor185 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade27 = new A.Shade() { Val = 50000 };
-
-            schemeColor185.Append(shade27);
-
-            lineReference21.Append(schemeColor185);
-
-            A.FillReference fillReference21 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor186 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference21.Append(schemeColor186);
-
-            A.EffectReference effectReference21 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor187 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference21.Append(schemeColor187);
-
-            A.FontReference fontReference21 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor188 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference21.Append(schemeColor188);
-
-            shapeStyle21.Append(lineReference21);
-            shapeStyle21.Append(fillReference21);
-            shapeStyle21.Append(effectReference21);
-            shapeStyle21.Append(fontReference21);
-
-            TextBody textBody86 = new TextBody();
-            A.BodyProperties bodyProperties86 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle86 = new A.ListStyle();
-
-            A.Paragraph paragraph110 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties57 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter1 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints11 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter1.Append(spacingPoints11);
-
-            paragraphProperties57.Append(spaceAfter1);
-
-            A.Run run122 = new A.Run();
-
-            A.RunProperties runProperties125 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill95 = new A.SolidFill();
-            A.SchemeColor schemeColor189 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill95.Append(schemeColor189);
-            A.LatinFont latinFont95 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont95 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont95 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties125.Append(solidFill95);
-            runProperties125.Append(latinFont95);
-            runProperties125.Append(eastAsianFont95);
-            runProperties125.Append(complexScriptFont95);
-            A.Text text124 = new A.Text();
-            text124.Text = "#6Theme.Title";
-
-            run122.Append(runProperties125);
-            run122.Append(text124);
-
-            paragraph110.Append(paragraphProperties57);
-            paragraph110.Append(run122);
-
-            A.Paragraph paragraph111 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties58 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter2 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints12 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter2.Append(spacingPoints12);
-
-            paragraphProperties58.Append(spaceAfter2);
-
-            A.EndParagraphRunProperties endParagraphRunProperties47 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill96 = new A.SolidFill();
-            A.SchemeColor schemeColor190 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill96.Append(schemeColor190);
-            A.LatinFont latinFont96 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties47.Append(solidFill96);
-            endParagraphRunProperties47.Append(latinFont96);
-
-            paragraph111.Append(paragraphProperties58);
-            paragraph111.Append(endParagraphRunProperties47);
-
-            A.Paragraph paragraph112 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties59 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter3 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints13 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter3.Append(spacingPoints13);
-
-            paragraphProperties59.Append(spaceAfter3);
-
-            A.Run run123 = new A.Run();
-
-            A.RunProperties runProperties126 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill97 = new A.SolidFill();
-            A.SchemeColor schemeColor191 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill97.Append(schemeColor191);
-            A.LatinFont latinFont97 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties126.Append(solidFill97);
-            runProperties126.Append(latinFont97);
-            A.Text text125 = new A.Text();
-            text125.Text = "#6Theme.Text";
-
-            run123.Append(runProperties126);
-            run123.Append(text125);
-
-            paragraph112.Append(paragraphProperties59);
-            paragraph112.Append(run123);
-
-            A.Paragraph paragraph113 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties60 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter4 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints14 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter4.Append(spacingPoints14);
-
-            paragraphProperties60.Append(spaceAfter4);
-
-            A.EndParagraphRunProperties endParagraphRunProperties48 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill98 = new A.SolidFill();
-            A.SchemeColor schemeColor192 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill98.Append(schemeColor192);
-            A.LatinFont latinFont98 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties48.Append(solidFill98);
-            endParagraphRunProperties48.Append(latinFont98);
-
-            paragraph113.Append(paragraphProperties60);
-            paragraph113.Append(endParagraphRunProperties48);
-
-            A.Paragraph paragraph114 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties61 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter5 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints15 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter5.Append(spacingPoints15);
-
-            paragraphProperties61.Append(spaceAfter5);
-
-            A.Run run124 = new A.Run();
-
-            A.RunProperties runProperties127 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill99 = new A.SolidFill();
-            A.SchemeColor schemeColor193 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill99.Append(schemeColor193);
-            A.LatinFont latinFont99 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties127.Append(solidFill99);
-            runProperties127.Append(latinFont99);
-            A.Text text126 = new A.Text();
-            text126.Text = "#6Theme.SourceUrl";
-
-            run124.Append(runProperties127);
-            run124.Append(text126);
-
-            A.EndParagraphRunProperties endParagraphRunProperties49 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 800, Dirty = false };
-
-            A.SolidFill solidFill100 = new A.SolidFill();
-            A.SchemeColor schemeColor194 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill100.Append(schemeColor194);
-
-            endParagraphRunProperties49.Append(solidFill100);
-
-            paragraph114.Append(paragraphProperties61);
-            paragraph114.Append(run124);
-            paragraph114.Append(endParagraphRunProperties49);
-
-            textBody86.Append(bodyProperties86);
-            textBody86.Append(listStyle86);
-            textBody86.Append(paragraph110);
-            textBody86.Append(paragraph111);
-            textBody86.Append(paragraph112);
-            textBody86.Append(paragraph113);
-            textBody86.Append(paragraph114);
-
-            shape92.Append(nonVisualShapeProperties92);
-            shape92.Append(shapeProperties111);
-            shape92.Append(shapeStyle21);
-            shape92.Append(textBody86);
+            Shape shape92 = GenerateSpringboardDetailThemeOffset(19U, "Oval 18", 7727716L, 3731327L,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[6].Title,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[6].Text,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[6].SourceUrl);
             #endregion
 
             #region Oval Shape, Theme Title, Text & SourceUrl #1
-            Shape shape93 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties93 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties134 = new NonVisualDrawingProperties() { Id = (UInt32Value)21U, Name = "Oval 20" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties93 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks68 = new A.ShapeLocks() { NoChangeAspect = true };
-
-            nonVisualShapeDrawingProperties93.Append(shapeLocks68);
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties134 = new ApplicationNonVisualDrawingProperties();
-
-            nonVisualShapeProperties93.Append(nonVisualDrawingProperties134);
-            nonVisualShapeProperties93.Append(nonVisualShapeDrawingProperties93);
-            nonVisualShapeProperties93.Append(applicationNonVisualDrawingProperties134);
-
-            ShapeProperties shapeProperties112 = new ShapeProperties();
-
-            A.Transform2D transform2D94 = new A.Transform2D();
-            A.Offset offset116 = new A.Offset() { X = 4185956L, Y = 3459937L };
-            A.Extents extents116 = new A.Extents() { Cx = 1944000L, Cy = 1944000L };
-
-            transform2D94.Append(offset116);
-            transform2D94.Append(extents116);
-
-            A.PresetGeometry presetGeometry60 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
-            A.AdjustValueList adjustValueList60 = new A.AdjustValueList();
-
-            presetGeometry60.Append(adjustValueList60);
-
-            A.SolidFill solidFill101 = new A.SolidFill();
-
-            A.SchemeColor schemeColor195 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
-            A.Alpha alpha12 = new A.Alpha() { Val = 70000 };
-
-            schemeColor195.Append(alpha12);
-
-            solidFill101.Append(schemeColor195);
-
-            A.Outline outline31 = new A.Outline();
-            A.NoFill noFill33 = new A.NoFill();
-
-            outline31.Append(noFill33);
-            A.EffectList effectList8 = new A.EffectList();
-
-            shapeProperties112.Append(transform2D94);
-            shapeProperties112.Append(presetGeometry60);
-            shapeProperties112.Append(solidFill101);
-            shapeProperties112.Append(outline31);
-            shapeProperties112.Append(effectList8);
-
-            ShapeStyle shapeStyle22 = new ShapeStyle();
-
-            A.LineReference lineReference22 = new A.LineReference() { Index = (UInt32Value)2U };
-
-            A.SchemeColor schemeColor196 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-            A.Shade shade28 = new A.Shade() { Val = 50000 };
-
-            schemeColor196.Append(shade28);
-
-            lineReference22.Append(schemeColor196);
-
-            A.FillReference fillReference22 = new A.FillReference() { Index = (UInt32Value)1U };
-            A.SchemeColor schemeColor197 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            fillReference22.Append(schemeColor197);
-
-            A.EffectReference effectReference22 = new A.EffectReference() { Index = (UInt32Value)0U };
-            A.SchemeColor schemeColor198 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
-
-            effectReference22.Append(schemeColor198);
-
-            A.FontReference fontReference22 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
-            A.SchemeColor schemeColor199 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
-
-            fontReference22.Append(schemeColor199);
-
-            shapeStyle22.Append(lineReference22);
-            shapeStyle22.Append(fillReference22);
-            shapeStyle22.Append(effectReference22);
-            shapeStyle22.Append(fontReference22);
-
-            TextBody textBody87 = new TextBody();
-            A.BodyProperties bodyProperties87 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
-            A.ListStyle listStyle87 = new A.ListStyle();
-
-            A.Paragraph paragraph115 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties62 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter6 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints16 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter6.Append(spacingPoints16);
-
-            paragraphProperties62.Append(spaceAfter6);
-
-            A.Run run125 = new A.Run();
-
-            A.RunProperties runProperties128 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill102 = new A.SolidFill();
-            A.SchemeColor schemeColor200 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill102.Append(schemeColor200);
-            A.LatinFont latinFont100 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont96 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont96 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties128.Append(solidFill102);
-            runProperties128.Append(latinFont100);
-            runProperties128.Append(eastAsianFont96);
-            runProperties128.Append(complexScriptFont96);
-            A.Text text127 = new A.Text();
-            text127.Text = "#1Theme.Title";
-
-            run125.Append(runProperties128);
-            run125.Append(text127);
-
-            paragraph115.Append(paragraphProperties62);
-            paragraph115.Append(run125);
-
-            A.Paragraph paragraph116 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties63 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter7 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints17 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter7.Append(spacingPoints17);
-
-            paragraphProperties63.Append(spaceAfter7);
-
-            A.EndParagraphRunProperties endParagraphRunProperties50 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill103 = new A.SolidFill();
-            A.SchemeColor schemeColor201 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill103.Append(schemeColor201);
-            A.LatinFont latinFont101 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties50.Append(solidFill103);
-            endParagraphRunProperties50.Append(latinFont101);
-
-            paragraph116.Append(paragraphProperties63);
-            paragraph116.Append(endParagraphRunProperties50);
-
-            A.Paragraph paragraph117 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties64 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter8 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints18 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter8.Append(spacingPoints18);
-
-            paragraphProperties64.Append(spaceAfter8);
-
-            A.Run run126 = new A.Run();
-
-            A.RunProperties runProperties129 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill104 = new A.SolidFill();
-            A.SchemeColor schemeColor202 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill104.Append(schemeColor202);
-            A.LatinFont latinFont102 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties129.Append(solidFill104);
-            runProperties129.Append(latinFont102);
-            A.Text text128 = new A.Text();
-            text128.Text = "#1Theme.Text";
-
-            run126.Append(runProperties129);
-            run126.Append(text128);
-
-            paragraph117.Append(paragraphProperties64);
-            paragraph117.Append(run126);
-
-            A.Paragraph paragraph118 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties65 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter9 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints19 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter9.Append(spacingPoints19);
-
-            paragraphProperties65.Append(spaceAfter9);
-
-            A.EndParagraphRunProperties endParagraphRunProperties51 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill105 = new A.SolidFill();
-            A.SchemeColor schemeColor203 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill105.Append(schemeColor203);
-            A.LatinFont latinFont103 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties51.Append(solidFill105);
-            endParagraphRunProperties51.Append(latinFont103);
-
-            paragraph118.Append(paragraphProperties65);
-            paragraph118.Append(endParagraphRunProperties51);
-
-            A.Paragraph paragraph119 = new A.Paragraph();
-
-            A.ParagraphProperties paragraphProperties66 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
-
-            A.SpaceAfter spaceAfter10 = new A.SpaceAfter();
-            A.SpacingPoints spacingPoints20 = new A.SpacingPoints() { Val = 400 };
-
-            spaceAfter10.Append(spacingPoints20);
-
-            paragraphProperties66.Append(spaceAfter10);
-
-            A.Run run127 = new A.Run();
-
-            A.RunProperties runProperties130 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
-
-            A.SolidFill solidFill106 = new A.SolidFill();
-            A.SchemeColor schemeColor204 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill106.Append(schemeColor204);
-            A.LatinFont latinFont104 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties130.Append(solidFill106);
-            runProperties130.Append(latinFont104);
-            A.Text text129 = new A.Text();
-            text129.Text = "#1Theme.SourceUrl";
-
-            run127.Append(runProperties130);
-            run127.Append(text129);
-
-            A.EndParagraphRunProperties endParagraphRunProperties52 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 800, Dirty = false };
-
-            A.SolidFill solidFill107 = new A.SolidFill();
-            A.SchemeColor schemeColor205 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
-
-            solidFill107.Append(schemeColor205);
-
-            endParagraphRunProperties52.Append(solidFill107);
-
-            paragraph119.Append(paragraphProperties66);
-            paragraph119.Append(run127);
-            paragraph119.Append(endParagraphRunProperties52);
-
-            textBody87.Append(bodyProperties87);
-            textBody87.Append(listStyle87);
-            textBody87.Append(paragraph115);
-            textBody87.Append(paragraph116);
-            textBody87.Append(paragraph117);
-            textBody87.Append(paragraph118);
-            textBody87.Append(paragraph119);
-
-            shape93.Append(nonVisualShapeProperties93);
-            shape93.Append(shapeProperties112);
-            shape93.Append(shapeStyle22);
-            shape93.Append(textBody87);
+            Shape shape93 = GenerateSpringboardDetailThemeOffset(21U, "Oval 20", 4185956L, 3459937L,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[1].Title,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[1].Text,
+                                                     _springboard.Project.Areas[0].Springboards[0].Themes[1].SourceUrl);
             #endregion
 
             #region Oval Shape, Theme Title, Text & SourceUrl #2
@@ -10831,6 +10325,7 @@ namespace builder.Services
 
             textBody88.Append(bodyProperties88);
             textBody88.Append(listStyle88);
+            
             textBody88.Append(paragraph120);
             textBody88.Append(paragraph121);
             textBody88.Append(paragraph122);
@@ -14413,6 +13908,265 @@ namespace builder.Services
             slidePart6.Slide = slide6;
         }
         #endregion
+
+        private Shape GenerateSpringboardDetailThemeOffset(UInt32Value shapeId, string shapeName, long xOffset, long yOffset, string themeTitle, string themeText, string themeSourceUrl)
+        {
+            Shape shape92 = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties92 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties133 = new NonVisualDrawingProperties() { Id = shapeId, Name = shapeName };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties92 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks67 = new A.ShapeLocks() { NoChangeAspect = true };
+
+            nonVisualShapeDrawingProperties92.Append(shapeLocks67);
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties133 = new ApplicationNonVisualDrawingProperties();
+
+            nonVisualShapeProperties92.Append(nonVisualDrawingProperties133);
+            nonVisualShapeProperties92.Append(nonVisualShapeDrawingProperties92);
+            nonVisualShapeProperties92.Append(applicationNonVisualDrawingProperties133);
+
+            ShapeProperties shapeProperties111 = new ShapeProperties();
+
+            A.Transform2D transform2D93 = new A.Transform2D();
+            A.Offset offset115 = new A.Offset() { X = xOffset, Y = yOffset};
+            A.Extents extents115 = new A.Extents() { Cx = 1944000L, Cy = 1944000L };
+
+            transform2D93.Append(offset115);
+            transform2D93.Append(extents115);
+
+            A.PresetGeometry presetGeometry59 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Ellipse };
+            A.AdjustValueList adjustValueList59 = new A.AdjustValueList();
+
+            presetGeometry59.Append(adjustValueList59);
+
+            A.SolidFill solidFill94 = new A.SolidFill();
+
+            A.SchemeColor schemeColor184 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
+            A.Alpha alpha11 = new A.Alpha() { Val = 70000 };
+
+            schemeColor184.Append(alpha11);
+
+            solidFill94.Append(schemeColor184);
+
+            A.Outline outline30 = new A.Outline();
+            A.NoFill noFill32 = new A.NoFill();
+
+            outline30.Append(noFill32);
+            A.EffectList effectList7 = new A.EffectList();
+
+            shapeProperties111.Append(transform2D93);
+            shapeProperties111.Append(presetGeometry59);
+            shapeProperties111.Append(solidFill94);
+            shapeProperties111.Append(outline30);
+            shapeProperties111.Append(effectList7);
+
+            ShapeStyle shapeStyle21 = new ShapeStyle();
+
+            A.LineReference lineReference21 = new A.LineReference() { Index = (UInt32Value)2U };
+
+            A.SchemeColor schemeColor185 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+            A.Shade shade27 = new A.Shade() { Val = 50000 };
+
+            schemeColor185.Append(shade27);
+
+            lineReference21.Append(schemeColor185);
+
+            A.FillReference fillReference21 = new A.FillReference() { Index = (UInt32Value)1U };
+            A.SchemeColor schemeColor186 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+
+            fillReference21.Append(schemeColor186);
+
+            A.EffectReference effectReference21 = new A.EffectReference() { Index = (UInt32Value)0U };
+            A.SchemeColor schemeColor187 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent1 };
+
+            effectReference21.Append(schemeColor187);
+
+            A.FontReference fontReference21 = new A.FontReference() { Index = A.FontCollectionIndexValues.Minor };
+            A.SchemeColor schemeColor188 = new A.SchemeColor() { Val = A.SchemeColorValues.Light1 };
+
+            fontReference21.Append(schemeColor188);
+
+            shapeStyle21.Append(lineReference21);
+            shapeStyle21.Append(fillReference21);
+            shapeStyle21.Append(effectReference21);
+            shapeStyle21.Append(fontReference21);
+
+            TextBody textBody86 = new TextBody();
+            A.BodyProperties bodyProperties86 = new A.BodyProperties() { LeftInset = 0, TopInset = 0, RightInset = 0, BottomInset = 0, RightToLeftColumns = false, Anchor = A.TextAnchoringTypeValues.Center };
+            A.ListStyle listStyle86 = new A.ListStyle();
+
+            A.Paragraph paragraph110 = new A.Paragraph();
+
+            A.ParagraphProperties paragraphProperties57 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.SpaceAfter spaceAfter1 = new A.SpaceAfter();
+            A.SpacingPoints spacingPoints11 = new A.SpacingPoints() { Val = 400 };
+
+            spaceAfter1.Append(spacingPoints11);
+
+            paragraphProperties57.Append(spaceAfter1);
+
+            A.Run run122 = new A.Run();
+
+            A.RunProperties runProperties125 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
+
+            A.SolidFill solidFill95 = new A.SolidFill();
+            A.SchemeColor schemeColor189 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill95.Append(schemeColor189);
+            A.LatinFont latinFont95 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            runProperties125.Append(solidFill95);
+            runProperties125.Append(latinFont95);
+            A.Text text124 = new A.Text();
+            text124.Text = themeTitle; // "#6Theme.Title";
+
+            run122.Append(runProperties125);
+            run122.Append(text124);
+
+            paragraph110.Append(paragraphProperties57);
+            paragraph110.Append(run122);
+
+            A.Paragraph paragraph111 = new A.Paragraph();
+
+            A.ParagraphProperties paragraphProperties58 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.SpaceAfter spaceAfter2 = new A.SpaceAfter();
+            A.SpacingPoints spacingPoints12 = new A.SpacingPoints() { Val = 400 };
+
+            spaceAfter2.Append(spacingPoints12);
+
+            paragraphProperties58.Append(spaceAfter2);
+
+            A.EndParagraphRunProperties endParagraphRunProperties47 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
+
+            A.SolidFill solidFill96 = new A.SolidFill();
+            A.SchemeColor schemeColor190 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill96.Append(schemeColor190);
+            A.LatinFont latinFont96 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            endParagraphRunProperties47.Append(solidFill96);
+            endParagraphRunProperties47.Append(latinFont96);
+
+            paragraph111.Append(paragraphProperties58);
+            paragraph111.Append(endParagraphRunProperties47);
+
+            A.Paragraph paragraph112 = new A.Paragraph();
+
+            A.ParagraphProperties paragraphProperties59 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.SpaceAfter spaceAfter3 = new A.SpaceAfter();
+            A.SpacingPoints spacingPoints13 = new A.SpacingPoints() { Val = 400 };
+
+            spaceAfter3.Append(spacingPoints13);
+
+            paragraphProperties59.Append(spaceAfter3);
+
+            A.Run run123 = new A.Run();
+
+            A.RunProperties runProperties126 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
+
+            A.SolidFill solidFill97 = new A.SolidFill();
+            A.SchemeColor schemeColor191 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill97.Append(schemeColor191);
+            A.LatinFont latinFont97 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            runProperties126.Append(solidFill97);
+            runProperties126.Append(latinFont97);
+            A.Text text125 = new A.Text();
+            text125.Text = themeText; //"#6Theme.Text";
+
+            run123.Append(runProperties126);
+            run123.Append(text125);
+
+            paragraph112.Append(paragraphProperties59);
+            paragraph112.Append(run123);
+
+            A.Paragraph paragraph113 = new A.Paragraph();
+
+            A.ParagraphProperties paragraphProperties60 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.SpaceAfter spaceAfter4 = new A.SpaceAfter();
+            A.SpacingPoints spacingPoints14 = new A.SpacingPoints() { Val = 400 };
+
+            spaceAfter4.Append(spacingPoints14);
+
+            paragraphProperties60.Append(spaceAfter4);
+
+            A.EndParagraphRunProperties endParagraphRunProperties48 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
+
+            A.SolidFill solidFill98 = new A.SolidFill();
+            A.SchemeColor schemeColor192 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill98.Append(schemeColor192);
+            A.LatinFont latinFont98 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            endParagraphRunProperties48.Append(solidFill98);
+            endParagraphRunProperties48.Append(latinFont98);
+
+            paragraph113.Append(paragraphProperties60);
+            paragraph113.Append(endParagraphRunProperties48);
+
+            A.Paragraph paragraph114 = new A.Paragraph();
+
+            A.ParagraphProperties paragraphProperties61 = new A.ParagraphProperties() { Alignment = A.TextAlignmentTypeValues.Center };
+
+            A.SpaceAfter spaceAfter5 = new A.SpaceAfter();
+            A.SpacingPoints spacingPoints15 = new A.SpacingPoints() { Val = 400 };
+
+            spaceAfter5.Append(spacingPoints15);
+
+            paragraphProperties61.Append(spaceAfter5);
+
+            A.Run run124 = new A.Run();
+
+            A.RunProperties runProperties127 = new A.RunProperties() { Language = "en-US", FontSize = 1100, Dirty = false };
+
+            A.SolidFill solidFill99 = new A.SolidFill();
+            A.SchemeColor schemeColor193 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill99.Append(schemeColor193);
+            A.LatinFont latinFont99 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+
+            runProperties127.Append(solidFill99);
+            runProperties127.Append(latinFont99);
+            A.Text text126 = new A.Text();
+            text126.Text = themeSourceUrl; //"#6Theme.SourceUrl";
+
+            run124.Append(runProperties127);
+            run124.Append(text126);
+
+            A.EndParagraphRunProperties endParagraphRunProperties49 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 800, Dirty = false };
+
+            A.SolidFill solidFill100 = new A.SolidFill();
+            A.SchemeColor schemeColor194 = new A.SchemeColor() { Val = A.SchemeColorValues.Text1 };
+
+            solidFill100.Append(schemeColor194);
+
+            endParagraphRunProperties49.Append(solidFill100);
+
+            paragraph114.Append(paragraphProperties61);
+            paragraph114.Append(run124);
+            paragraph114.Append(endParagraphRunProperties49);
+
+            textBody86.Append(bodyProperties86);
+            textBody86.Append(listStyle86);
+            textBody86.Append(paragraph110);
+            textBody86.Append(paragraph111);
+            textBody86.Append(paragraph112);
+            textBody86.Append(paragraph113);
+            textBody86.Append(paragraph114);
+
+            shape92.Append(nonVisualShapeProperties92);
+            shape92.Append(shapeProperties111);
+            shape92.Append(shapeStyle21);
+            shape92.Append(textBody86);
+
+            return shape92;
+        }
 
         // Generates content of notesSlidePart1.
         private void GenerateNotesSlidePart1Content(NotesSlidePart notesSlidePart1)
