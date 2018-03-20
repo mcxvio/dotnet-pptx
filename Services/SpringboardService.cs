@@ -1472,6 +1472,7 @@ namespace builder.Services
             themePart1.Theme = theme1;
         }
 
+        #region Springboard Slide.
         // Generates content of slidePart1.
         private void GenerateSlidePart1Content(SlidePart slidePart1)
         {
@@ -1872,12 +1873,12 @@ namespace builder.Services
             return shape18;
         }
 
-        private Shape GenerateSpringboardPictureUrlOffset(UInt32Value uInt32, string textboxName, long xOffset, long yOffset, string pictureUrl)
+        private Shape GenerateSpringboardPictureUrlOffset(UInt32Value textboxId, string textboxName, long xOffset, long yOffset, string pictureUrl)
         {
             Shape shape23 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties23 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties25 = new NonVisualDrawingProperties() { Id = uInt32, Name = textboxName };
+            NonVisualDrawingProperties nonVisualDrawingProperties25 = new NonVisualDrawingProperties() { Id = textboxId, Name = textboxName };
             NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties23 = new NonVisualShapeDrawingProperties() { TextBox = true };
             ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties25 = new ApplicationNonVisualDrawingProperties();
 
@@ -2171,6 +2172,7 @@ namespace builder.Services
             shape8.Append(textBody8);
             return shape8;
         }
+        #endregion
 
         // Generates content of slideLayoutPart1.
         private void GenerateSlideLayoutPart1Content(SlideLayoutPart slideLayoutPart1)
@@ -8472,6 +8474,7 @@ namespace builder.Services
             slideLayoutPart9.SlideLayout = slideLayout9;
         }
 
+        #region Project Sources Slide.
         // Generates content of slidePart2.
         private void GenerateSlidePart2Content(SlidePart slidePart2)
         {
@@ -8743,6 +8746,7 @@ namespace builder.Services
 
             slidePart2.Slide = slide2;
         }
+        #endregion
 
         // Generates content of tableStylesPart1.
         private void GenerateTableStylesPart1Content(TableStylesPart tableStylesPart1)
@@ -8753,6 +8757,7 @@ namespace builder.Services
             tableStylesPart1.TableStyleList = tableStyleList1;
         }
 
+        #region Oval Slide
         // Generates content of slidePart3.
         private void GenerateSlidePart3Content(SlidePart slidePart3)
         {
@@ -9255,6 +9260,7 @@ namespace builder.Services
 
             return shape75;
         }
+        #endregion
 
         // Generates content of slidePart4.
         private void GenerateSlidePart4Content(SlidePart slidePart4)
@@ -9779,6 +9785,7 @@ namespace builder.Services
             viewPropertiesPart1.ViewProperties = viewProperties1;
         }
 
+        #region Springboard Themes & Scattered Ovals Slide.
         // Generates content of slidePart6.
         private void GenerateSlidePart6Content(SlidePart slidePart6)
         {
@@ -9815,6 +9822,7 @@ namespace builder.Services
 
             groupShapeProperties22.Append(transformGroup22);
 
+            #region Placeholder Shape
             Shape shape89 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties89 = new NonVisualShapeProperties();
@@ -9867,7 +9875,9 @@ namespace builder.Services
             shape89.Append(nonVisualShapeProperties89);
             shape89.Append(shapeProperties107);
             shape89.Append(textBody83);
+            #endregion
 
+            #region Title Shape
             Shape shape90 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties90 = new NonVisualShapeProperties();
@@ -9913,7 +9923,9 @@ namespace builder.Services
             shape90.Append(nonVisualShapeProperties90);
             shape90.Append(shapeProperties108);
             shape90.Append(textBody84);
+            #endregion
 
+            #region Placeholder Text Shape
             Shape shape91 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties91 = new NonVisualShapeProperties();
@@ -10049,7 +10061,9 @@ namespace builder.Services
             picture15.Append(nonVisualPictureProperties15);
             picture15.Append(blipFill15);
             picture15.Append(shapeProperties110);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text, Source Url #6
             Shape shape92 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties92 = new NonVisualShapeProperties();
@@ -10307,7 +10321,9 @@ namespace builder.Services
             shape92.Append(shapeProperties111);
             shape92.Append(shapeStyle21);
             shape92.Append(textBody86);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #1
             Shape shape93 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties93 = new NonVisualShapeProperties();
@@ -10565,7 +10581,9 @@ namespace builder.Services
             shape93.Append(shapeProperties112);
             shape93.Append(shapeStyle22);
             shape93.Append(textBody87);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #2
             Shape shape94 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties94 = new NonVisualShapeProperties();
@@ -10823,7 +10841,9 @@ namespace builder.Services
             shape94.Append(shapeProperties113);
             shape94.Append(shapeStyle23);
             shape94.Append(textBody88);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #9
             Shape shape95 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties95 = new NonVisualShapeProperties();
@@ -11081,7 +11101,9 @@ namespace builder.Services
             shape95.Append(shapeProperties114);
             shape95.Append(shapeStyle24);
             shape95.Append(textBody89);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #4
             Shape shape96 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties96 = new NonVisualShapeProperties();
@@ -11339,7 +11361,9 @@ namespace builder.Services
             shape96.Append(shapeProperties115);
             shape96.Append(shapeStyle25);
             shape96.Append(textBody90);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #7
             Shape shape97 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties97 = new NonVisualShapeProperties();
@@ -11597,7 +11621,9 @@ namespace builder.Services
             shape97.Append(shapeProperties116);
             shape97.Append(shapeStyle26);
             shape97.Append(textBody91);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #8
             Shape shape98 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties98 = new NonVisualShapeProperties();
@@ -11855,7 +11881,9 @@ namespace builder.Services
             shape98.Append(shapeProperties117);
             shape98.Append(shapeStyle27);
             shape98.Append(textBody92);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #5
             Shape shape99 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties99 = new NonVisualShapeProperties();
@@ -12113,7 +12141,9 @@ namespace builder.Services
             shape99.Append(shapeProperties118);
             shape99.Append(shapeStyle28);
             shape99.Append(textBody93);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #3
             Shape shape100 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties100 = new NonVisualShapeProperties();
@@ -12371,7 +12401,9 @@ namespace builder.Services
             shape100.Append(shapeProperties119);
             shape100.Append(shapeStyle29);
             shape100.Append(textBody94);
+            #endregion
 
+            #region Oval Shape, Theme Title, Text & SourceUrl #0
             Shape shape101 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties101 = new NonVisualShapeProperties();
@@ -12629,6 +12661,7 @@ namespace builder.Services
             shape101.Append(shapeProperties120);
             shape101.Append(shapeStyle30);
             shape101.Append(textBody95);
+            #endregion
 
             Shape shape102 = new Shape();
 
@@ -12794,6 +12827,7 @@ namespace builder.Services
             shape103.Append(shapeStyle31);
             shape103.Append(textBody96);
 
+            #region Oval Shape, Market #0
             Shape shape104 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties104 = new NonVisualShapeProperties();
@@ -12998,7 +13032,9 @@ namespace builder.Services
             shape105.Append(shapeProperties124);
             shape105.Append(shapeStyle32);
             shape105.Append(textBody98);
+            #endregion
 
+            #region Oval Shape, Market #1
             Shape shape106 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties106 = new NonVisualShapeProperties();
@@ -13079,6 +13115,7 @@ namespace builder.Services
             shape106.Append(nonVisualShapeProperties106);
             shape106.Append(shapeProperties125);
             shape106.Append(textBody99);
+            #endregion
 
             Shape shape107 = new Shape();
 
@@ -14363,6 +14400,7 @@ namespace builder.Services
 
             slidePart6.Slide = slide6;
         }
+        #endregion
 
         // Generates content of notesSlidePart1.
         private void GenerateNotesSlidePart1Content(NotesSlidePart notesSlidePart1)
