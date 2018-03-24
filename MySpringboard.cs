@@ -108,9 +108,10 @@ namespace builder
 
         private M.Source[] CreateSources()
         {
-            M.Source[] sources = new M.Source[2];
+            M.Source[] sources = new M.Source[3];
             sources[0] = new M.Source { Url = "source url 1", Area = "source area 1", Market = "source market 1" };
             sources[1] = new M.Source { Url = "source url 2", Area = "source area 2", Market = "source market 2" };
+            sources[2] = new M.Source { Url = "source url 3", Area = "source area 3", Market = "source market 3" };
             return sources;
         }
 
@@ -124,9 +125,10 @@ namespace builder
 
         private M.WordList[] CreateWordLists()
         {
-            M.WordList[] wordlists = new M.WordList[2];
+            M.WordList[] wordlists = new M.WordList[3];
             wordlists[0] = new M.WordList { Title = "wordlist title 1", Words = CreateWords() };
-            wordlists[1] = new M.WordList { Title = "wordlist title 1", Words = CreateWords() };
+            wordlists[1] = new M.WordList { Title = "wordlist title 2", Words = CreateWords() };
+            wordlists[2] = new M.WordList { Title = "wordlist title 3", Words = CreateWords() };
             return wordlists;
         }
 
