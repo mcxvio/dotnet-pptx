@@ -196,8 +196,7 @@ namespace builder
         // Generates content of thumbnailPart1.
         private void GenerateThumbnailPart1Content(ThumbnailPart thumbnailPart1)
         {
-            //System.IO.Stream data = GetBinaryDataStream(thumbnailPart1Data);
-            System.IO.Stream data = new System.IO.MemoryStream(System.Text.Encoding.Unicode.GetBytes(ImageResources.thumbnailPart1Data));
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.thumbnailPart1Data);
             thumbnailPart1.FeedData(data);
             data.Close();
         }
@@ -205,7 +204,7 @@ namespace builder
         // Generates content of imagePart1.
         private void GenerateImagePart1Content(ImagePart imagePart1)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart1Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.imagePart1Data);
             imagePart1.FeedData(data);
             data.Close();
         }
@@ -213,7 +212,7 @@ namespace builder
         // Generates content of imagePart2.
         private void GenerateImagePart2Content(ImagePart imagePart2)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart2Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.imagePart2Data);
             imagePart2.FeedData(data);
             data.Close();
         }
@@ -221,7 +220,7 @@ namespace builder
         // Generates content of imagePart3.
         private void GenerateImagePart3Content(ImagePart imagePart3)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart3Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.imagePart3Data);
             imagePart3.FeedData(data);
             data.Close();
         }
@@ -229,7 +228,7 @@ namespace builder
         // Generates content of imagePart4.
         private void GenerateImagePart4Content(ImagePart imagePart4)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart4Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.imagePart4Data);
             imagePart4.FeedData(data);
             data.Close();
         }
@@ -237,7 +236,7 @@ namespace builder
         // Generates content of imagePart5.
         private void GenerateImagePart5Content(ImagePart imagePart5)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart5Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.discover_ai_black);
             imagePart5.FeedData(data);
             data.Close();
         }
@@ -245,7 +244,7 @@ namespace builder
         // Generates content of imagePart6.
         private void GenerateImagePart6Content(ImagePart imagePart6)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart6Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.imagePart6Data);
             imagePart6.FeedData(data);
             data.Close();
         }
@@ -253,15 +252,23 @@ namespace builder
         // Generates content of imagePart7.
         private void GenerateImagePart7Content(ImagePart imagePart7)
         {
-            System.IO.Stream data = GetBinaryDataStream(imagePart7Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.discover_ai_white);
             imagePart7.FeedData(data);
+            data.Close();
+        }
+
+        // Generate content of extendedPartn.
+        private void GenerateExtendedPartContent(ExtendedPart extendedPart, string extendedPartData)
+        {
+            System.IO.Stream data = GetBinaryDataStream(extendedPartData);
+            extendedPart.FeedData(data);
             data.Close();
         }
 
         // Generates content of extendedPart1.
         private void GenerateExtendedPart1Content(ExtendedPart extendedPart1)
         {
-            System.IO.Stream data = GetBinaryDataStream(extendedPart1Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.extendedPart1Data);
             extendedPart1.FeedData(data);
             data.Close();
         }
@@ -269,7 +276,7 @@ namespace builder
         // Generates content of extendedPart2.
         private void GenerateExtendedPart2Content(ExtendedPart extendedPart2)
         {
-            System.IO.Stream data = GetBinaryDataStream(extendedPart2Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.extendedPart2Data);
             extendedPart2.FeedData(data);
             data.Close();
         }
@@ -277,7 +284,7 @@ namespace builder
         // Generates content of extendedPart3.
         private void GenerateExtendedPart3Content(ExtendedPart extendedPart3)
         {
-            System.IO.Stream data = GetBinaryDataStream(extendedPart3Data);
+            System.IO.Stream data = GetBinaryDataStream(ImageResources.extendedPart3Data);
             extendedPart3.FeedData(data);
             data.Close();
         }
@@ -11036,9 +11043,15 @@ namespace builder
 
         private string extendedPart3Data = "";
 
-        private System.IO.Stream GetBinaryDataStream(string base64String)
+        private System.IO.Stream GetBinaryDataStream(string imageData /*base64String*/)
         {
-            return new System.IO.MemoryStream(System.Convert.FromBase64String(base64String));
+            //return new System.IO.MemoryStream(System.Convert.FromBase64String(base64String));
+            return new System.IO.MemoryStream(System.Text.Encoding.Unicode.GetBytes(imageData));
+        }
+
+        private System.IO.Stream GetBinaryDataStream(byte[] imageData)
+        {
+            return new System.IO.MemoryStream(imageData);
         }
         #endregion
     }
