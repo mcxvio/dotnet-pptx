@@ -1,6 +1,6 @@
 using System;
 
-namespace pptx_creator.Models
+namespace builder
 {
     public class ErrorViewModel
     {

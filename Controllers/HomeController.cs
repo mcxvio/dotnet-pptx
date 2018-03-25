@@ -4,10 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using pptx_creator.Models;
-using builder.Services;
 
-namespace pptx_creator.Controllers
+namespace builder
 {
     public class HomeController : Controller
     {

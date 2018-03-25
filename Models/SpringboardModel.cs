@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace builder.Models
+namespace builder
 {
     public class SpringboardModel
     {

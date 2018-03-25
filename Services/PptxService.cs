@@ -8,7 +8,7 @@ using DocumentFormat.OpenXml.Presentation;
 using P = DocumentFormat.OpenXml.Presentation;
 using Drawing = DocumentFormat.OpenXml.Drawing;
 
-namespace builder.Services
+namespace builder
 {
     public class PptxService
     {

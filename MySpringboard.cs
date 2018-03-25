@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using builder.Models;
-using M = builder.Models.SpringboardModel;
+using M = builder.SpringboardModel;
 
 namespace builder
 {

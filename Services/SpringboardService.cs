@@ -8,8 +8,9 @@ using Thm15 = DocumentFormat.OpenXml.Office2013.Theme;
 using A14 = DocumentFormat.OpenXml.Office2010.Drawing;
 using Ap = DocumentFormat.OpenXml.ExtendedProperties;
 using Vt = DocumentFormat.OpenXml.VariantTypes;
+using System.Resources;
 
-namespace builder.Services
+namespace builder
 {
     public class SpringboardService
     {
@@ -39,6 +40,9 @@ namespace builder.Services
             ThemePart themePart1 = notesMasterPart1.AddNewPart<ThemePart>("rId1");
             GenerateThemePart1Content(themePart1);
 
+            ExtendedPart extendedPart1 = presentationPart1.AddExtendedPart("http://schemas.microsoft.com/office/2015/10/relationships/revisionInfo", "application/vnd.ms-powerpoint.revisioninfo+xml", "xml", "rId13");
+            GenerateExtendedPart1Content(extendedPart1);
+
             SlidePart slidePart1 = presentationPart1.AddNewPart<SlidePart>("rId3");
             GenerateSlidePart1Content(slidePart1);
 
@@ -51,7 +55,19 @@ namespace builder.Services
             SlideLayoutPart slideLayoutPart2 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId8");
             GenerateSlideLayoutPart2Content(slideLayoutPart2);
 
+            ImagePart imagePart1 = slideLayoutPart2.AddNewPart<ImagePart>("image/png", "rId3");
+            GenerateImagePart1Content(imagePart1);
+
+            ImagePart imagePart2 = slideLayoutPart2.AddNewPart<ImagePart>("image/jpeg", "rId2");
+            GenerateImagePart2Content(imagePart2);
+
             slideLayoutPart2.AddPart(slideMasterPart1, "rId1");
+
+            ExtendedPart extendedPart2 = slideLayoutPart2.AddExtendedPart("http://schemas.microsoft.com/office/2007/relationships/hdphoto", "image/vnd.ms-photo", "wdp", "rId5");
+            GenerateExtendedPart2Content(extendedPart2);
+
+            ImagePart imagePart3 = slideLayoutPart2.AddNewPart<ImagePart>("image/png", "rId4");
+            GenerateImagePart3Content(imagePart3);
 
             SlideLayoutPart slideLayoutPart3 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId3");
             GenerateSlideLayoutPart3Content(slideLayoutPart3);
@@ -61,27 +77,56 @@ namespace builder.Services
             SlideLayoutPart slideLayoutPart4 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId7");
             GenerateSlideLayoutPart4Content(slideLayoutPart4);
 
+            slideLayoutPart4.AddPart(imagePart2, "rId2");
+
             slideLayoutPart4.AddPart(slideMasterPart1, "rId1");
 
             SlideLayoutPart slideLayoutPart5 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId2");
             GenerateSlideLayoutPart5Content(slideLayoutPart5);
+
+            ImagePart imagePart4 = slideLayoutPart5.AddNewPart<ImagePart>("image/png", "rId3");
+            GenerateImagePart4Content(imagePart4);
+
+            ImagePart imagePart5 = slideLayoutPart5.AddNewPart<ImagePart>("image/png", "rId2");
+            GenerateImagePart5Content(imagePart5);
 
             slideLayoutPart5.AddPart(slideMasterPart1, "rId1");
 
             SlideLayoutPart slideLayoutPart6 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId1");
             GenerateSlideLayoutPart6Content(slideLayoutPart6);
 
+            slideLayoutPart6.AddPart(imagePart4, "rId3");
+
+            slideLayoutPart6.AddPart(imagePart5, "rId2");
+
             slideLayoutPart6.AddPart(slideMasterPart1, "rId1");
 
             SlideLayoutPart slideLayoutPart7 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId6");
             GenerateSlideLayoutPart7Content(slideLayoutPart7);
 
+            ImagePart imagePart6 = slideLayoutPart7.AddNewPart<ImagePart>("image/png", "rId3");
+            GenerateImagePart6Content(imagePart6);
+
+            slideLayoutPart7.AddPart(imagePart2, "rId2");
+
             slideLayoutPart7.AddPart(slideMasterPart1, "rId1");
+
+            ExtendedPart extendedPart3 = slideLayoutPart7.AddExtendedPart("http://schemas.microsoft.com/office/2007/relationships/hdphoto", "image/vnd.ms-photo", "wdp", "rId4");
+            GenerateExtendedPart3Content(extendedPart3);
+
+            slideMasterPart1.AddPart(imagePart1, "rId11");
 
             SlideLayoutPart slideLayoutPart8 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId5");
             GenerateSlideLayoutPart8Content(slideLayoutPart8);
 
+            slideLayoutPart8.AddPart(imagePart6, "rId3");
+
+            ImagePart imagePart7 = slideLayoutPart8.AddNewPart<ImagePart>("image/png", "rId2");
+            GenerateImagePart7Content(imagePart7);
+
             slideLayoutPart8.AddPart(slideMasterPart1, "rId1");
+
+            slideLayoutPart8.AddPart(extendedPart3, "rId4");
 
             ThemePart themePart2 = slideMasterPart1.AddNewPart<ThemePart>("rId10");
             GenerateThemePart2Content(themePart2);
@@ -90,6 +135,8 @@ namespace builder.Services
 
             SlideLayoutPart slideLayoutPart9 = slideMasterPart1.AddNewPart<SlideLayoutPart>("rId9");
             GenerateSlideLayoutPart9Content(slideLayoutPart9);
+
+            slideLayoutPart9.AddPart(imagePart2, "rId2");
 
             slideLayoutPart9.AddPart(slideMasterPart1, "rId1");
 
@@ -135,6 +182,8 @@ namespace builder.Services
 
             slidePart6.AddPart(slideLayoutPart9, "rId1");
 
+            slidePart6.AddPart(extendedPart3, "rId4");
+
             PresentationPropertiesPart presentationPropertiesPart1 = presentationPart1.AddNewPart<PresentationPropertiesPart>("rId9");
             GeneratePresentationPropertiesPart1Content(presentationPropertiesPart1);
 
@@ -147,8 +196,89 @@ namespace builder.Services
         // Generates content of thumbnailPart1.
         private void GenerateThumbnailPart1Content(ThumbnailPart thumbnailPart1)
         {
-            System.IO.Stream data = GetBinaryDataStream(thumbnailPart1Data);
+            //System.IO.Stream data = GetBinaryDataStream(thumbnailPart1Data);
+            System.IO.Stream data = new System.IO.MemoryStream(System.Text.Encoding.Unicode.GetBytes(ImageResources.thumbnailPart1Data));
             thumbnailPart1.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart1.
+        private void GenerateImagePart1Content(ImagePart imagePart1)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart1Data);
+            imagePart1.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart2.
+        private void GenerateImagePart2Content(ImagePart imagePart2)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart2Data);
+            imagePart2.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart3.
+        private void GenerateImagePart3Content(ImagePart imagePart3)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart3Data);
+            imagePart3.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart4.
+        private void GenerateImagePart4Content(ImagePart imagePart4)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart4Data);
+            imagePart4.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart5.
+        private void GenerateImagePart5Content(ImagePart imagePart5)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart5Data);
+            imagePart5.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart6.
+        private void GenerateImagePart6Content(ImagePart imagePart6)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart6Data);
+            imagePart6.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of imagePart7.
+        private void GenerateImagePart7Content(ImagePart imagePart7)
+        {
+            System.IO.Stream data = GetBinaryDataStream(imagePart7Data);
+            imagePart7.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of extendedPart1.
+        private void GenerateExtendedPart1Content(ExtendedPart extendedPart1)
+        {
+            System.IO.Stream data = GetBinaryDataStream(extendedPart1Data);
+            extendedPart1.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of extendedPart2.
+        private void GenerateExtendedPart2Content(ExtendedPart extendedPart2)
+        {
+            System.IO.Stream data = GetBinaryDataStream(extendedPart2Data);
+            extendedPart2.FeedData(data);
+            data.Close();
+        }
+
+        // Generates content of extendedPart3.
+        private void GenerateExtendedPart3Content(ExtendedPart extendedPart3)
+        {
+            System.IO.Stream data = GetBinaryDataStream(extendedPart3Data);
+            extendedPart3.FeedData(data);
             data.Close();
         }
 
@@ -278,13 +408,9 @@ namespace builder.Services
 
             solidFill6.Append(schemeColor6);
             A.LatinFont latinFont6 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont6 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont6 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties7.Append(solidFill6);
             defaultRunProperties7.Append(latinFont6);
-            defaultRunProperties7.Append(eastAsianFont6);
-            defaultRunProperties7.Append(complexScriptFont6);
 
             level6ParagraphProperties1.Append(defaultRunProperties7);
 
@@ -312,13 +438,9 @@ namespace builder.Services
 
             solidFill8.Append(schemeColor8);
             A.LatinFont latinFont8 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont8 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont8 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties9.Append(solidFill8);
             defaultRunProperties9.Append(latinFont8);
-            defaultRunProperties9.Append(eastAsianFont8);
-            defaultRunProperties9.Append(complexScriptFont8);
 
             level8ParagraphProperties1.Append(defaultRunProperties9);
 
@@ -726,8 +848,7 @@ namespace builder.Services
             Shape shape80 = GenerateSlideShapeOval(_springboard.Project.Areas[6].Title, "Oval 17", 2798571L, 5156395L);
             Shape shape81 = GenerateSlideShapeOval(_springboard.Project.Areas[7].Title, "Oval 18", 3885834L, 5156395L);
             Shape shape82 = GenerateSlideShapeOval(_springboard.Project.Areas[8].Title, "Oval 19", 4973097L, 5156395L);
-            //A.Offset offset106 = new A.Offset() { X = 6060360L, Y = 5156395L };
-            Shape shape83 = GenerateSlideShapeOval(_springboard.Project.Areas[9].Title, "Oval 20", 6060360L, 5156395L);
+            Shape shape83 = GenerateSlideShapeOval(_springboard.Project.Areas[9].Title, "Oval 20", 6060360L, 5156395L); // new A.Offset() { X = 6060360L, Y = 5156395L };
 
             // Bottom row.
             groupShape5.Append(shape79);
@@ -982,7 +1103,7 @@ namespace builder.Services
             shape7.Append(textBody7);
 
             // Title & Description #1
-            Shape shape8 = GenerateSpringboardTitle(_springboard.Project.Areas[0].Springboards[0].Title);
+            Shape shape8 = GenerateSpringboardTitleOffset(_springboard.Project.Areas[0].Springboards[0].Title, 695326L, 2296391L);
             //A.Offset offset9 = new A.Offset() { X = 695326L, Y = 5116152L };
             Shape shape9 = GenerateSpringboardDescription(_springboard.Project.Areas[0].Springboards[0].Description, 695326L, 5116152L);
 
@@ -1315,7 +1436,7 @@ namespace builder.Services
             */
 
             A.Run run20 = new A.Run();
-            A.RunProperties runProperties22 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
+            A.RunProperties runProperties22 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text22 = new A.Text();
             text22.Text = pictureUrl;
 
@@ -1513,54 +1634,6 @@ namespace builder.Services
             shape11.Append(textBody11);
 
             return shape11;
-        }
-
-        private Shape GenerateSpringboardTitle(string springboardTitle)
-        {
-            Shape shape8 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties8 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties10 = new NonVisualDrawingProperties() { Id = (UInt32Value)10U, Name = "Text Placeholder 9" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties8 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks8 = new A.ShapeLocks() { NoGrouping = true };
-
-            nonVisualShapeDrawingProperties8.Append(shapeLocks8);
-
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties10 = new ApplicationNonVisualDrawingProperties();
-            PlaceholderShape placeholderShape8 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)16U };
-
-            applicationNonVisualDrawingProperties10.Append(placeholderShape8);
-
-            nonVisualShapeProperties8.Append(nonVisualDrawingProperties10);
-            nonVisualShapeProperties8.Append(nonVisualShapeDrawingProperties8);
-            nonVisualShapeProperties8.Append(applicationNonVisualDrawingProperties10);
-            ShapeProperties shapeProperties8 = new ShapeProperties();
-
-            TextBody textBody8 = new TextBody();
-            A.BodyProperties bodyProperties8 = new A.BodyProperties();
-            A.ListStyle listStyle8 = new A.ListStyle();
-
-            A.Paragraph paragraph12 = new A.Paragraph();
-
-            A.Run run8 = new A.Run();
-            A.RunProperties runProperties10 = new A.RunProperties() { Language = "en-US", Dirty = false };
-            A.Text text10 = new A.Text();
-            text10.Text = springboardTitle; //"#0Springboard.Title";
-
-            run8.Append(runProperties10);
-            run8.Append(text10);
-
-            paragraph12.Append(run8);
-
-            textBody8.Append(bodyProperties8);
-            textBody8.Append(listStyle8);
-            textBody8.Append(paragraph12);
-
-            shape8.Append(nonVisualShapeProperties8);
-            shape8.Append(shapeProperties8);
-            shape8.Append(textBody8);
-            return shape8;
         }
         #endregion
 
@@ -2003,7 +2076,7 @@ namespace builder.Services
             A.LatinFont latinFont159 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", Panose = "020F0704030504030204", PitchFamily = 34, CharacterSet = 0 };
 
             A.Run run160 = new A.Run();
-            A.RunProperties runProperties163 = new A.RunProperties() { Language = "en-GB", FontSize = 1200, Dirty = false, SpellingError = true };
+            A.RunProperties runProperties163 = new A.RunProperties() { Language = "en-GB", FontSize = 1200, Dirty = false };
 
             A.SolidFill solidFill186 = new A.SolidFill();
             A.SchemeColor schemeColor340 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
@@ -2697,7 +2770,7 @@ namespace builder.Services
             A.Paragraph paragraph105 = new A.Paragraph();
 
             A.Run run117 = new A.Run();
-            A.RunProperties runProperties120 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
+            A.RunProperties runProperties120 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text119 = new A.Text();
             text119.Text = _springboard.Project.WordClouds[0].Title;//"WordCloud.Title";
 
@@ -2905,7 +2978,7 @@ namespace builder.Services
             A.Paragraph paragraph100 = new A.Paragraph();
 
             A.Run run110 = new A.Run();
-            A.RunProperties runProperties113 = new A.RunProperties() { Language = "en-GB", Dirty = false, SpellingError = true };
+            A.RunProperties runProperties113 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text112 = new A.Text();
             text112.Text = _springboard.Project.WordLists[0].Title;//"WordList.Title";
 
@@ -3784,12 +3857,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties30 = new A.DefaultRunProperties() { FontSize = 1400 };
             A.LatinFont latinFont24 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont24 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont24 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties30.Append(latinFont24);
-            defaultRunProperties30.Append(eastAsianFont24);
-            defaultRunProperties30.Append(complexScriptFont24);
 
             level1ParagraphProperties13.Append(noBullet6);
             level1ParagraphProperties13.Append(defaultRunProperties30);
@@ -3858,12 +3927,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties31 = new A.DefaultRunProperties() { FontSize = 1200 };
             A.LatinFont latinFont25 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont25 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont25 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties31.Append(latinFont25);
-            defaultRunProperties31.Append(eastAsianFont25);
-            defaultRunProperties31.Append(complexScriptFont25);
 
             level1ParagraphProperties14.Append(noBullet7);
             level1ParagraphProperties14.Append(defaultRunProperties31);
@@ -3932,12 +3997,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties32 = new A.DefaultRunProperties() { FontSize = 1400 };
             A.LatinFont latinFont26 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont26 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont26 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties32.Append(latinFont26);
-            defaultRunProperties32.Append(eastAsianFont26);
-            defaultRunProperties32.Append(complexScriptFont26);
 
             level1ParagraphProperties15.Append(noBullet8);
             level1ParagraphProperties15.Append(defaultRunProperties32);
@@ -4006,12 +4067,7 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties33 = new A.DefaultRunProperties() { FontSize = 1200 };
             A.LatinFont latinFont27 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont27 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont27 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
             defaultRunProperties33.Append(latinFont27);
-            defaultRunProperties33.Append(eastAsianFont27);
-            defaultRunProperties33.Append(complexScriptFont27);
 
             level1ParagraphProperties16.Append(noBullet9);
             level1ParagraphProperties16.Append(defaultRunProperties33);
@@ -4080,12 +4136,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties34 = new A.DefaultRunProperties() { FontSize = 1400 };
             A.LatinFont latinFont28 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont28 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont28 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties34.Append(latinFont28);
-            defaultRunProperties34.Append(eastAsianFont28);
-            defaultRunProperties34.Append(complexScriptFont28);
 
             level1ParagraphProperties17.Append(noBullet10);
             level1ParagraphProperties17.Append(defaultRunProperties34);
@@ -4154,12 +4206,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties35 = new A.DefaultRunProperties() { FontSize = 1200 };
             A.LatinFont latinFont29 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont29 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont29 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties35.Append(latinFont29);
-            defaultRunProperties35.Append(eastAsianFont29);
-            defaultRunProperties35.Append(complexScriptFont29);
 
             level1ParagraphProperties18.Append(noBullet11);
             level1ParagraphProperties18.Append(defaultRunProperties35);
@@ -4228,12 +4276,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties36 = new A.DefaultRunProperties() { FontSize = 1400 };
             A.LatinFont latinFont30 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont30 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont30 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties36.Append(latinFont30);
-            defaultRunProperties36.Append(eastAsianFont30);
-            defaultRunProperties36.Append(complexScriptFont30);
 
             level1ParagraphProperties19.Append(noBullet12);
             level1ParagraphProperties19.Append(defaultRunProperties36);
@@ -4302,12 +4346,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties37 = new A.DefaultRunProperties() { FontSize = 1200 };
             A.LatinFont latinFont31 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont31 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont31 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties37.Append(latinFont31);
-            defaultRunProperties37.Append(eastAsianFont31);
-            defaultRunProperties37.Append(complexScriptFont31);
 
             level1ParagraphProperties20.Append(noBullet13);
             level1ParagraphProperties20.Append(defaultRunProperties37);
@@ -4376,12 +4416,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties38 = new A.DefaultRunProperties() { FontSize = 1400 };
             A.LatinFont latinFont32 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont32 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont32 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties38.Append(latinFont32);
-            defaultRunProperties38.Append(eastAsianFont32);
-            defaultRunProperties38.Append(complexScriptFont32);
 
             level1ParagraphProperties21.Append(noBullet14);
             level1ParagraphProperties21.Append(defaultRunProperties38);
@@ -4450,12 +4486,8 @@ namespace builder.Services
 
             A.DefaultRunProperties defaultRunProperties39 = new A.DefaultRunProperties() { FontSize = 1200 };
             A.LatinFont latinFont33 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont33 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont33 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties39.Append(latinFont33);
-            defaultRunProperties39.Append(eastAsianFont33);
-            defaultRunProperties39.Append(complexScriptFont33);
 
             level1ParagraphProperties22.Append(noBullet15);
             level1ParagraphProperties22.Append(defaultRunProperties39);
@@ -4850,13 +4882,9 @@ namespace builder.Services
 
             solidFill36.Append(schemeColor49);
             A.LatinFont latinFont34 = new A.LatinFont() { Typeface = "+mj-lt" };
-            A.EastAsianFont eastAsianFont34 = new A.EastAsianFont() { Typeface = "+mj-ea" };
-            A.ComplexScriptFont complexScriptFont34 = new A.ComplexScriptFont() { Typeface = "+mj-cs" };
 
             defaultRunProperties40.Append(solidFill36);
             defaultRunProperties40.Append(latinFont34);
-            defaultRunProperties40.Append(eastAsianFont34);
-            defaultRunProperties40.Append(complexScriptFont34);
 
             level1ParagraphProperties23.Append(lineSpacing2);
             level1ParagraphProperties23.Append(spaceBefore2);
@@ -4888,13 +4916,9 @@ namespace builder.Services
 
             solidFill37.Append(schemeColor50);
             A.LatinFont latinFont35 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont35 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont35 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties41.Append(solidFill37);
             defaultRunProperties41.Append(latinFont35);
-            defaultRunProperties41.Append(eastAsianFont35);
-            defaultRunProperties41.Append(complexScriptFont35);
 
             level1ParagraphProperties24.Append(lineSpacing3);
             level1ParagraphProperties24.Append(spaceBefore3);
@@ -4924,13 +4948,9 @@ namespace builder.Services
 
             solidFill38.Append(schemeColor51);
             A.LatinFont latinFont36 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont36 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont36 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties42.Append(solidFill38);
             defaultRunProperties42.Append(latinFont36);
-            defaultRunProperties42.Append(eastAsianFont36);
-            defaultRunProperties42.Append(complexScriptFont36);
 
             level2ParagraphProperties3.Append(lineSpacing4);
             level2ParagraphProperties3.Append(spaceBefore4);
@@ -4961,13 +4981,9 @@ namespace builder.Services
 
             solidFill39.Append(schemeColor52);
             A.LatinFont latinFont37 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont37 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont37 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties43.Append(solidFill39);
             defaultRunProperties43.Append(latinFont37);
-            defaultRunProperties43.Append(eastAsianFont37);
-            defaultRunProperties43.Append(complexScriptFont37);
 
             level3ParagraphProperties3.Append(lineSpacing5);
             level3ParagraphProperties3.Append(spaceBefore5);
@@ -4997,13 +5013,9 @@ namespace builder.Services
 
             solidFill40.Append(schemeColor53);
             A.LatinFont latinFont38 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont38 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont38 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties44.Append(solidFill40);
             defaultRunProperties44.Append(latinFont38);
-            defaultRunProperties44.Append(eastAsianFont38);
-            defaultRunProperties44.Append(complexScriptFont38);
 
             level4ParagraphProperties3.Append(lineSpacing6);
             level4ParagraphProperties3.Append(spaceBefore6);
@@ -5032,13 +5044,9 @@ namespace builder.Services
 
             solidFill41.Append(schemeColor54);
             A.LatinFont latinFont39 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont39 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont39 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties45.Append(solidFill41);
             defaultRunProperties45.Append(latinFont39);
-            defaultRunProperties45.Append(eastAsianFont39);
-            defaultRunProperties45.Append(complexScriptFont39);
 
             level5ParagraphProperties3.Append(lineSpacing7);
             level5ParagraphProperties3.Append(spaceBefore7);
@@ -5067,13 +5075,9 @@ namespace builder.Services
 
             solidFill42.Append(schemeColor55);
             A.LatinFont latinFont40 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont40 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont40 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties46.Append(solidFill42);
             defaultRunProperties46.Append(latinFont40);
-            defaultRunProperties46.Append(eastAsianFont40);
-            defaultRunProperties46.Append(complexScriptFont40);
 
             level6ParagraphProperties3.Append(lineSpacing8);
             level6ParagraphProperties3.Append(spaceBefore8);
@@ -5102,13 +5106,9 @@ namespace builder.Services
 
             solidFill43.Append(schemeColor56);
             A.LatinFont latinFont41 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont41 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont41 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties47.Append(solidFill43);
             defaultRunProperties47.Append(latinFont41);
-            defaultRunProperties47.Append(eastAsianFont41);
-            defaultRunProperties47.Append(complexScriptFont41);
 
             level7ParagraphProperties3.Append(lineSpacing9);
             level7ParagraphProperties3.Append(spaceBefore9);
@@ -5137,13 +5137,9 @@ namespace builder.Services
 
             solidFill44.Append(schemeColor57);
             A.LatinFont latinFont42 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont42 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont42 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties48.Append(solidFill44);
             defaultRunProperties48.Append(latinFont42);
-            defaultRunProperties48.Append(eastAsianFont42);
-            defaultRunProperties48.Append(complexScriptFont42);
 
             level8ParagraphProperties3.Append(lineSpacing10);
             level8ParagraphProperties3.Append(spaceBefore10);
@@ -5172,13 +5168,9 @@ namespace builder.Services
 
             solidFill45.Append(schemeColor58);
             A.LatinFont latinFont43 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont43 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont43 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties49.Append(solidFill45);
             defaultRunProperties49.Append(latinFont43);
-            defaultRunProperties49.Append(eastAsianFont43);
-            defaultRunProperties49.Append(complexScriptFont43);
 
             level9ParagraphProperties3.Append(lineSpacing11);
             level9ParagraphProperties3.Append(spaceBefore11);
@@ -5212,13 +5204,9 @@ namespace builder.Services
 
             solidFill46.Append(schemeColor59);
             A.LatinFont latinFont44 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont44 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont44 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties51.Append(solidFill46);
             defaultRunProperties51.Append(latinFont44);
-            defaultRunProperties51.Append(eastAsianFont44);
-            defaultRunProperties51.Append(complexScriptFont44);
 
             level1ParagraphProperties25.Append(defaultRunProperties51);
 
@@ -5231,13 +5219,9 @@ namespace builder.Services
 
             solidFill47.Append(schemeColor60);
             A.LatinFont latinFont45 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont45 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont45 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties52.Append(solidFill47);
             defaultRunProperties52.Append(latinFont45);
-            defaultRunProperties52.Append(eastAsianFont45);
-            defaultRunProperties52.Append(complexScriptFont45);
 
             level2ParagraphProperties4.Append(defaultRunProperties52);
 
@@ -5250,13 +5234,9 @@ namespace builder.Services
 
             solidFill48.Append(schemeColor61);
             A.LatinFont latinFont46 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont46 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont46 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties53.Append(solidFill48);
             defaultRunProperties53.Append(latinFont46);
-            defaultRunProperties53.Append(eastAsianFont46);
-            defaultRunProperties53.Append(complexScriptFont46);
 
             level3ParagraphProperties4.Append(defaultRunProperties53);
 
@@ -5269,13 +5249,9 @@ namespace builder.Services
 
             solidFill49.Append(schemeColor62);
             A.LatinFont latinFont47 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont47 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont47 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties54.Append(solidFill49);
             defaultRunProperties54.Append(latinFont47);
-            defaultRunProperties54.Append(eastAsianFont47);
-            defaultRunProperties54.Append(complexScriptFont47);
 
             level4ParagraphProperties4.Append(defaultRunProperties54);
 
@@ -5288,13 +5264,9 @@ namespace builder.Services
 
             solidFill50.Append(schemeColor63);
             A.LatinFont latinFont48 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont48 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont48 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties55.Append(solidFill50);
             defaultRunProperties55.Append(latinFont48);
-            defaultRunProperties55.Append(eastAsianFont48);
-            defaultRunProperties55.Append(complexScriptFont48);
 
             level5ParagraphProperties4.Append(defaultRunProperties55);
 
@@ -5307,13 +5279,9 @@ namespace builder.Services
 
             solidFill51.Append(schemeColor64);
             A.LatinFont latinFont49 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont49 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont49 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties56.Append(solidFill51);
             defaultRunProperties56.Append(latinFont49);
-            defaultRunProperties56.Append(eastAsianFont49);
-            defaultRunProperties56.Append(complexScriptFont49);
 
             level6ParagraphProperties4.Append(defaultRunProperties56);
 
@@ -5326,13 +5294,9 @@ namespace builder.Services
 
             solidFill52.Append(schemeColor65);
             A.LatinFont latinFont50 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont50 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont50 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties57.Append(solidFill52);
             defaultRunProperties57.Append(latinFont50);
-            defaultRunProperties57.Append(eastAsianFont50);
-            defaultRunProperties57.Append(complexScriptFont50);
 
             level7ParagraphProperties4.Append(defaultRunProperties57);
 
@@ -5345,13 +5309,9 @@ namespace builder.Services
 
             solidFill53.Append(schemeColor66);
             A.LatinFont latinFont51 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont51 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont51 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties58.Append(solidFill53);
             defaultRunProperties58.Append(latinFont51);
-            defaultRunProperties58.Append(eastAsianFont51);
-            defaultRunProperties58.Append(complexScriptFont51);
 
             level8ParagraphProperties4.Append(defaultRunProperties58);
 
@@ -5364,13 +5324,9 @@ namespace builder.Services
 
             solidFill54.Append(schemeColor67);
             A.LatinFont latinFont52 = new A.LatinFont() { Typeface = "+mn-lt" };
-            A.EastAsianFont eastAsianFont52 = new A.EastAsianFont() { Typeface = "+mn-ea" };
-            A.ComplexScriptFont complexScriptFont52 = new A.ComplexScriptFont() { Typeface = "+mn-cs" };
 
             defaultRunProperties59.Append(solidFill54);
             defaultRunProperties59.Append(latinFont52);
-            defaultRunProperties59.Append(eastAsianFont52);
-            defaultRunProperties59.Append(complexScriptFont52);
 
             level9ParagraphProperties4.Append(defaultRunProperties59);
 
@@ -5859,28 +5815,19 @@ namespace builder.Services
 
             A.RunProperties runProperties48 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
             A.LatinFont latinFont53 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont53 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont53 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties48.Append(latinFont53);
-            runProperties48.Append(eastAsianFont53);
-            runProperties48.Append(complexScriptFont53);
-            A.Text text48 = new A.Text();
-            text48.Text = "More about ";
+            A.Text text48 = new A.Text { Text = "More about " };
 
             run46.Append(runProperties48);
             run46.Append(text48);
 
             A.Run run47 = new A.Run();
 
-            A.RunProperties runProperties49 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false, SpellingError = true };
+            A.RunProperties runProperties49 = new A.RunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
             A.LatinFont latinFont54 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont54 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont54 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties49.Append(latinFont54);
-            runProperties49.Append(eastAsianFont54);
-            runProperties49.Append(complexScriptFont54);
             A.Text text49 = new A.Text();
             text49.Text = "Discover.ai";
 
@@ -5889,12 +5836,8 @@ namespace builder.Services
 
             A.EndParagraphRunProperties endParagraphRunProperties19 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 1200, Dirty = false };
             A.LatinFont latinFont55 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont55 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont55 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             endParagraphRunProperties19.Append(latinFont55);
-            endParagraphRunProperties19.Append(eastAsianFont55);
-            endParagraphRunProperties19.Append(complexScriptFont55);
 
             paragraph50.Append(paragraphProperties22);
             paragraph50.Append(run46);
@@ -6378,12 +6321,8 @@ namespace builder.Services
 
             A.RunProperties runProperties51 = new A.RunProperties() { Language = "en-US", FontSize = 1600, Dirty = false };
             A.LatinFont latinFont56 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont56 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont56 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties51.Append(latinFont56);
-            runProperties51.Append(eastAsianFont56);
-            runProperties51.Append(complexScriptFont56);
             A.Text text51 = new A.Text();
             text51.Text = "[AN INTRODUCTION TO ";
 
@@ -6394,25 +6333,17 @@ namespace builder.Services
 
             A.RunProperties runProperties52 = new A.RunProperties() { Language = "en-US", FontSize = 1600, Dirty = false };
             A.LatinFont latinFont57 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont57 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont57 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties52.Append(latinFont57);
-            runProperties52.Append(eastAsianFont57);
-            runProperties52.Append(complexScriptFont57);
 
             break1.Append(runProperties52);
 
             A.Run run50 = new A.Run();
 
-            A.RunProperties runProperties53 = new A.RunProperties() { Language = "en-US", FontSize = 1600, Dirty = false, SpellingError = true };
+            A.RunProperties runProperties53 = new A.RunProperties() { Language = "en-US", FontSize = 1600, Dirty = false };
             A.LatinFont latinFont58 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont58 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont58 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties53.Append(latinFont58);
-            runProperties53.Append(eastAsianFont58);
-            runProperties53.Append(complexScriptFont58);
             A.Text text52 = new A.Text();
             text52.Text = "DISCOVER.AI";
 
@@ -6423,12 +6354,8 @@ namespace builder.Services
 
             A.RunProperties runProperties54 = new A.RunProperties() { Language = "en-US", FontSize = 1600, Dirty = false };
             A.LatinFont latinFont59 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont59 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont59 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties54.Append(latinFont59);
-            runProperties54.Append(eastAsianFont59);
-            runProperties54.Append(complexScriptFont59);
             A.Text text53 = new A.Text();
             text53.Text = " VIDEO]";
 
@@ -6714,13 +6641,9 @@ namespace builder.Services
 
             solidFill65.Append(schemeColor97);
             A.LatinFont latinFont60 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont60 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont60 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties64.Append(solidFill65);
             defaultRunProperties64.Append(latinFont60);
-            defaultRunProperties64.Append(eastAsianFont60);
-            defaultRunProperties64.Append(complexScriptFont60);
 
             level1ParagraphProperties30.Append(noBullet20);
             level1ParagraphProperties30.Append(defaultRunProperties64);
@@ -6809,13 +6732,9 @@ namespace builder.Services
 
             solidFill66.Append(schemeColor98);
             A.LatinFont latinFont61 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont61 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont61 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties65.Append(solidFill66);
             defaultRunProperties65.Append(latinFont61);
-            defaultRunProperties65.Append(eastAsianFont61);
-            defaultRunProperties65.Append(complexScriptFont61);
 
             level1ParagraphProperties31.Append(noBullet21);
             level1ParagraphProperties31.Append(defaultRunProperties65);
@@ -8981,13 +8900,9 @@ namespace builder.Services
 
             solidFill86.Append(schemeColor140);
             A.LatinFont latinFont64 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont64 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont64 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             defaultRunProperties75.Append(solidFill86);
             defaultRunProperties75.Append(latinFont64);
-            defaultRunProperties75.Append(eastAsianFont64);
-            defaultRunProperties75.Append(complexScriptFont64);
 
             level1ParagraphProperties39.Append(lineSpacing15);
             level1ParagraphProperties39.Append(defaultRunProperties75);
@@ -9214,21 +9129,13 @@ namespace builder.Services
 
             A.MajorFont majorFont1 = new A.MajorFont();
             A.LatinFont latinFont19 = new A.LatinFont() { Typeface = "Calibri Light", Panose = "020F0302020204030204" };
-            A.EastAsianFont eastAsianFont19 = new A.EastAsianFont() { Typeface = "" };
-            A.ComplexScriptFont complexScriptFont19 = new A.ComplexScriptFont() { Typeface = "" };
 
             majorFont1.Append(latinFont19);
-            majorFont1.Append(eastAsianFont19);
-            majorFont1.Append(complexScriptFont19);
 
             A.MinorFont minorFont1 = new A.MinorFont();
             A.LatinFont latinFont20 = new A.LatinFont() { Typeface = "Calibri", Panose = "020F0502020204030204" };
-            A.EastAsianFont eastAsianFont20 = new A.EastAsianFont() { Typeface = "" };
-            A.ComplexScriptFont complexScriptFont20 = new A.ComplexScriptFont() { Typeface = "" };
 
             minorFont1.Append(latinFont20);
-            minorFont1.Append(eastAsianFont20);
-            minorFont1.Append(complexScriptFont20);
 
             fontScheme1.Append(majorFont1);
             fontScheme1.Append(minorFont1);
@@ -9618,21 +9525,13 @@ namespace builder.Services
 
             A.MajorFont majorFont2 = new A.MajorFont();
             A.LatinFont latinFont62 = new A.LatinFont() { Typeface = "Arial", Panose = "020B0604020202020204" };
-            A.EastAsianFont eastAsianFont62 = new A.EastAsianFont() { Typeface = "" };
-            A.ComplexScriptFont complexScriptFont62 = new A.ComplexScriptFont() { Typeface = "" };
 
             majorFont2.Append(latinFont62);
-            majorFont2.Append(eastAsianFont62);
-            majorFont2.Append(complexScriptFont62);
 
             A.MinorFont minorFont2 = new A.MinorFont();
             A.LatinFont latinFont63 = new A.LatinFont() { Typeface = "Arial", Panose = "020B0604020202020204" };
-            A.EastAsianFont eastAsianFont63 = new A.EastAsianFont() { Typeface = "" };
-            A.ComplexScriptFont complexScriptFont63 = new A.ComplexScriptFont() { Typeface = "" };
 
             minorFont2.Append(latinFont63);
-            minorFont2.Append(eastAsianFont63);
-            minorFont2.Append(complexScriptFont63);
 
             fontScheme2.Append(majorFont2);
             fontScheme2.Append(minorFont2);
@@ -11117,11 +11016,30 @@ namespace builder.Services
         #region Binary Data
         private string thumbnailPart1Data = "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";
 
+        private string imagePart1Data = "";
+
+        private string imagePart2Data = "";
+
+        private string imagePart3Data = "";
+
+        private string imagePart4Data = "";
+
+        private string imagePart5Data = "";
+
+        private string imagePart6Data = "";
+
+        private string imagePart7Data = "";
+
+        private string extendedPart1Data = "";
+
+        private string extendedPart2Data = "";
+
+        private string extendedPart3Data = "";
+
         private System.IO.Stream GetBinaryDataStream(string base64String)
         {
             return new System.IO.MemoryStream(System.Convert.FromBase64String(base64String));
         }
-
         #endregion
     }
 }
