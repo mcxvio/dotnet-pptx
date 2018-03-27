@@ -712,6 +712,7 @@ namespace builder
 
             groupShapeProperties2.Append(transformGroup2);
 
+            #region Area.Title
             Shape shape7 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties7 = new NonVisualShapeProperties();
@@ -750,40 +751,22 @@ namespace builder
 
             runProperties8.Append(solidFill26);
             A.Text text8 = new A.Text();
-            text8.Text = "$Area.Title";
+            text8.Text = _springboard.Project.Areas[0].Title; //"$Area.Title";
 
             run6.Append(runProperties8);
             run6.Append(text8);
 
             A.Run run7 = new A.Run();
-
-            A.RunProperties runProperties9 = new A.RunProperties() { Language = "en-GB" };
-            runProperties9.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
-
-            A.SolidFill solidFill27 = new A.SolidFill();
-            A.SchemeColor schemeColor36 = new A.SchemeColor() { Val = A.SchemeColorValues.Accent4 };
-
-            solidFill27.Append(schemeColor36);
-
-            runProperties9.Append(solidFill27);
+            A.RunProperties runProperties9 = new A.RunProperties() { Language = "en-GB", Dirty = false };
             A.Text text9 = new A.Text();
-            text9.Text = "";
+            text9.Text = " Springboards";
 
             run7.Append(runProperties9);
             run7.Append(text9);
-
-            A.Run run8 = new A.Run();
-            A.RunProperties runProperties10 = new A.RunProperties() { Language = "en-GB", Dirty = false };
-            A.Text text10 = new A.Text();
-            text10.Text = "Springboards";
-
-            run8.Append(runProperties10);
-            run8.Append(text10);
             A.EndParagraphRunProperties endParagraphRunProperties6 = new A.EndParagraphRunProperties() { Language = "en-US", Dirty = false };
 
             paragraph11.Append(run6);
             paragraph11.Append(run7);
-            paragraph11.Append(run8);
             paragraph11.Append(endParagraphRunProperties6);
 
             textBody7.Append(bodyProperties7);
@@ -793,7 +776,12 @@ namespace builder
             shape7.Append(nonVisualShapeProperties7);
             shape7.Append(shapeProperties7);
             shape7.Append(textBody7);
+            #endregion
 
+            #region Title & Descriptions
+            Shape shape8 = GenerateSpringboardTitleOffset(10U, "Text Placeholder 9", 16U, _springboard.Project.Areas[0].Springboards[0].Title, 695326L, 2296391L);
+            Shape shape9 = GenerateSpringboardDescriptionOffset(11U, "Text Placeholder 2", 17U, _springboard.Project.Areas[0].Springboards[0].Description, 695326L, 5116152L);
+            /*
             Shape shape8 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties8 = new NonVisualShapeProperties();
@@ -899,7 +887,10 @@ namespace builder
             shape9.Append(nonVisualShapeProperties9);
             shape9.Append(shapeProperties9);
             shape9.Append(textBody9);
-
+            */
+            Shape shape10 = GenerateSpringboardTitleOffset(12U, "Text Placeholder 11", 18U, _springboard.Project.Areas[0].Springboards[1].Title, 2834401L, 2296391L);
+            Shape shape28 = GenerateSpringboardDescriptionOffset(3U, "Text Placeholder 10", 19U, _springboard.Project.Areas[0].Springboards[1].Description, 2920602L, 5116152L);
+            /*
             Shape shape10 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties10 = new NonVisualShapeProperties();
@@ -948,6 +939,67 @@ namespace builder
             shape10.Append(shapeProperties10);
             shape10.Append(textBody10);
 
+            Shape shape28 = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties28 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties30 = new NonVisualDrawingProperties() { Id = (UInt32Value)3U, Name = "Text Placeholder 2" };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties28 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks22 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties28.Append(shapeLocks22);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties30 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape22 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)19U };
+
+            applicationNonVisualDrawingProperties30.Append(placeholderShape22);
+
+            nonVisualShapeProperties28.Append(nonVisualDrawingProperties30);
+            nonVisualShapeProperties28.Append(nonVisualShapeDrawingProperties28);
+            nonVisualShapeProperties28.Append(applicationNonVisualDrawingProperties30);
+
+            ShapeProperties shapeProperties28 = new ShapeProperties();
+
+            A.Transform2D transform2D18 = new A.Transform2D();
+            A.Offset offset20 = new A.Offset() { X = 2920602L, Y = 5116152L };
+            A.Extents extents20 = new A.Extents() { Cx = 2139075L, Cy = 1013185L };
+
+            transform2D18.Append(offset20);
+            transform2D18.Append(extents20);
+
+            shapeProperties28.Append(transform2D18);
+
+            TextBody textBody23 = new TextBody();
+            A.BodyProperties bodyProperties23 = new A.BodyProperties();
+            A.ListStyle listStyle23 = new A.ListStyle();
+
+            A.Paragraph paragraph27 = new A.Paragraph();
+
+            A.Run run31 = new A.Run();
+
+            A.RunProperties runProperties33 = new A.RunProperties() { Language = "en-US", Dirty = false };
+            runProperties33.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
+            A.Text text33 = new A.Text();
+            text33.Text = "#1Springboard.Description";
+
+            run31.Append(runProperties33);
+            run31.Append(text33);
+            A.EndParagraphRunProperties endParagraphRunProperties22 = new A.EndParagraphRunProperties() { Language = "en-US", Dirty = false };
+
+            paragraph27.Append(run31);
+            paragraph27.Append(endParagraphRunProperties22);
+
+            textBody23.Append(bodyProperties23);
+            textBody23.Append(listStyle23);
+            textBody23.Append(paragraph27);
+
+            shape28.Append(nonVisualShapeProperties28);
+            shape28.Append(shapeProperties28);
+            shape28.Append(textBody23);
+            */
+            Shape shape11 = GenerateSpringboardTitleOffset(14U, "Text Placeholder 13", 20U, _springboard.Project.Areas[0].Springboards[2].Title, 5059678L, 2296391L);
+            Shape shape12 = GenerateSpringboardDescriptionOffset(15U, "Text Placeholder 14", 21U, _springboard.Project.Areas[0].Springboards[2].Description, 5145880L, 5116152L);
+            /*
             Shape shape11 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties11 = new NonVisualShapeProperties();
@@ -1063,7 +1115,10 @@ namespace builder
             shape12.Append(nonVisualShapeProperties12);
             shape12.Append(shapeProperties12);
             shape12.Append(textBody12);
-
+            */
+            Shape shape13 = GenerateSpringboardTitleOffset(16U, "Text Placeholder 15", 22U, _springboard.Project.Areas[0].Springboards[3].Title, 7284955L, 2296391L);
+            Shape shape14 = GenerateSpringboardDescriptionOffset(17U, "Text Placeholder 16", 23U, _springboard.Project.Areas[0].Springboards[3].Description, 7371159L, 5116152L);
+            /*
             Shape shape13 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties13 = new NonVisualShapeProperties();
@@ -1169,7 +1224,10 @@ namespace builder
             shape14.Append(nonVisualShapeProperties14);
             shape14.Append(shapeProperties14);
             shape14.Append(textBody14);
-
+            */
+            Shape shape15 = GenerateSpringboardTitleOffset(18U, "Text Placeholder 17", 24U, _springboard.Project.Areas[0].Springboards[4].Title, 9596436L, 2296391L);
+            Shape shape16 = GenerateSpringboardDescriptionOffset(19U, "Text Placeholder 18", 25U, _springboard.Project.Areas[0].Springboards[4].Description, 9596436L, 5116152L);
+            /*
             Shape shape15 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties15 = new NonVisualShapeProperties();
@@ -1275,7 +1333,10 @@ namespace builder
             shape16.Append(nonVisualShapeProperties16);
             shape16.Append(shapeProperties16);
             shape16.Append(textBody16);
+            */
+            #endregion
 
+            #region Project Teaser
             Shape shape17 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties17 = new NonVisualShapeProperties();
@@ -1382,92 +1443,43 @@ namespace builder
             A.Run run18 = new A.Run();
 
             A.RunProperties runProperties20 = new A.RunProperties() { Language = "en-US", FontSize = 2000, Dirty = false };
-            runProperties20.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
 
             A.SolidFill solidFill29 = new A.SolidFill();
             A.SchemeColor schemeColor41 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
 
             solidFill29.Append(schemeColor41);
-            A.LatinFont latinFont21 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont21 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont21 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.LatinFont latinFont22 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.EastAsianFont eastAsianFont22 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
+            A.ComplexScriptFont complexScriptFont22 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
             runProperties20.Append(solidFill29);
-            runProperties20.Append(latinFont21);
-            runProperties20.Append(eastAsianFont21);
-            runProperties20.Append(complexScriptFont21);
+            runProperties20.Append(latinFont22);
+            runProperties20.Append(eastAsianFont22);
+            runProperties20.Append(complexScriptFont22);
             A.Text text20 = new A.Text();
-            text20.Text = "$";
+            text20.Text = _springboard.Project.Teaser; //"Project.Teaser";
 
             run18.Append(runProperties20);
             run18.Append(text20);
 
-            A.Run run19 = new A.Run();
-
-            A.RunProperties runProperties21 = new A.RunProperties() { Language = "en-US", FontSize = 2000, Dirty = false, SpellingError = true };
-            runProperties21.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
+            A.EndParagraphRunProperties endParagraphRunProperties7 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 2000, Dirty = false };
 
             A.SolidFill solidFill30 = new A.SolidFill();
             A.SchemeColor schemeColor42 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
 
             solidFill30.Append(schemeColor42);
-            A.LatinFont latinFont22 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont22 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont22 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            runProperties21.Append(solidFill30);
-            runProperties21.Append(latinFont22);
-            runProperties21.Append(eastAsianFont22);
-            runProperties21.Append(complexScriptFont22);
-            A.Text text21 = new A.Text();
-            text21.Text = "Project.";
-
-            run19.Append(runProperties21);
-            run19.Append(text21);
-
-            A.Run run20 = new A.Run();
-
-            A.RunProperties runProperties22 = new A.RunProperties() { Language = "en-US", FontSize = 2000, Dirty = false, SpellingError = true };
-            runProperties22.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
-
-            A.SolidFill solidFill31 = new A.SolidFill();
-            A.SchemeColor schemeColor43 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
-
-            solidFill31.Append(schemeColor43);
             A.LatinFont latinFont23 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
             A.EastAsianFont eastAsianFont23 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
             A.ComplexScriptFont complexScriptFont23 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
 
-            runProperties22.Append(solidFill31);
-            runProperties22.Append(latinFont23);
-            runProperties22.Append(eastAsianFont23);
-            runProperties22.Append(complexScriptFont23);
-            A.Text text22 = new A.Text();
-            text22.Text = "Teaser";
-
-            run20.Append(runProperties22);
-            run20.Append(text22);
-
-            A.EndParagraphRunProperties endParagraphRunProperties16 = new A.EndParagraphRunProperties() { Language = "en-US", FontSize = 2000, Dirty = false };
-
-            A.SolidFill solidFill32 = new A.SolidFill();
-            A.SchemeColor schemeColor44 = new A.SchemeColor() { Val = A.SchemeColorValues.Background1 };
-
-            solidFill32.Append(schemeColor44);
-            A.LatinFont latinFont24 = new A.LatinFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.EastAsianFont eastAsianFont24 = new A.EastAsianFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-            A.ComplexScriptFont complexScriptFont24 = new A.ComplexScriptFont() { Typeface = "Arial Rounded MT Bold", CharacterSet = 0 };
-
-            endParagraphRunProperties16.Append(solidFill32);
-            endParagraphRunProperties16.Append(latinFont24);
-            endParagraphRunProperties16.Append(eastAsianFont24);
-            endParagraphRunProperties16.Append(complexScriptFont24);
+            endParagraphRunProperties7.Append(solidFill30);
+            endParagraphRunProperties7.Append(latinFont23);
+            endParagraphRunProperties7.Append(eastAsianFont23);
+            endParagraphRunProperties7.Append(complexScriptFont23);
 
             paragraph21.Append(paragraphProperties6);
             paragraph21.Append(run18);
-            paragraph21.Append(run19);
-            paragraph21.Append(run20);
-            paragraph21.Append(endParagraphRunProperties16);
+            paragraph21.Append(endParagraphRunProperties7);
 
             textBody17.Append(bodyProperties17);
             textBody17.Append(listStyle17);
@@ -1477,7 +1489,19 @@ namespace builder
             shape17.Append(shapeProperties17);
             shape17.Append(shapeStyle1);
             shape17.Append(textBody17);
+            #endregion
 
+            #region Picture Placeholders
+            Shape shape18 = GenerateSpringboardPicturePlaceholderOffset(6U, "Picture Placeholder 5", "<a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{E267D8F3-E48A-4700-AB21-28A292CD6593}\" />", 10U);
+
+            Shape shape19 = GenerateSpringboardPicturePlaceholderOffset(8U, "Picture Placeholder 7", "<a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{73494BF0-70FF-4AB3-9134-962977A40301}\" />", 11U);
+
+            Shape shape20 = GenerateSpringboardPicturePlaceholderOffset(32U, "Picture Placeholder 31", "<a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{C1F7E11A-8B90-43C7-8E96-88F39215F946}\" />", 12U);
+
+            Shape shape21 = GenerateSpringboardPicturePlaceholderOffset(34U, "Picture Placeholder 33", "<a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{54D10450-84D4-404C-9A7D-B5C8EEECBA1C}\" />", 13U);
+
+            Shape shape22 = GenerateSpringboardPicturePlaceholderOffset(36U, "Picture Placeholder 35", "<a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{C023F899-3365-4468-BD4F-10A31B72305D}\" />", 14U);
+            /*
             Shape shape18 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties18 = new NonVisualShapeProperties();
@@ -1657,7 +1681,21 @@ namespace builder
 
             shape22.Append(nonVisualShapeProperties22);
             shape22.Append(shapeProperties22);
+            */
+            #endregion
 
+            #region  PictureUrls
+            Shape shape23 = GenerateSpringboardPictureUrlOffset(20U, "TextBox 19", 810051L, 4171813L, _springboard.Project.Areas[0].Springboards[0].ImageUrl);
+
+            Shape shape24 = GenerateSpringboardPictureUrlOffset(21U, "TextBox 20", 2920603L, 4187073L, _springboard.Project.Areas[0].Springboards[1].ImageUrl);
+
+            Shape shape25 = GenerateSpringboardPictureUrlOffset(22U, "TextBox 21", 5260607L, 4187073L, _springboard.Project.Areas[0].Springboards[2].ImageUrl);
+
+            Shape shape26 = GenerateSpringboardPictureUrlOffset(23U, "TextBox 22", 7485885L, 4169234L, _springboard.Project.Areas[0].Springboards[3].ImageUrl);
+
+            Shape shape27 = GenerateSpringboardPictureUrlOffset(24U, "TextBox 23", 9711162L, 4187073L, _springboard.Project.Areas[0].Springboards[4].ImageUrl);
+            #endregion
+            /*
             Shape shape23 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties23 = new NonVisualShapeProperties();
@@ -2022,64 +2060,7 @@ namespace builder
             shape27.Append(nonVisualShapeProperties27);
             shape27.Append(shapeProperties27);
             shape27.Append(textBody22);
-
-            Shape shape28 = new Shape();
-
-            NonVisualShapeProperties nonVisualShapeProperties28 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties30 = new NonVisualDrawingProperties() { Id = (UInt32Value)3U, Name = "Text Placeholder 2" };
-
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties28 = new NonVisualShapeDrawingProperties();
-            A.ShapeLocks shapeLocks22 = new A.ShapeLocks() { NoGrouping = true };
-
-            nonVisualShapeDrawingProperties28.Append(shapeLocks22);
-
-            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties30 = new ApplicationNonVisualDrawingProperties();
-            PlaceholderShape placeholderShape22 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = (UInt32Value)19U };
-
-            applicationNonVisualDrawingProperties30.Append(placeholderShape22);
-
-            nonVisualShapeProperties28.Append(nonVisualDrawingProperties30);
-            nonVisualShapeProperties28.Append(nonVisualShapeDrawingProperties28);
-            nonVisualShapeProperties28.Append(applicationNonVisualDrawingProperties30);
-
-            ShapeProperties shapeProperties28 = new ShapeProperties();
-
-            A.Transform2D transform2D18 = new A.Transform2D();
-            A.Offset offset20 = new A.Offset() { X = 2920602L, Y = 5116152L };
-            A.Extents extents20 = new A.Extents() { Cx = 2139075L, Cy = 1013185L };
-
-            transform2D18.Append(offset20);
-            transform2D18.Append(extents20);
-
-            shapeProperties28.Append(transform2D18);
-
-            TextBody textBody23 = new TextBody();
-            A.BodyProperties bodyProperties23 = new A.BodyProperties();
-            A.ListStyle listStyle23 = new A.ListStyle();
-
-            A.Paragraph paragraph27 = new A.Paragraph();
-
-            A.Run run31 = new A.Run();
-
-            A.RunProperties runProperties33 = new A.RunProperties() { Language = "en-US", Dirty = false };
-            runProperties33.SetAttribute(new OpenXmlAttribute("", "smtClean", "", "0"));
-            A.Text text33 = new A.Text();
-            text33.Text = "#1Springboard.Description";
-
-            run31.Append(runProperties33);
-            run31.Append(text33);
-            A.EndParagraphRunProperties endParagraphRunProperties22 = new A.EndParagraphRunProperties() { Language = "en-US", Dirty = false };
-
-            paragraph27.Append(run31);
-            paragraph27.Append(endParagraphRunProperties22);
-
-            textBody23.Append(bodyProperties23);
-            textBody23.Append(listStyle23);
-            textBody23.Append(paragraph27);
-
-            shape28.Append(nonVisualShapeProperties28);
-            shape28.Append(shapeProperties28);
-            shape28.Append(textBody23);
+            */
 
             shapeTree2.Append(nonVisualGroupShapeProperties2);
             shapeTree2.Append(groupShapeProperties2);
@@ -2130,6 +2111,231 @@ namespace builder
 
             slidePart1.Slide = slide1;
         }
+
+        private Shape GenerateSpringboardTitleOffset(UInt32Value drawingId, string drawingName, UInt32Value placeholderIndex, string springboardTitle, long xOffset, long yOffset)
+        {
+            Shape shape = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties11 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties13 = new NonVisualDrawingProperties() { Id = drawingId, Name = drawingName };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties11 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks11 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties11.Append(shapeLocks11);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties13 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape11 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = placeholderIndex };
+
+            applicationNonVisualDrawingProperties13.Append(placeholderShape11);
+
+            nonVisualShapeProperties11.Append(nonVisualDrawingProperties13);
+            nonVisualShapeProperties11.Append(nonVisualShapeDrawingProperties11);
+            nonVisualShapeProperties11.Append(applicationNonVisualDrawingProperties13);
+
+            ShapeProperties shapeProperties11 = new ShapeProperties();
+
+            A.Transform2D transform2D8 = new A.Transform2D();
+            A.Offset offset10 = new A.Offset() { X = xOffset, Y = yOffset };
+            A.Extents extents10 = new A.Extents() { Cx = 2072642L, Cy = 628578L };
+
+            transform2D8.Append(offset10);
+            transform2D8.Append(extents10);
+
+            shapeProperties11.Append(transform2D8);
+
+            TextBody textBody11 = new TextBody();
+            A.BodyProperties bodyProperties11 = new A.BodyProperties();
+            A.ListStyle listStyle11 = new A.ListStyle();
+
+            A.Paragraph paragraph15 = new A.Paragraph();
+
+            A.Run run11 = new A.Run();
+            A.RunProperties runProperties13 = new A.RunProperties() { Language = "en-US", Dirty = false };
+            A.Text text13 = new A.Text();
+            text13.Text = springboardTitle;
+
+            run11.Append(runProperties13);
+            run11.Append(text13);
+
+            paragraph15.Append(run11);
+
+            textBody11.Append(bodyProperties11);
+            textBody11.Append(listStyle11);
+            textBody11.Append(paragraph15);
+
+            shape.Append(nonVisualShapeProperties11);
+            shape.Append(shapeProperties11);
+            shape.Append(textBody11);
+
+            return shape;
+        }
+
+        private Shape GenerateSpringboardDescriptionOffset(UInt32Value drawingId, string drawingName, UInt32Value placeholderIndex, string springboardDescription, long xOffset, long yOffset)
+        {
+            Shape shape = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties12 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties14 = new NonVisualDrawingProperties() { Id = drawingId, Name = drawingName };
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties12 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks12 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties12.Append(shapeLocks12);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties14 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape12 = new PlaceholderShape() { Type = PlaceholderValues.Body, Size = PlaceholderSizeValues.Quarter, Index = placeholderIndex };
+
+            applicationNonVisualDrawingProperties14.Append(placeholderShape12);
+
+            nonVisualShapeProperties12.Append(nonVisualDrawingProperties14);
+            nonVisualShapeProperties12.Append(nonVisualShapeDrawingProperties12);
+            nonVisualShapeProperties12.Append(applicationNonVisualDrawingProperties14);
+
+            ShapeProperties shapeProperties12 = new ShapeProperties();
+
+            A.Transform2D transform2D9 = new A.Transform2D();
+            A.Offset offset11 = new A.Offset() { X = xOffset, Y = yOffset };
+            A.Extents extents11 = new A.Extents() { Cx = 1986439L, Cy = 1013185L };
+
+            transform2D9.Append(offset11);
+            transform2D9.Append(extents11);
+
+            shapeProperties12.Append(transform2D9);
+
+            TextBody textBody12 = new TextBody();
+            A.BodyProperties bodyProperties12 = new A.BodyProperties();
+            A.ListStyle listStyle12 = new A.ListStyle();
+
+            A.Paragraph paragraph16 = new A.Paragraph();
+
+            A.Run run12 = new A.Run();
+            A.RunProperties runProperties14 = new A.RunProperties() { Language = "en-US", Dirty = false };
+            A.Text text14 = new A.Text();
+            text14.Text = springboardDescription;
+
+            run12.Append(runProperties14);
+            run12.Append(text14);
+
+            paragraph16.Append(run12);
+
+            textBody12.Append(bodyProperties12);
+            textBody12.Append(listStyle12);
+            textBody12.Append(paragraph16);
+
+            shape.Append(nonVisualShapeProperties12);
+            shape.Append(shapeProperties12);
+            shape.Append(textBody12);
+
+            return shape;
+        }
+
+        private Shape GenerateSpringboardPicturePlaceholderOffset(UInt32Value drawingId, string drawingName, string xmlUnknownElement, UInt32Value placeholderIndex)
+        {
+            Shape shape = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties18 = new NonVisualShapeProperties();
+
+            NonVisualDrawingProperties nonVisualDrawingProperties20 = new NonVisualDrawingProperties() { Id = drawingId, Name = drawingName };
+
+            A.NonVisualDrawingPropertiesExtensionList nonVisualDrawingPropertiesExtensionList2 = new A.NonVisualDrawingPropertiesExtensionList();
+
+            A.NonVisualDrawingPropertiesExtension nonVisualDrawingPropertiesExtension2 = new A.NonVisualDrawingPropertiesExtension() { Uri = "{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}" };
+
+            OpenXmlUnknownElement openXmlUnknownElement2 = OpenXmlUnknownElement.CreateOpenXmlUnknownElement(xmlUnknownElement);
+
+            nonVisualDrawingPropertiesExtension2.Append(openXmlUnknownElement2);
+
+            nonVisualDrawingPropertiesExtensionList2.Append(nonVisualDrawingPropertiesExtension2);
+
+            nonVisualDrawingProperties20.Append(nonVisualDrawingPropertiesExtensionList2);
+
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties18 = new NonVisualShapeDrawingProperties();
+            A.ShapeLocks shapeLocks17 = new A.ShapeLocks() { NoGrouping = true };
+
+            nonVisualShapeDrawingProperties18.Append(shapeLocks17);
+
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties20 = new ApplicationNonVisualDrawingProperties();
+            PlaceholderShape placeholderShape17 = new PlaceholderShape() { Type = PlaceholderValues.Picture, Size = PlaceholderSizeValues.Quarter, Index = placeholderIndex };
+
+            applicationNonVisualDrawingProperties20.Append(placeholderShape17);
+
+            nonVisualShapeProperties18.Append(nonVisualDrawingProperties20);
+            nonVisualShapeProperties18.Append(nonVisualShapeDrawingProperties18);
+            nonVisualShapeProperties18.Append(applicationNonVisualDrawingProperties20);
+            ShapeProperties shapeProperties18 = new ShapeProperties();
+
+            shape.Append(nonVisualShapeProperties18);
+            shape.Append(shapeProperties18);
+
+            return shape;
+        }
+
+        private Shape GenerateSpringboardPictureUrlOffset(UInt32Value drawingId, string drawingName, long xOffset, long yOffset, string pictureUrl)
+        {
+            Shape shape = new Shape();
+
+            NonVisualShapeProperties nonVisualShapeProperties23 = new NonVisualShapeProperties();
+            NonVisualDrawingProperties nonVisualDrawingProperties25 = new NonVisualDrawingProperties() { Id = drawingId, Name = drawingName };
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties23 = new NonVisualShapeDrawingProperties() { TextBox = true };
+            ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties25 = new ApplicationNonVisualDrawingProperties();
+
+            nonVisualShapeProperties23.Append(nonVisualDrawingProperties25);
+            nonVisualShapeProperties23.Append(nonVisualShapeDrawingProperties23);
+            nonVisualShapeProperties23.Append(applicationNonVisualDrawingProperties25);
+
+            ShapeProperties shapeProperties23 = new ShapeProperties();
+
+            A.Transform2D transform2D13 = new A.Transform2D();
+            A.Offset offset15 = new A.Offset() { X = xOffset, Y = yOffset };
+            A.Extents extents15 = new A.Extents() { Cx = 1785512L, Cy = 369332L };
+
+            transform2D13.Append(offset15);
+            transform2D13.Append(extents15);
+
+            A.PresetGeometry presetGeometry8 = new A.PresetGeometry() { Preset = A.ShapeTypeValues.Rectangle };
+            A.AdjustValueList adjustValueList8 = new A.AdjustValueList();
+
+            presetGeometry8.Append(adjustValueList8);
+            A.NoFill noFill3 = new A.NoFill();
+
+            shapeProperties23.Append(transform2D13);
+            shapeProperties23.Append(presetGeometry8);
+            shapeProperties23.Append(noFill3);
+
+            TextBody textBody18 = new TextBody();
+
+            A.BodyProperties bodyProperties18 = new A.BodyProperties() { Wrap = A.TextWrappingValues.Square, RightToLeftColumns = false };
+            A.ShapeAutoFit shapeAutoFit1 = new A.ShapeAutoFit();
+
+            bodyProperties18.Append(shapeAutoFit1);
+            A.ListStyle listStyle18 = new A.ListStyle();
+
+            A.Paragraph paragraph22 = new A.Paragraph();
+
+            A.Run run20 = new A.Run();
+            A.RunProperties runProperties22 = new A.RunProperties() { Language = "en-GB", Dirty = false };
+            A.Text text22 = new A.Text();
+            text22.Text = pictureUrl;
+
+            run20.Append(runProperties22);
+            run20.Append(text22);
+            A.EndParagraphRunProperties endParagraphRunProperties8 = new A.EndParagraphRunProperties() { Language = "en-GB", Dirty = false };
+
+            paragraph22.Append(run20);
+            paragraph22.Append(endParagraphRunProperties8);
+
+            textBody18.Append(bodyProperties18);
+            textBody18.Append(listStyle18);
+            textBody18.Append(paragraph22);
+
+            shape.Append(nonVisualShapeProperties23);
+            shape.Append(shapeProperties23);
+            shape.Append(textBody18);
+
+            return shape;
+        }
+
         #endregion
 
         #region Slide 3: Springboard Title & Themes/Ovals
