@@ -3276,8 +3276,8 @@ namespace builder
             Shape shape118 = new Shape();
 
             NonVisualShapeProperties nonVisualShapeProperties118 = new NonVisualShapeProperties();
-            NonVisualDrawingProperties nonVisualDrawingProperties159 = new NonVisualDrawingProperties() { Id = (UInt32Value)5U, Name = "TextBox 4" };
-            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties118 = new NonVisualShapeDrawingProperties() { TextBox = true };
+            NonVisualDrawingProperties nonVisualDrawingProperties159 = new NonVisualDrawingProperties { Id = (UInt32Value)5U, Name = "TextBox 4" };
+            NonVisualShapeDrawingProperties nonVisualShapeDrawingProperties118 = new NonVisualShapeDrawingProperties { TextBox = true };
             ApplicationNonVisualDrawingProperties applicationNonVisualDrawingProperties159 = new ApplicationNonVisualDrawingProperties();
 
             nonVisualShapeProperties118.Append(nonVisualDrawingProperties159);
@@ -3287,8 +3287,8 @@ namespace builder
             ShapeProperties shapeProperties137 = new ShapeProperties();
 
             A.Transform2D transform2D118 = new A.Transform2D();
-            A.Offset offset140 = new A.Offset() { X = 962820L, Y = 1365983L };
-            A.Extents extents140 = new A.Extents() { Cx = 1785512L, Cy = 646331L };
+            A.Offset offset140 = new A.Offset { X = 962820L, Y = 1365983L };
+            A.Extents extents140 = new A.Extents { Cx = 1785512L, Cy = 646331L };
 
             transform2D118.Append(offset140);
             transform2D118.Append(extents140);
@@ -4431,22 +4431,19 @@ namespace builder
 
             A.Run run69 = new A.Run();
             A.RunProperties runProperties72 = new A.RunProperties() { Language = "en-GB", Dirty = false };
-            A.Text text71 = new A.Text();
-            text71.Text = url + " ";
+            A.Text text71 = new A.Text { Text = url + " " };
             run69.Append(runProperties72);
             run69.Append(text71);
 
             A.Run run70 = new A.Run();
             A.RunProperties runProperties73 = new A.RunProperties() { Language = "en-GB", Dirty = false };
-            A.Text text72 = new A.Text();
-            text72.Text = area + " ";
+            A.Text text72 = new A.Text { Text = area + " " };
             run70.Append(runProperties73);
             run70.Append(text72);
 
             A.Run run71 = new A.Run();
             A.RunProperties runProperties74 = new A.RunProperties() { Language = "en-GB", Dirty = false };
-            A.Text text73 = new A.Text();
-            text73.Text = market;
+            A.Text text73 = new A.Text { Text = market };
             run71.Append(runProperties74);
             run71.Append(text73);
 
@@ -12566,54 +12563,39 @@ namespace builder
         {
             Ap.Properties properties1 = new Ap.Properties();
             properties1.AddNamespaceDeclaration("vt", "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes");
-            Ap.Template template1 = new Ap.Template();
-            template1.Text = "Office Theme";
-            Ap.TotalTime totalTime1 = new Ap.TotalTime();
-            totalTime1.Text = "810";
-            Ap.Words words1 = new Ap.Words();
-            words1.Text = "207";
-            Ap.Application application1 = new Ap.Application();
-            application1.Text = "Microsoft Office PowerPoint";
-            Ap.PresentationFormat presentationFormat1 = new Ap.PresentationFormat();
-            presentationFormat1.Text = "Custom";
-            Ap.Paragraphs paragraphs1 = new Ap.Paragraphs();
-            paragraphs1.Text = "113";
-            Ap.Slides slides1 = new Ap.Slides();
-            slides1.Text = "6";
-            Ap.Notes notes1 = new Ap.Notes();
-            notes1.Text = "1";
-            Ap.HiddenSlides hiddenSlides1 = new Ap.HiddenSlides();
-            hiddenSlides1.Text = "0";
-            Ap.MultimediaClips multimediaClips1 = new Ap.MultimediaClips();
-            multimediaClips1.Text = "0";
-            Ap.ScaleCrop scaleCrop1 = new Ap.ScaleCrop();
-            scaleCrop1.Text = "false";
+            Ap.Template template1 = new Ap.Template { Text = "Office Theme" };
+            Ap.TotalTime totalTime1 = new Ap.TotalTime { Text = "810" };
+            Ap.Words words1 = new Ap.Words { Text = "207" };
+            Ap.Application application1 = new Ap.Application { Text = "Microsoft Office PowerPoint" };
+            Ap.PresentationFormat presentationFormat1 = new Ap.PresentationFormat { Text = "Custom" };
+            Ap.Paragraphs paragraphs1 = new Ap.Paragraphs { Text = "113" };
+            Ap.Slides slides1 = new Ap.Slides { Text = "6" };
+            Ap.Notes notes1 = new Ap.Notes { Text = "1" };
+            Ap.HiddenSlides hiddenSlides1 = new Ap.HiddenSlides { Text = "0" };
+            Ap.MultimediaClips multimediaClips1 = new Ap.MultimediaClips { Text = "0" };
+            Ap.ScaleCrop scaleCrop1 = new Ap.ScaleCrop { Text = "false" };
 
             Ap.HeadingPairs headingPairs1 = new Ap.HeadingPairs();
 
             Vt.VTVector vTVector1 = new Vt.VTVector() { BaseType = Vt.VectorBaseValues.Variant, Size = (UInt32Value)4U };
 
             Vt.Variant variant1 = new Vt.Variant();
-            Vt.VTLPSTR vTLPSTR1 = new Vt.VTLPSTR();
-            vTLPSTR1.Text = "Theme";
+            Vt.VTLPSTR vTLPSTR1 = new Vt.VTLPSTR { Text = "Theme"};
 
             variant1.Append(vTLPSTR1);
 
             Vt.Variant variant2 = new Vt.Variant();
-            Vt.VTInt32 vTInt321 = new Vt.VTInt32();
-            vTInt321.Text = "1";
+            Vt.VTInt32 vTInt321 = new Vt.VTInt32 { Text = "1" };
 
             variant2.Append(vTInt321);
 
             Vt.Variant variant3 = new Vt.Variant();
-            Vt.VTLPSTR vTLPSTR2 = new Vt.VTLPSTR();
-            vTLPSTR2.Text = "Slide Titles";
+            Vt.VTLPSTR vTLPSTR2 = new Vt.VTLPSTR { Text = "Slide Titles" };
 
             variant3.Append(vTLPSTR2);
 
             Vt.Variant variant4 = new Vt.Variant();
-            Vt.VTInt32 vTInt322 = new Vt.VTInt32();
-            vTInt322.Text = "6";
+            Vt.VTInt32 vTInt322 = new Vt.VTInt32 { Text = "6" };
 
             variant4.Append(vTInt322);
 
@@ -12627,20 +12609,13 @@ namespace builder
             Ap.TitlesOfParts titlesOfParts1 = new Ap.TitlesOfParts();
 
             Vt.VTVector vTVector2 = new Vt.VTVector() { BaseType = Vt.VectorBaseValues.Lpstr, Size = (UInt32Value)7U };
-            Vt.VTLPSTR vTLPSTR3 = new Vt.VTLPSTR();
-            vTLPSTR3.Text = "Office Theme";
-            Vt.VTLPSTR vTLPSTR4 = new Vt.VTLPSTR();
-            vTLPSTR4.Text = "$Question";
-            Vt.VTLPSTR vTLPSTR5 = new Vt.VTLPSTR();
-            vTLPSTR5.Text = "$Area.Title Springboards";
-            Vt.VTLPSTR vTLPSTR6 = new Vt.VTLPSTR();
-            vTLPSTR6.Text = "$SpringBoard.Title";
-            Vt.VTLPSTR vTLPSTR7 = new Vt.VTLPSTR();
-            vTLPSTR7.Text = "$WordCloud.Title";
-            Vt.VTLPSTR vTLPSTR8 = new Vt.VTLPSTR();
-            vTLPSTR8.Text = "$WordList.Title";
-            Vt.VTLPSTR vTLPSTR9 = new Vt.VTLPSTR();
-            vTLPSTR9.Text = "Project Sources";
+            Vt.VTLPSTR vTLPSTR3 = new Vt.VTLPSTR { Text = "Office Theme" };
+            Vt.VTLPSTR vTLPSTR4 = new Vt.VTLPSTR { Text = "$Question" };
+            Vt.VTLPSTR vTLPSTR5 = new Vt.VTLPSTR { Text = "$Area.Title Springboards" };
+            Vt.VTLPSTR vTLPSTR6 = new Vt.VTLPSTR { Text = "$SpringBoard.Title" };
+            Vt.VTLPSTR vTLPSTR7 = new Vt.VTLPSTR { Text = "$WordCloud.Title" };
+            Vt.VTLPSTR vTLPSTR8 = new Vt.VTLPSTR { Text = "$WordList.Title" };
+            Vt.VTLPSTR vTLPSTR9 = new Vt.VTLPSTR { Text = "Project Sources" };
 
             vTVector2.Append(vTLPSTR3);
             vTVector2.Append(vTLPSTR4);
@@ -12651,16 +12626,11 @@ namespace builder
             vTVector2.Append(vTLPSTR9);
 
             titlesOfParts1.Append(vTVector2);
-            Ap.Company company1 = new Ap.Company();
-            company1.Text = "";
-            Ap.LinksUpToDate linksUpToDate1 = new Ap.LinksUpToDate();
-            linksUpToDate1.Text = "false";
-            Ap.SharedDocument sharedDocument1 = new Ap.SharedDocument();
-            sharedDocument1.Text = "false";
-            Ap.HyperlinksChanged hyperlinksChanged1 = new Ap.HyperlinksChanged();
-            hyperlinksChanged1.Text = "false";
-            Ap.ApplicationVersion applicationVersion1 = new Ap.ApplicationVersion();
-            applicationVersion1.Text = "14.0000";
+            Ap.Company company1 = new Ap.Company { Text = "" };
+            Ap.LinksUpToDate linksUpToDate1 = new Ap.LinksUpToDate { Text = "false" };
+            Ap.SharedDocument sharedDocument1 = new Ap.SharedDocument { Text = "false" };
+            Ap.HyperlinksChanged hyperlinksChanged1 = new Ap.HyperlinksChanged { Text = "false" };
+            Ap.ApplicationVersion applicationVersion1 = new Ap.ApplicationVersion { Text = "14.0000" };
 
             properties1.Append(template1);
             properties1.Append(totalTime1);
