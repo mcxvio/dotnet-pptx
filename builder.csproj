@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Remove="Services\SpringboardService_Original.cs" />
+    <Compile Remove="Services\SpringboardService_Custom.cs" />
   </ItemGroup>
 
   <ItemGroup>
